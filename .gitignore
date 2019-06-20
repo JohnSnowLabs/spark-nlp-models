@@ -132,3 +132,5 @@ dmypy.json
 **/embeddings_index-*/**
 glove.*
 *.hdf
+.idea
+**/graphs_log/**
