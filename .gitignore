@@ -131,3 +131,4 @@ dmypy.json
 # Spark NLP
 **/embeddings_index-*/**
 glove.*
+*.hdf
