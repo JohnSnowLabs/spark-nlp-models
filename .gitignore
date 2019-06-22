@@ -134,3 +134,4 @@ glove.*
 *.hdf
 .idea
 **/graphs_log/**
+**/wikiner/**
