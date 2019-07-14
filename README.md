@@ -85,16 +85,26 @@ Pre-trained `NerDLModel` was trained on Dutch `WikiNER` corpus.
 |----------|-------|------------------|
 |0.94|0.89|0.91|
 
-## Contributing
+#### Italian
 
-We appreciate any sort of contributions:
+Pre-trained `NerDLModel` was trained on Italian `WikiNER` corpus.
 
-* ideas
-* feedback
-* documentation
-* bug reports
-* nlp training and testing corpora
-* development and testing
+#### Italian NER ACCURACY
+
+|tag   |Precision|Recall|F1-Score|
+|------|------|------|------|
+|I-PER |0.983    |0.987 |0.985   |
+|I-ORG |0.966    |0.961 |0.963   |
+|I-MISC|0.949    |0.948 |0.948   |
+|B-PER |0.935    |0.896 |0.915   |
+|I-LOC |0.933    |0.966 |0.949   |
+|B-MISC|0.889    |0.865 |0.877   |
+|B-LOC |0.864    |0.9   |0.882   |
+|B-ORG |0.636    |0.933 |0.756   |
+
+|Precision |Recall |F1-Score          |
+|----------|-------|------------------|
+|0.89|0.93|0.91|
 
 ## Contact
 
