@@ -45,7 +45,7 @@ The evaluation scores are tagged-based and it is done over a random proportion o
 
 #### French
 
-Pre-trained `NerDLModel` was trained on French `WikiNER` corpus and pre-trained WordEmbeddingd `glove_840B_300`.
+This pre-trained `NerDLModel` is trained on French `WikiNER` corpus and pre-trained WordEmbeddings `glove_840B_300`.
 
 #### French NER ACCURACY
 
@@ -66,7 +66,7 @@ Pre-trained `NerDLModel` was trained on French `WikiNER` corpus and pre-trained 
 
 #### German
 
-Pre-trained `NerDLModel` was trained on Dutch `WikiNER` corpus and pre-trained WordEmbeddingd `glove_840B_300`.
+This pre-trained `NerDLModel` is trained on Dutch `WikiNER` corpus and pre-trained WordEmbeddings `glove_840B_300`.
 
 #### German NER ACCURACY
 
@@ -87,7 +87,7 @@ Pre-trained `NerDLModel` was trained on Dutch `WikiNER` corpus and pre-trained W
 
 #### Italian
 
-Pre-trained `NerDLModel` was trained on Italian `WikiNER` corpus and pre-trained WordEmbeddingd `glove_840B_300`.
+This pre-trained `NerDLModel` is trained on Italian `WikiNER` corpus and pre-trained WordEmbeddings `glove_840B_300`.
 
 #### Italian NER ACCURACY
 
