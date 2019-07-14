@@ -16,7 +16,7 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
 
 ## Table of contents
 
-* [Spark NLP Evaluation](#sparknlpevaluation)
+* [Spark NLP Evaluation](#spark-nlp-evaluation)
   * [NerDLModel](#nerdlmodel)
     * [French](#french)
     * [German](#german)
