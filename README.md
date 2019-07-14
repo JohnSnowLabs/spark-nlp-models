@@ -16,9 +16,39 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
 
 ## Table of contents
 
-* [Training](https://github.com/JohnSnowLabs/spark-nlp-models/tree/master/training)
+* [Spark NLP Evaluation](#sparknlpevaluation)
+  * [NerDLModel](#nerdlmodel)
+    * [French](#french)
+    * [German](#german)
+    * [Italian](#italian)
+* [Spark NLP Training](https://github.com/JohnSnowLabs/spark-nlp-models/tree/master/training)
   * [Lemmatizer Model](https://github.com/JohnSnowLabs/spark-nlp-models/tree/master/training/lemmatizer)
   * [POS Tagger Model](https://github.com/JohnSnowLabs/spark-nlp-models/tree/master/training/part_of_speech)
+
+## Spark NLP Evaluation
+
+### NerDLModel
+
+#### French
+
+Pre-trained `NerDLModel` was trained on `WikiNER` corpus. The evaluation is tag based and it was done over a random proportion of the `WikiNER` corpus.
+
+#### French NER ACCURACY
+
+|tag   |Precision|Recall|F1-Score|
+|------|------|------|------|
+|I-PER |0.969    |0.971 |0.97    |
+|I-ORG |0.931    |0.926 |0.928   |
+|I-LOC |0.919    |0.93  |0.924   |
+|I-MISC|0.913    |0.919 |0.916   |
+|B-MISC|0.909    |0.758 |0.827   |
+|B-PER |0.904    |0.885 |0.894   |
+|B-ORG |0.895    |0.944 |0.919   |
+|B-LOC |0.793    |0.805 |0.799   |
+
+|Precision         |Recall |F1-Score          |
+|------------------|-------|------------------|
+|0.90|0.89|0.90|
 
 ## Contributing
 
