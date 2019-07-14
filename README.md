@@ -27,11 +27,25 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
 
 ## Spark NLP Evaluation
 
+How do we calcuate Precision, Recall, and F1-Score:
+
+> **Precision** is "how useful the POS results are", and **Recall** is "how complete the results are". Precision can be seen as a measure of **exactness or quality**, whereas recall is a measure of **completeness or quantity**. [https://en.wikipedia.org/wiki/Precision_and_recall](https://en.wikipedia.org/wiki/Precision_and_recall)
+
+> The **F1 score** is the harmonic average of the precision and recall, where an F1 score reaches its best value at 1 (perfect precision and recall) and worst at 0. [https://en.wikipedia.org/wiki/F1_score](https://en.wikipedia.org/wiki/F1_score)
+
+![Precision](https://wikimedia.org/api/rest_v1/media/math/render/svg/26106935459abe7c266f7b1ebfa2a824b334c807)
+
+![Recall](https://wikimedia.org/api/rest_v1/media/math/render/svg/4c233366865312bc99c832d1475e152c5074891b)
+
+![F1 Score](https://wikimedia.org/api/rest_v1/media/math/render/svg/057ffc6b4fa80dc1c0e1f2f1f6b598c38cdd7c23)
+
 ### NerDLModel
+
+The evaluation scores are tagged-based and it is done over a random proportion of `WikiNER` (for multi-lingual NerDLModel) or CoNLL 2003 `testa+testb` for English NerDLModel.
 
 #### French
 
-Pre-trained `NerDLModel` was trained on `WikiNER` corpus. The evaluation is tag based and it was done over a random proportion of the `WikiNER` corpus.
+Pre-trained `NerDLModel` was trained on French `WikiNER` corpus.
 
 #### French NER ACCURACY
 
@@ -49,6 +63,27 @@ Pre-trained `NerDLModel` was trained on `WikiNER` corpus. The evaluation is tag 
 |Precision         |Recall |F1-Score          |
 |------------------|-------|------------------|
 |0.90|0.89|0.90|
+
+#### German
+
+Pre-trained `NerDLModel` was trained on Dutch `WikiNER` corpus.
+
+#### German NER ACCURACY
+
+|tag   |Precision|Recall|F1-Score|
+|------|------|------|------|
+|I-PER |0.985    |0.984 |0.984   |
+|I-LOC |0.951    |0.977 |0.964   |
+|I-ORG |0.954    |0.934 |0.944   |
+|I-MISC|0.949    |0.923 |0.936   |
+|B-LOC |0.917    |0.906 |0.911   |
+|B-ORG |0.93     |0.856 |0.891   |
+|B-MISC|0.905    |0.788 |0.842   |
+|B-PER |0.928    |0.72  |0.811   |
+
+|Precision |Recall |F1-Score          |
+|----------|-------|------------------|
+|0.94|0.89|0.91|
 
 ## Contributing
 
