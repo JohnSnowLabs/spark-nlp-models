@@ -18,9 +18,14 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
 
 * [Spark NLP Evaluation](#spark-nlp-evaluation)
   * [NerDLModel](#nerdlmodel)
-    * [French](#french)
-    * [German](#german)
-    * [Italian](#italian)
+    * [French](#french-ner)
+    * [German](#german-ner)
+    * [Italian](#italian-ner)
+  * [PerceptronModel](#perceptronmodel)
+    * [French](#french-pos)
+    * [German](#german-pos)
+    * [Italian](#italian-pos)
+
 * [Spark NLP Training](https://github.com/JohnSnowLabs/spark-nlp-models/tree/master/training)
   * [Lemmatizer Model](https://github.com/JohnSnowLabs/spark-nlp-models/tree/master/training/lemmatizer)
   * [POS Tagger Model](https://github.com/JohnSnowLabs/spark-nlp-models/tree/master/training/part_of_speech)
@@ -43,7 +48,7 @@ How do we calcuate Precision, Recall, and F1-Score:
 
 The evaluation scores are tagged-based and it is done over a random proportion of `WikiNER` (for multi-lingual NerDLModel) or CoNLL 2003 `testa+testb` for English NerDLModel.
 
-#### French
+#### French NER
 
 This pre-trained `NerDLModel` is trained on French `WikiNER` corpus and pre-trained WordEmbeddings `glove_840B_300`.
 
@@ -64,7 +69,7 @@ This pre-trained `NerDLModel` is trained on French `WikiNER` corpus and pre-trai
 |------------------|-------|------------------|
 |0.90|0.89|0.90|
 
-#### German
+#### German NER
 
 This pre-trained `NerDLModel` is trained on Dutch `WikiNER` corpus and pre-trained WordEmbeddings `glove_840B_300`.
 
@@ -85,7 +90,7 @@ This pre-trained `NerDLModel` is trained on Dutch `WikiNER` corpus and pre-train
 |----------|-------|------------------|
 |0.94|0.89|0.91|
 
-#### Italian
+#### Italian NER
 
 This pre-trained `NerDLModel` is trained on Italian `WikiNER` corpus and pre-trained WordEmbeddings `glove_840B_300`.
 
@@ -105,6 +110,34 @@ This pre-trained `NerDLModel` is trained on Italian `WikiNER` corpus and pre-tra
 |Precision |Recall |F1-Score          |
 |----------|-------|------------------|
 |0.89|0.93|0.91|
+
+### PerceptronModel
+
+The evaluations have been done over gold tokenization.
+
+#### French POS
+
+Trained by PerceptronApproach annotator on the [Universal Dependencies](https://universaldependencies.org/treebanks/fr_gsd/index.html). This has been tested on `fr_gsd-ud-test` corpus which is not part of the training.
+
+|Precision |Recall |F1-Score          |
+|----------|-------|------------------|
+|0.88|0.88|0.88
+
+#### German POS
+
+Trained by PerceptronApproach annotator on the [Universal Dependencies](https://universaldependencies.org/treebanks/de_hdt/index.html). This has been tested on `de_hdt-ud-test` corpus which is not part of the training.
+
+|Precision |Recall |F1-Score          |
+|----------|-------|------------------|
+|0.96|0.95|0.95
+
+#### Italian POS
+
+Trained by PerceptronApproach annotator on the [Universal Dependencies](https://universaldependencies.org/treebanks/it_isdt/index.html). This has been tested on `it_isdt-ud-test` corpus which is not part of the training.
+
+|Precision |Recall |F1-Score          |
+|----------|-------|------------------|
+|0.89|0.89|0.95
 
 ## Contact
 
