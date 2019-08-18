@@ -69,17 +69,6 @@ This pre-trained `NerDLModel` is trained on French `WikiNER` corpus and pre-trai
 
 #### French NER ACCURACY
 
-|tag   |Precision|Recall|F1-Score|
-|------|------|------|------|
-|I-PER |0.969    |0.971 |0.97    |
-|I-ORG |0.931    |0.926 |0.928   |
-|I-LOC |0.919    |0.93  |0.924   |
-|I-MISC|0.913    |0.919 |0.916   |
-|B-MISC|0.909    |0.758 |0.827   |
-|B-PER |0.904    |0.885 |0.894   |
-|B-ORG |0.895    |0.944 |0.919   |
-|B-LOC |0.793    |0.805 |0.799   |
-
 |Precision         |Recall |F1-Score          |
 |------------------|-------|------------------|
 |0.90|0.89|0.90|
@@ -91,17 +80,6 @@ This pre-trained `NerDLModel` is trained on Dutch `WikiNER` corpus and pre-train
 
 #### German NER ACCURACY
 
-|tag   |Precision|Recall|F1-Score|
-|------|------|------|------|
-|I-PER |0.985    |0.984 |0.984   |
-|I-LOC |0.951    |0.977 |0.964   |
-|I-ORG |0.954    |0.934 |0.944   |
-|I-MISC|0.949    |0.923 |0.936   |
-|B-LOC |0.917    |0.906 |0.911   |
-|B-ORG |0.93     |0.856 |0.891   |
-|B-MISC|0.905    |0.788 |0.842   |
-|B-PER |0.928    |0.72  |0.811   |
-
 |Precision |Recall |F1-Score          |
 |----------|-------|------------------|
 |0.94|0.89|0.91|
@@ -112,17 +90,6 @@ This pre-trained `NerDLModel` is trained on Dutch `WikiNER` corpus and pre-train
 This pre-trained `NerDLModel` is trained on Italian `WikiNER` corpus and pre-trained WordEmbeddings `glove_840B_300`.
 
 #### Italian NER ACCURACY
-
-|tag   |Precision|Recall|F1-Score|
-|------|------|------|------|
-|I-PER |0.983    |0.987 |0.985   |
-|I-ORG |0.966    |0.961 |0.963   |
-|I-MISC|0.949    |0.948 |0.948   |
-|B-PER |0.935    |0.896 |0.915   |
-|I-LOC |0.933    |0.966 |0.949   |
-|B-MISC|0.889    |0.865 |0.877   |
-|B-LOC |0.864    |0.9   |0.882   |
-|B-ORG |0.636    |0.933 |0.756   |
 
 |Precision |Recall |F1-Score          |
 |----------|-------|------------------|
