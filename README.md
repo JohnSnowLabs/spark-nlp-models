@@ -18,6 +18,7 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
 
 * [Spark NLP Evaluation](#spark-nlp-evaluation)
   * [NerDLModel](#nerdlmodel)
+    * [English](#english-ner)
     * [French](#french-ner)
     * [German](#german-ner)
     * [Italian](#italian-ner)
@@ -48,7 +49,21 @@ How do we calcuate Precision, Recall, and F1-Score:
 
 The evaluation scores are tagged-based and it is done over a random proportion of `WikiNER` (for multi-lingual NerDLModel) or CoNLL 2003 `testa+testb` for English NerDLModel.
 
+#### English NER
+`onto_300`
+
+This pre-trained `NerDLModel` is trained on OntoNotes `CoNLL 2012` corpus and pre-trained WordEmbeddings `glove_840B_300`.
+
+Evaluation: `conlleval.pl`
+
+processed 152728 tokens with 11257 phrases; found: 11345 phrases; correct: 9916.
+
+|Accuracy         |Precision         |Recall |F1-Score          |
+|-----------------|------------------|-------|-----------|
+|97.81%|87.40%|88.09%|87.74|
+
 #### French NER
+`wikiner_840B_300`
 
 This pre-trained `NerDLModel` is trained on French `WikiNER` corpus and pre-trained WordEmbeddings `glove_840B_300`.
 
@@ -70,6 +85,7 @@ This pre-trained `NerDLModel` is trained on French `WikiNER` corpus and pre-trai
 |0.90|0.89|0.90|
 
 #### German NER
+`wikiner_840B_300`
 
 This pre-trained `NerDLModel` is trained on Dutch `WikiNER` corpus and pre-trained WordEmbeddings `glove_840B_300`.
 
@@ -91,6 +107,7 @@ This pre-trained `NerDLModel` is trained on Dutch `WikiNER` corpus and pre-train
 |0.94|0.89|0.91|
 
 #### Italian NER
+`wikiner_840B_300`
 
 This pre-trained `NerDLModel` is trained on Italian `WikiNER` corpus and pre-trained WordEmbeddings `glove_840B_300`.
 
