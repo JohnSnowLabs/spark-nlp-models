@@ -58,7 +58,7 @@ Evaluation: `conlleval.pl`
 
 processed 152728 tokens with 11257 phrases; found: 11345 phrases; correct: 9916.
 
-|Accuracy         |Precision         |Recall |F1-Score          |
+|Accuracy         |Precision         |Recall |F1-Score   |
 |-----------------|------------------|-------|-----------|
 |97.81%|87.40%|88.09%|87.74|
 
@@ -69,9 +69,17 @@ This pre-trained `NerDLModel` is trained on French `WikiNER` corpus and pre-trai
 
 #### French NER ACCURACY
 
-|Precision         |Recall |F1-Score          |
-|------------------|-------|------------------|
-|0.90|0.89|0.90|
+Evaluation: `conlleval.pl`
+
+|Accuracy         |Precision         |Recall |F1-Score   |
+|-----------------|------------------|-------|-----------|
+|98.01%|88.02%|87.64%|87.83|
+
+Evaluation: `Micro-average`
+
+|Precision |Recall |F1-Score          |
+|----------|-------|------------------|
+|0.91|0.87|0.89|
 
 #### German NER
 `wikiner_840B_300`
