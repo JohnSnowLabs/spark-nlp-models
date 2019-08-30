@@ -16,6 +16,11 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
 
 ## Table of contents
 
+* [Spark NLP Training](https://github.com/JohnSnowLabs/spark-nlp-models/tree/master/training)
+  * [Lemmatizer Model](https://github.com/JohnSnowLabs/spark-nlp-models/tree/master/training/lemmatizer)
+  * [POS Tagger Model](https://github.com/JohnSnowLabs/spark-nlp-models/tree/master/training/part_of_speech)
+  * [NerDL Model](https://github.com/JohnSnowLabs/spark-nlp-models/tree/master/training/ner_dl)
+
 * [Spark NLP Evaluation](#spark-nlp-evaluation)
   * [NerDLModel](#nerdlmodel)
     * [English](#english-ner)
@@ -27,16 +32,11 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
     * [German](#german-pos)
     * [Italian](#italian-pos)
 
-* [Spark NLP Training](https://github.com/JohnSnowLabs/spark-nlp-models/tree/master/training)
-  * [Lemmatizer Model](https://github.com/JohnSnowLabs/spark-nlp-models/tree/master/training/lemmatizer)
-  * [POS Tagger Model](https://github.com/JohnSnowLabs/spark-nlp-models/tree/master/training/part_of_speech)
-
 ## Spark NLP Evaluation
 
 How do we calcuate Precision, Recall, and F1-Score:
 
 > **Precision** is "how useful the POS results are", and **Recall** is "how complete the results are". Precision can be seen as a measure of **exactness or quality**, whereas recall is a measure of **completeness or quantity**. [https://en.wikipedia.org/wiki/Precision_and_recall](https://en.wikipedia.org/wiki/Precision_and_recall)
-
 > The **F1 score** is the harmonic average of the precision and recall, where an F1 score reaches its best value at 1 (perfect precision and recall) and worst at 0. [https://en.wikipedia.org/wiki/F1_score](https://en.wikipedia.org/wiki/F1_score)
 
 ![Precision](https://wikimedia.org/api/rest_v1/media/math/render/svg/26106935459abe7c266f7b1ebfa2a824b334c807)
@@ -50,6 +50,7 @@ How do we calcuate Precision, Recall, and F1-Score:
 The evaluation scores are tagged-based and it is done over a random proportion of `WikiNER` (for multi-lingual NerDLModel) or CoNLL 2003 `testa+testb` for English NerDLModel.
 
 #### English NER
+
 `onto_300`
 
 This pre-trained `NerDLModel` is trained on OntoNotes `CoNLL 2012` corpus and pre-trained WordEmbeddings `glove_840B_300`.
@@ -63,6 +64,7 @@ processed 152728 tokens with 11257 phrases; found: 11345 phrases; correct: 9916.
 |97.81%|87.40%|88.09%|87.74|
 
 #### French NER
+
 `wikiner_840B_300`
 
 This pre-trained `NerDLModel` is trained on French `WikiNER` corpus and pre-trained WordEmbeddings `glove_840B_300`.
@@ -82,6 +84,7 @@ Evaluation: `Micro-average`
 |0.91|0.87|0.89|
 
 #### German NER
+
 `wikiner_840B_300`
 
 This pre-trained `NerDLModel` is trained on Dutch `WikiNER` corpus and pre-trained WordEmbeddings `glove_840B_300`.
@@ -93,6 +96,7 @@ This pre-trained `NerDLModel` is trained on Dutch `WikiNER` corpus and pre-train
 |0.94|0.89|0.91|
 
 #### Italian NER
+
 `wikiner_840B_300`
 
 This pre-trained `NerDLModel` is trained on Italian `WikiNER` corpus and pre-trained WordEmbeddings `glove_840B_300`.
