@@ -79,9 +79,9 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
 
 | Model                        | Name               | Build            | Notes | Description | Offline                                                                                                                                                                                                |
 |:-----------------------------|:-------------------|:-----------------|:------|:------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| LemmatizerModel (Lemmatizer) | `lemma`            | 2.0.8-2019.06.23 |       |             | [de](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_de_2.0.8_2.4_1561248996126.zip)                                                                                             |
-| PerceptronModel (POS UD)     | `pos_ud_hdt`       | 2.0.8-2019.06.22 |       |             | [de](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_hdt_de_2.0.8_2.4_1561232528570.zip)                                                                                        |
-| NerDLModel (glove_840B_300)  | `wikiner_840B_300` | 2.1.0-2019.07.13 |       |             | [de](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_840B_300_de_2.1.0_2.4_1563035544700.zip)                                                                                  |
+| LemmatizerModel (Lemmatizer) | `lemma`            | 2.0.8-2019.06.23 |       |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_de_2.0.8_2.4_1561248996126.zip)                                                                                             |
+| PerceptronModel (POS UD)     | `pos_ud_hdt`       | 2.0.8-2019.06.22 |       |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_hdt_de_2.0.8_2.4_1561232528570.zip)                                                                                        |
+| NerDLModel (glove_840B_300)  | `wikiner_840B_300` | 2.1.0-2019.07.13 |       |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_840B_300_de_2.1.0_2.4_1563035544700.zip)                                                                                  |
 
 | Feature   | Description                                                                                                                                                                                            |
 |:----------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -167,38 +167,38 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
 
 It is required to specify 3rd argument to `pretrained(name, lang, loc)` function (location) to add the location of these
 
-| Model                    | Name                       | Build            | Notes | Description | location        |
-|:-------------------------|:---------------------------|:-----------------|:------|:------------|:----------------|
-| NerDLModel               | `ner_clinical`             | 2.0.2-2019.04.30 |       |             | clinical/models |
-| NerDLModel               | `ner_clinical_noncontrib`  | 2.3.0-2019.11.14 |       |             | clinical/models |
-| NerDLModel               | `ner_bionlp`               | 2.3.4-2019.11.27 |       |             | clinical/models |
-| NerDLModel               | `ner_bionlp_noncontrib`    | 2.3.4-2019.11.27 |       |             | clinical/models |
-| NerDLModel               | `deidentify_dl`            | 2.0.2-2019.06.04 |       |             | clinical/models |
-| AssertionDLModel         | `assertion_dl`             | 2.3.4-2019.11.27 |       |             | clinical/models |
-| AssertionLogRegModel     | `assertion_ml`             | 2.3.4-2019.11.27 |       |             | clinical/models |
-| DeIdentificationModel    | `deidentify_rb`            | 2.0.2-2019.06.04 |       |             | clinical/models |
-| WordEmbeddingsModel      | `embeddings_clinical`      | 2.0.2-2019.05.21 |       |             | clinical/models |
-| WordEmbeddingsModel      | `embeddings_icdoem`        | 2.3.2-2019.11.12 |       |             | clinical/models |
-| BertEmbeddingsModel      | `biobert_pubmed_cased`     | 2.3.1-2019.11.23 |       |             | clinical/models |
-| BertEmbeddingsModel      | `biobert_pmc_cased`        | 2.3.1-2019.11.23 |       |             | clinical/models |
-| BertEmbeddingsModel      | `biobert_pubmed_pmc_cased` | 2.3.1-2019.11.23 |       |             | clinical/models |
-| BertEmbeddingsModel      | `biobert_clinical_cased`   | 2.3.1-2019.11.23 |       |             | clinical/models |
-| BertEmbeddingsModel      | `biobert_discharge_cased`  | 2.3.1-2019.11.23 |       |             | clinical/models |
-| PerceptronModel          | `pos_clinical`             | 2.0.2-2019.04.30 |       |             | clinical/models |
-| EntityResolverModel      | `resolve_icd10`            | 2.0.2-2019.06.05 |       |             | clinical/models |
-| EntityResolverModel      | `resolve_icd10cm_cl_em`    | 2.0.8-2019.06.28 |       |             | clinical/models |
-| EntityResolverModel      | `resolve_icd10pcs_cl_em`   | 2.0.8-2019.06.28 |       |             | clinical/models |
-| EntityResolverModel      | `resolve_cpt_cl_em`        | 2.0.8-2019.06.28 |       |             | clinical/models |
-| EntityResolverModel      | `resolve_icd10cm_icdem`    | 2.2.0-2019.10.03 |       |             | clinical/models |
-| EntityResolverModel      | `resolve_icd10cm_icdoem`   | 2.3.2-2019.11.13 |       |             | clinical/models |
-| EntityResolverModel      | `resolve_cpt_icdoem`       | 2.3.2-2019.11.13 |       |             | clinical/models |
-| EntityResolverModel      | `resolve_icdo_icdoem`      | 2.3.2-2019.11.14 |       |             | clinical/models |
-| ContextSpellCheckerModel | `spellcheck_dl`            | 2.2.2-2019.11.12 |       |             | clinical/models |
-| TextMatcherModel         | `textmatch_icdo_ner_n2c4`  | 2.3.3-2019.11.22 |       |             | clinical/models |
-| TextMatcherModel         | `textmatch_cpt_token_n2c1` | 2.3.3-2019.11.25 |       |             | clinical/models |
-| Disambiguator            | `people_disambiguator`     | 2.3.4-2019.11.27 |       |             | clinical/models |
-| ChunkEntityResolverModel | `chunkresolve_icdo_icdoem` | 2.3.3-2019.11.25 |       |             | clinical/models |
-| ChunkEntityResolverModel | `chunkresolve_cpt_icdoem`  | 2.3.3-2019.11.25 |       |             | clinical/models |
+| Model                    | Name                       | Build            | Notes                                                                                          | Description | location        |
+|:-------------------------|:---------------------------|:-----------------|:-----------------------------------------------------------------------------------------------|:------------|:----------------|
+| NerDLModel               | `ner_clinical`             | 2.0.2-2019.04.30 |                                                                                                |             | clinical/models |
+| NerDLModel               | `ner_clinical_noncontrib`  | 2.3.0-2019.11.14 |                                                                                                |             | clinical/models |
+| NerDLModel               | `ner_bionlp`               | 2.3.4-2019.11.27 | [link](https://github.com/JohnSnowLabs/spark-nlp-models/releases/tag/2.3.4-bionlp-ner)         |             | clinical/models |
+| NerDLModel               | `ner_bionlp_noncontrib`    | 2.3.4-2019.11.27 | [link](https://github.com/JohnSnowLabs/spark-nlp-models/releases/tag/2.3.4-bionlp-ner)         |             | clinical/models |
+| NerDLModel               | `deidentify_dl`            | 2.0.2-2019.06.04 |                                                                                                |             | clinical/models |
+| AssertionDLModel         | `assertion_dl`             | 2.3.4-2019.11.27 |                                                                                                |             | clinical/models |
+| AssertionLogRegModel     | `assertion_ml`             | 2.3.4-2019.11.27 |                                                                                                |             | clinical/models |
+| DeIdentificationModel    | `deidentify_rb`            | 2.0.2-2019.06.04 |                                                                                                |             | clinical/models |
+| WordEmbeddingsModel      | `embeddings_clinical`      | 2.0.2-2019.05.21 |                                                                                                |             | clinical/models |
+| WordEmbeddingsModel      | `embeddings_icdoem`        | 2.3.2-2019.11.12 | [link](https://github.com/JohnSnowLabs/spark-nlp-models/releases/tag/2.3.4-icd-embeddings)     |             | clinical/models |
+| BertEmbeddingsModel      | `biobert_pubmed_cased`     | 2.3.1-2019.11.23 | [link](https://github.com/JohnSnowLabs/spark-nlp-models/releases/tag/2.3.4-biobert-embeddings) |             | clinical/models |
+| BertEmbeddingsModel      | `biobert_pmc_cased`        | 2.3.1-2019.11.23 | [link](https://github.com/JohnSnowLabs/spark-nlp-models/releases/tag/2.3.4-biobert-embeddings) |             | clinical/models |
+| BertEmbeddingsModel      | `biobert_pubmed_pmc_cased` | 2.3.1-2019.11.23 | [link](https://github.com/JohnSnowLabs/spark-nlp-models/releases/tag/2.3.4-biobert-embeddings) |             | clinical/models |
+| BertEmbeddingsModel      | `biobert_clinical_cased`   | 2.3.1-2019.11.23 | [link](https://github.com/JohnSnowLabs/spark-nlp-models/releases/tag/2.3.4-biobert-embeddings) |             | clinical/models |
+| BertEmbeddingsModel      | `biobert_discharge_cased`  | 2.3.1-2019.11.23 | [link](https://github.com/JohnSnowLabs/spark-nlp-models/releases/tag/2.3.4-biobert-embeddings) |             | clinical/models |
+| PerceptronModel          | `pos_clinical`             | 2.0.2-2019.04.30 |                                                                                                |             | clinical/models |
+| EntityResolverModel      | `resolve_icd10`            | 2.0.2-2019.06.05 |                                                                                                |             | clinical/models |
+| EntityResolverModel      | `resolve_icd10cm_cl_em`    | 2.0.8-2019.06.28 |                                                                                                |             | clinical/models |
+| EntityResolverModel      | `resolve_icd10pcs_cl_em`   | 2.0.8-2019.06.28 |                                                                                                |             | clinical/models |
+| EntityResolverModel      | `resolve_cpt_cl_em`        | 2.0.8-2019.06.28 |                                                                                                |             | clinical/models |
+| EntityResolverModel      | `resolve_icd10cm_icdem`    | 2.2.0-2019.10.03 | [link](https://github.com/JohnSnowLabs/spark-nlp-models/releases/tag/2.3.4-icd-embeddings)     |             | clinical/models |
+| EntityResolverModel      | `resolve_icd10cm_icdoem`   | 2.3.2-2019.11.13 | [link](https://github.com/JohnSnowLabs/spark-nlp-models/releases/tag/2.3.4-icd-embeddings)     |             | clinical/models |
+| EntityResolverModel      | `resolve_cpt_icdoem`       | 2.3.2-2019.11.13 | [link](https://github.com/JohnSnowLabs/spark-nlp-models/releases/tag/2.3.4-icd-embeddings)     |             | clinical/models |
+| EntityResolverModel      | `resolve_icdo_icdoem`      | 2.3.2-2019.11.14 |                                                                                                |             | clinical/models |
+| ContextSpellCheckerModel | `spellcheck_dl`            | 2.2.2-2019.11.12 |                                                                                                |             | clinical/models |
+| TextMatcherModel         | `textmatch_icdo_ner_n2c4`  | 2.3.3-2019.11.22 | [link](https://github.com/JohnSnowLabs/spark-nlp-models/releases/tag/2.3.4-icd-embeddings)     |             | clinical/models |
+| TextMatcherModel         | `textmatch_cpt_token_n2c1` | 2.3.3-2019.11.25 | [link](https://github.com/JohnSnowLabs/spark-nlp-models/releases/tag/2.3.4-icd-embeddings)     |             | clinical/models |
+| Disambiguator            | `people_disambiguator`     | 2.3.4-2019.11.27 |                                                                                                |             | clinical/models |
+| ChunkEntityResolverModel | `chunkresolve_icdo_icdoem` | 2.3.3-2019.11.25 |                                                                                                |             | clinical/models |
+| ChunkEntityResolverModel | `chunkresolve_cpt_icdoem`  | 2.3.3-2019.11.25 |                                                                                                |             | clinical/models |
 
 ## Contact
 
