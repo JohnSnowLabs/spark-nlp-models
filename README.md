@@ -16,124 +16,175 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
 
 ## Table of contents
 
-* [Spark NLP Training](https://github.com/JohnSnowLabs/spark-nlp-models/tree/master/training)
-  * [Lemmatizer Model](https://github.com/JohnSnowLabs/spark-nlp-models/tree/master/training/lemmatizer)
-  * [POS Tagger Model](https://github.com/JohnSnowLabs/spark-nlp-models/tree/master/training/part_of_speech)
-  * [NerDL Model](https://github.com/JohnSnowLabs/spark-nlp-models/tree/master/training/ner_dl)
+* [Pretrained Models](#pretrained-models)
+  * [Public Models](#public---models)
+    * [English](#english---models)
+    * [French](#French---models)
+    * [German](#german---models)
+    * [Italian](#italian---models)
+    * [Multi-language](#multi-language)
+  * [Licensed Enterprise](#licensed-enterprise)
+    * [English](#english---licensed)
+* [Pretrained Pipelines](#pretrained-pipelines)
+  * [English](#english---pipelines)
+  * [French](#French---pipelines)
+  * [Italian](#italian---pipelines)
 
-* [Spark NLP Evaluation](#spark-nlp-evaluation)
-  * [NerDLModel](#nerdlmodel)
-    * [English](#english-ner)
-    * [French](#french-ner)
-    * [German](#german-ner)
-    * [Italian](#italian-ner)
-  * [PerceptronModel](#perceptronmodel)
-    * [French](#french-pos)
-    * [German](#german-pos)
-    * [Italian](#italian-pos)
+# Pretrained Models
 
-## Spark NLP Evaluation
+## Public Models
 
-How do we calcuate Precision, Recall, and F1-Score:
+`pretrained(name, lang)` function to use
 
-> **Precision** is "how useful the POS results are", and **Recall** is "how complete the results are". Precision can be seen as a measure of **exactness or quality**, whereas recall is a measure of **completeness or quantity**. [https://en.wikipedia.org/wiki/Precision_and_recall](https://en.wikipedia.org/wiki/Precision_and_recall)
-> The **F1 score** is the harmonic average of the precision and recall, where an F1 score reaches its best value at 1 (perfect precision and recall) and worst at 0. [https://en.wikipedia.org/wiki/F1_score](https://en.wikipedia.org/wiki/F1_score)
+### English - Models
 
-![Precision](https://wikimedia.org/api/rest_v1/media/math/render/svg/26106935459abe7c266f7b1ebfa2a824b334c807)
+| Model                                  |   Name     |   en     |
+|----------------------------------------|---------------|---------------|
+|LemmatizerModel (Lemmatizer)            |  `lemma_antbnc`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_antbnc_en_2.0.2_2.4_1556480454569.zip)
+|PerceptronModel (POS)                   |   `pos_anc`     | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_anc_en_2.0.2_2.4_1556659930154.zip)
+|NerCrfModel (NER with GloVe)            |    `ner_crf`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/ner_crf_en_2.0.2_2.4_1556652790378.zip)
+|NerDLModel (NER with GloVe)             |    `ner_dl`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/ner_dl_en_2.0.2_2.4_1558802205173.zip)
+|NerDLModel (NER with GloVe)             |    `ner_dl_contrib`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/ner_dl_contrib_en_2.0.2_2.4_1556501490317.zip)
+|NerDLModel (NER with BERT)| `ner_dl_bert_base_cased`|[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/ner_dl_bert_base_cased_en_2.2.0_2.4_1567854461249.zip)
+|NerDLModel (OntoNotes with GloVe 100d)| `onto_100`|[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/onto_100_en_2.1.0_2.4_1564256329924.zip)
+|NerDLModel (OntoNotes with GloVe 300d)| `onto_300`|[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/onto_300_en_2.1.0_2.4_1564256072129.zip)
+|WordEmbeddings (GloVe) | `glove_100d` |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/glove_100d_en_2.0.2_2.4_1556534397055.zip)
+|BertEmbeddings (base_uncased) | `bert_base_uncased` | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/bert_base_uncased_en_2.2.0_2.4_1566671691653.zip)
+|BertEmbeddings (base_cased) | `bert_base_cased` | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/bert_base_cased_en_2.2.0_2.4_1566671427398.zip)
+|BertEmbeddings (large_uncased) | `bert_large_uncased` | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/bert_large_uncased_en_2.2.0_2.4_1566673292025.zip)
+|BertEmbeddings (large_cased) | `bert_large_cased` | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/bert_large_cased_en_2.2.0_2.4_1566672045674.zip)
+|DeepSentenceDetector| `ner_dl_sentence`|[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/ner_dl_sentence_en_2.0.2_2.4_1556666842347.zip)
+|ContextSpellCheckerModel (Spell Checker)|   `spellcheck_dl`     | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/spellcheck_dl_en_2.0.2_2.4_1556479898829.zip)
+|SymmetricDeleteModel (Spell Checker)    |   `spellcheck_sd`     | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/spellcheck_sd_en_2.0.2_2.4_1556604489934.zip)
+|NorvigSweetingModel (Spell Checker)     |  `spellcheck_norvig`   | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/spellcheck_norvig_en_2.0.2_2.4_1556605026653.zip)
+|ViveknSentimentModel (Sentiment)        |    `sentiment_vivekn`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sentiment_vivekn_en_2.0.2_2.4_1556663184035.zip)
+|DependencyParser (Dependency)        |    `dependency_conllu`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/dependency_conllu_en_2.0.8_2.4_1561435004077.zip)
+|TypedDependencyParser (Dependency)        |    `dependency_typed_conllu`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/dependency_typed_conllu_en_2.0.8_2.4_1561473259215.zip)
 
-![Recall](https://wikimedia.org/api/rest_v1/media/math/render/svg/4c233366865312bc99c832d1475e152c5074891b)
+### French - Models
 
-![F1 Score](https://wikimedia.org/api/rest_v1/media/math/render/svg/057ffc6b4fa80dc1c0e1f2f1f6b598c38cdd7c23)
+| Model                         | Name         |   fr    |
+|-------------------------------|--------------|---------------|
+|LemmatizerModel (Lemmatizer)| `lemma`|[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_fr_2.0.2_2.4_1556531462843.zip)
+|PerceptronModel (POS UD)       | `pos_ud_gsd` | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_gsd_fr_2.0.2_2.4_1556531457346.zip)
+|NerDLModel (glove_840B_300)| `wikiner_840B_300`|[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_840B_300_fr_2.1.0_2.4_1563035043013.zip)
 
-### NerDLModel
+|Feature | Description|
+|---|----|
+|**Lemma**|Trained by **Lemmatizer** annotator on **lemmatization-lists** by `Michal Měchura`
+|**POS**| Trained by **PerceptronApproach** annotator on the [Universal Dependencies](https://universaldependencies.org/treebanks/fr_gsd/index.html)
+|**NER**|Trained by **NerDLApproach** annotator with **Char CNNs - BiLSTM - CRF** and **GloVe Embeddings** on the **WikiNER** corpus and supports the identification of `PER`, `LOC`, `ORG` and `MISC` entities
 
-The evaluation scores are tagged-based and it is done over a random proportion of `WikiNER` (for multi-lingual NerDLModel) or CoNLL 2003 `testa+testb` for English NerDLModel.
+### German - Models
 
-#### English NER
+| Model                         | Name         |   de    |
+|-------------------------------|--------------|---------------|
+|LemmatizerModel (Lemmatizer)    | `lemma`  | [de](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_de_2.0.8_2.4_1561248996126.zip)
+|PerceptronModel (POS UD)      |`pos_ud_hdt`| [de](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_hdt_de_2.0.8_2.4_1561232528570.zip)
+|NerDLModel (glove_840B_300)| `wikiner_840B_300`|[de](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_840B_300_de_2.1.0_2.4_1563035544700.zip)
 
-`onto_300`
+|Feature | Description|
+|---|----|
+|**Lemma**|Trained by **Lemmatizer** annotator on **lemmatization-lists** by `Michal Měchura`
+|**POS**| Trained by **PerceptronApproach** annotator on the [Universal Dependencies](https://universaldependencies.org/treebanks/de_hdt/index.html)
+|**NER**|Trained by **NerDLApproach** annotator with **Char CNNs - BiLSTM - CRF** and **GloVe Embeddings** on the **WikiNER** corpus and supports the identification of `PER`, `LOC`, `ORG` and `MISC` entities
 
-This pre-trained `NerDLModel` is trained on OntoNotes `CoNLL 2012` corpus and pre-trained WordEmbeddings `glove_840B_300`.
+### Italian - Models
 
-Evaluation: `conlleval.pl`
+| Model                            | Name      |   it    |
+|----------------------------------|-----------|--------------|
+|LemmatizerModel (Lemmatizer)      |`lemma_dxc`| [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_dxc_it_2.0.2_2.4_1556531469058.zip)
+|SentimentDetector (Sentiment)     |  `sentiment_dxc`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sentiment_dxc_it_2.0.2_2.4_1556531477694.zip)
+|PerceptronModel (POS UD)      |`pos_ud_isdt`| [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_isdt_it_2.0.8_2.4_1560168427464.zip)
+|NerDLModel (glove_840B_300)| `wikiner_840B_300`|[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_840B_300_it_2.1.0_2.4_1563095099139.zip)
 
-processed 152728 tokens with 11257 phrases; found: 11345 phrases; correct: 9916.
+|Feature | Description|
+|---|----|
+|**Lemma**|Trained by **Lemmatizer** annotator on **DXC Technology** dataset
+|**POS**| Trained by **PerceptronApproach** annotator on the [Universal Dependencies](https://universaldependencies.org/treebanks/it_isdt/index.html)
+|**NER**|Trained by **NerDLApproach** annotator with **Char CNNs - BiLSTM - CRF** and **GloVe Embeddings** on the **WikiNER** corpus and supports the identification of `PER`, `LOC`, `ORG` and `MISC` entities
 
-|Accuracy         |Precision         |Recall |F1-Score   |
-|-----------------|------------------|-------|-----------|
-|97.81%|87.40%|88.09%|87.74|
+### Multi-language
 
-#### French NER
+|Model                         | Name          |   xx    |
+|-------------------------------|--------------|--------------|
+|WordEmbeddings (GloVe) | `glove_840B_300` |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/glove_840B_300_xx_2.0.2_2.4_1558645003344.zip)
+|WordEmbeddings (GloVe) | `glove_6B_300` |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/glove_6B_300_xx_2.0.2_2.4_1559059806004.zip)|
+|BertEmbeddings (multi_cased)  | `bert_multi_cased` | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/bert_multi_cased_xx_2.2.0_2.4_1566674716493.zip)
 
-`wikiner_840B_300`
+## Licensed Enterprise
 
-This pre-trained `NerDLModel` is trained on French `WikiNER` corpus and pre-trained WordEmbeddings `glove_840B_300`.
+`pretrained(name, lang)` function to use
 
-#### French NER ACCURACY
+### English - Licensed
 
-Evaluation: `conlleval.pl`
+It is required to specify 3rd argument to `pretrained(name, lang, loc)` function (location) to add the location of these
 
-|Accuracy         |Precision         |Recall |F1-Score   |
-|-----------------|------------------|-------|-----------|
-|98.01%|88.02%|87.64%|87.83|
+| Model                                  |   name     |   language     |   loc     |
+|----------------------------------------|---------------|---------------|---------------|
+|NerDLModel        |`ner_clinical`|en|clinical/models|
+|AssertionLogRegModel        |`assertion_ml`|en|clinical/models|
+|AssertionDLModel        |`assertion_dl`|en|clinical/models|
+|NerDLModel        |`deidentify_dl`|en|clinical/models|
+|DeIdentificationModel        |`deidentify_rb`|en|clinical/models|
+|WordEmbeddingsModel        |`embeddings_clinical`|en|clinical/models|
+|BertEmbeddingsModel | `biobert_pubmed_cased`|en|clinical/models|
+|BertEmbeddingsModel | `biobert_pmc_cased`|en|clinical/models|
+|BertEmbeddingsModel | `biobert_pubmed_pmc_cased`|en|clinical/models|
+|BertEmbeddingsModel | `biobert_clinical_cased`|en|clinical/models|
+|BertEmbeddingsModel | `biobert_discharge_cased`|en|clinical/models|
+|PerceptronModel        |`pos_clinical`|en|clinical/models|
+|EntityResolverModel        |`resolve_icd10`|en|clinical/models|
+|EntityResolverModel        |`resolve_icd10cm_cl_em`|en|clinical/models|
+|EntityResolverModel        |`resolve_icd10pcs_cl_em`|en|clinical/models|
+|ContextSpellCheckerModel        |`context_spell_med`|en|clinical/models|
 
-Evaluation: `Micro-average`
+# Pretrained Pipelines
 
-|Precision |Recall |F1-Score          |
-|----------|-------|------------------|
-|0.91|0.87|0.89|
+## English - Pipelines
 
-#### German NER
+**NOTE:**
+`noncontrib` pipelines are compatible with `Windows` operating systems.
 
-`wikiner_840B_300`
+| Pipelines            | Name                   | en                                                                                                                  |
+| -------------------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Explain Document ML  | `explain_document_ml`  | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_ml_en_2.1.0_2.4_1563203154682.zip)  |
+| Explain Document DL  | `explain_document_dl`  | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_dl_en_2.1.0_2.4_1564764767733.zip)  |
+| Explain Document DL Win | `explain_document_dl_noncontrib`  | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_dl_noncontrib_en_2.1.0_2.4_1564764344071.zip)  |
+| Explain Document DL Fast | `explain_document_dl_fast`  | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_dl_fast_en_2.1.0_2.4_1562946519404.zip)  |
+| Explain Document DL Fast Win | `explain_document_dl_fast_noncontrib`  | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_dl_fast_noncontrib_en_2.1.0_2.4_1562954323015.zip)  |
+| Recognize Entities DL | `recognize_entities_dl` | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/recognize_entities_dl_en_2.1.0_2.4_1562946909722.zip) |
+| Recognize Entities DL Win | `recognize_entities_dl_noncontrib` | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/recognize_entities_dl_noncontrib_en_2.1.0_2.4_1562954722690.zip) |
+| OntoNotes Entities Small | `onto_recognize_entities_sm` | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/onto_recognize_entities_sm_en_2.1.0_2.4_1564330931782.zip)
+| OntoNotes Entities Large | `onto_recognize_entities_lg` | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/onto_recognize_entities_lg_en_2.1.0_2.4_1564339796549.zip)
+| Match Datetime | `match_datetime` | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/match_datetime_en_2.1.0_2.4_1562944300214.zip)
+| Match Pattern | `match_pattern` | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/match_pattern_en_2.1.0_2.4_1562944301080.zip)
+| Match Chunk | `match_chunks` | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/match_chunks_en_2.2.0_2.4_1568121171238.zip)
+| Match Phrases | `match_phrases`| [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/match_phrases_en_2.1.0_2.4_1562944304428.zip)
+| Clean Stop | `clean_stop`| [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/clean_stop_en_2.1.0_2.4_1562944303490.zip)
+| Clean Pattern | `clean_pattern`| [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/clean_pattern_en_2.1.0_2.4_1562944302303.zip)
+| Clean Slang | `clean_slang`| [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/clean_slang_en_2.1.0_2.4_1562944852594.zip)
+| Check Spelling | `check_spelling`| [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/check_spelling_en_2.1.0_2.4_1562944297070.zip)
+| Analyze Sentiment | `analyze_sentiment` | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/analyze_sentiment_en_2.1.0_2.4_1563204637489.zip)
+| Dependency Parse | `dependency_parse` | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/dependency_parse_en_2.1.0_2.4_1563224147733.zip)
 
-This pre-trained `NerDLModel` is trained on Dutch `WikiNER` corpus and pre-trained WordEmbeddings `glove_840B_300`.
+## French - Pipelines
 
-#### German NER ACCURACY
+| Pipelines               | Name                  | fr                                                                                                                 |
+| ----------------------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Explain Document Large  | `explain_document_lg` | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_lg_fr_2.1.0_2.4_1563178528241.zip) |
+| Explain Document Medium | `explain_document_md` | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_md_fr_2.1.0_2.4_1563180522434.zip) |
+| Entity Recognizer Large | `entity_recognizer_lg` | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_lg_fr_2.1.0_2.4_1563180776696.zip) |
+| Entity Recognizer Medium | `entity_recognizer_md` | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_md_fr_2.1.0_2.4_1563182745366.zip) |
 
-|Precision |Recall |F1-Score          |
-|----------|-------|------------------|
-|0.94|0.89|0.91|
+## Italian - Pipelines
 
-#### Italian NER
-
-`wikiner_840B_300`
-
-This pre-trained `NerDLModel` is trained on Italian `WikiNER` corpus and pre-trained WordEmbeddings `glove_840B_300`.
-
-#### Italian NER ACCURACY
-
-|Precision |Recall |F1-Score          |
-|----------|-------|------------------|
-|0.89|0.93|0.91|
-
-### PerceptronModel
-
-The evaluations have been done over gold tokenization.
-
-#### French POS
-
-Trained by PerceptronApproach annotator on the [Universal Dependencies](https://universaldependencies.org/treebanks/fr_gsd/index.html). This has been tested on `fr_gsd-ud-test` corpus which is not part of the training.
-
-|Precision |Recall |F1-Score          |
-|----------|-------|------------------|
-|0.88|0.88|0.88
-
-#### German POS
-
-Trained by PerceptronApproach annotator on the [Universal Dependencies](https://universaldependencies.org/treebanks/de_hdt/index.html). This has been tested on `de_hdt-ud-test` corpus which is not part of the training.
-
-|Precision |Recall |F1-Score          |
-|----------|-------|------------------|
-|0.96|0.95|0.95
-
-#### Italian POS
-
-Trained by PerceptronApproach annotator on the [Universal Dependencies](https://universaldependencies.org/treebanks/it_isdt/index.html). This has been tested on `it_isdt-ud-test` corpus which is not part of the training.
-
-|Precision |Recall |F1-Score          |
-|----------|-------|------------------|
-|0.89|0.89|0.95
+| Pipelines               | Name                  | it                                                                                                                 |
+| ----------------------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Explain Document Large  | `explain_document_lg`  | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_lg_it_2.1.0_2.4_1563183013508.zip)  |
+| Explain Document Medium | `explain_document_md`  | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_md_it_2.1.0_2.4_1563184262421.zip)  |
+| Entity Recognizer Large | `entity_recognizer_lg` | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_lg_it_2.1.0_2.4_1563184543759.zip) |
+| Entity Recognizer Medium | `entity_recognizer_md` | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_md_it_2.1.0_2.4_1563186026810.zip) |
 
 ## Contact
 
