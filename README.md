@@ -187,7 +187,9 @@ It is required to specify 3rd argument to `pretrained(name, lang, loc)` function
 | PerceptronModel          | `pos_clinical`             | 2.0.2-2019.04.30 |       |             | clinical/models |
 | EntityResolverModel      | `resolve_icd10`            | 2.0.2-2019.06.05 |       |             | clinical/models |
 | EntityResolverModel      | `resolve_icd10cm_cl_em`    | 2.0.8-2019.06.28 |       |             | clinical/models |
-| EntityResolverModel      | `resolve_icd10cm_cl_em`    | 2.1.0-2019.07.15 |       |             | clinical/models |
+| EntityResolverModel      | `resolve_icd10pcs_cl_em`   | 2.0.8-2019.06.28 |       |             | clinical/models |
+| EntityResolverModel      | `resolve_cpt_cl_em`        | 2.0.8-2019.06.28 |       |             | clinical/models |
+| EntityResolverModel      | `resolve_icd10cm_icdem`    | 2.2.0-2019.10.03 |       |             | clinical/models |
 | EntityResolverModel      | `resolve_icd10cm_icdoem`   | 2.3.2-2019.11.13 |       |             | clinical/models |
 | EntityResolverModel      | `resolve_cpt_icdoem`       | 2.3.2-2019.11.13 |       |             | clinical/models |
 | EntityResolverModel      | `resolve_icdo_icdoem`      | 2.3.2-2019.11.14 |       |             | clinical/models |
