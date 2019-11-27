@@ -62,6 +62,7 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
 | ViveknSentimentModel (Sentiment)         | `sentiment_vivekn`        |       |         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sentiment_vivekn_en_2.0.2_2.4_1556663184035.zip)        |
 | DependencyParser (Dependency)            | `dependency_conllu`       |       |         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/dependency_conllu_en_2.0.8_2.4_1561435004077.zip)       |
 | TypedDependencyParser (Dependency)       | `dependency_typed_conllu` |       |         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/dependency_typed_conllu_en_2.0.8_2.4_1561473259215.zip) |
+
 ### French - Models
 
 | Model                        | Name               | Build | Details | Offline                                                                                                                     |
@@ -113,35 +114,6 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
 | WordEmbeddings (GloVe)       | `glove_6B_300`     |       |         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/glove_6B_300_xx_2.0.2_2.4_1559059806004.zip)     |
 | BertEmbeddings (multi_cased) | `bert_multi_cased` |       |         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/bert_multi_cased_xx_2.2.0_2.4_1566674716493.zip) |
 
-## Licensed Enterprise
-
-`pretrained(name, lang)` function to use
-
-### English - Licensed
-
-It is required to specify 3rd argument to `pretrained(name, lang, loc)` function (location) to add the location of these
-
-| Model                    | Name                       | Build | Details | Offline         |
-|:-------------------------|:---------------------------|:------|:--------|:----------------|
-| NerDLModel               | `ner_clinical`             |       | en      | clinical/models |
-| AssertionLogRegModel     | `assertion_ml`             |       | en      | clinical/models |
-| AssertionDLModel         | `assertion_dl`             |       | en      | clinical/models |
-| NerDLModel               | `deidentify_dl`            |       | en      | clinical/models |
-| DeIdentificationModel    | `deidentify_rb`            |       | en      | clinical/models |
-| WordEmbeddingsModel      | `embeddings_clinical`      |       | en      | clinical/models |
-| BertEmbeddingsModel      | `biobert_pubmed_cased`     |       | en      | clinical/models |
-| BertEmbeddingsModel      | `biobert_pmc_cased`        |       | en      | clinical/models |
-| BertEmbeddingsModel      | `biobert_pubmed_pmc_cased` |       | en      | clinical/models |
-| BertEmbeddingsModel      | `biobert_clinical_cased`   |       | en      | clinical/models |
-| BertEmbeddingsModel      | `biobert_discharge_cased`  |       | en      | clinical/models |
-| PerceptronModel          | `pos_clinical`             |       | en      | clinical/models |
-| EntityResolverModel      | `resolve_icd10`            |       | en      | clinical/models |
-| EntityResolverModel      | `resolve_icd10cm_cl_em`    |       | en      | clinical/models |
-| EntityResolverModel      | `resolve_icd10pcs_cl_em`   |       | en      | clinical/models |
-| ContextSpellCheckerModel | `context_spell_med`        |       | en      | clinical/models |
-
-# Pretrained Pipelines
-
 ## English - Pipelines
 
 **NOTE:**
@@ -186,6 +158,33 @@ It is required to specify 3rd argument to `pretrained(name, lang, loc)` function
 | Explain Document Medium  | `explain_document_md`       |       |         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_md_it_2.1.0_2.4_1563184262421.zip)  |
 | Entity Recognizer Large  | `entity_recognizer_lg`      |       |         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_lg_it_2.1.0_2.4_1563184543759.zip) |
 | Entity Recognizer Medium | `entity_recognizer_md`      |       |         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_md_it_2.1.0_2.4_1563186026810.zip) |
+
+## Licensed Enterprise - Spark NLP For Healthcare
+
+`pretrained(name, lang)` function to use
+
+### English - Pretrained Models
+
+It is required to specify 3rd argument to `pretrained(name, lang, loc)` function (location) to add the location of these
+
+| Model                    | Name                       | Build | Details | Offline         |
+|:-------------------------|:---------------------------|:------|:--------|:----------------|
+| NerDLModel               | `ner_clinical`             |       | en      | clinical/models |
+| AssertionLogRegModel     | `assertion_ml`             |       | en      | clinical/models |
+| AssertionDLModel         | `assertion_dl`             |       | en      | clinical/models |
+| NerDLModel               | `deidentify_dl`            |       | en      | clinical/models |
+| DeIdentificationModel    | `deidentify_rb`            |       | en      | clinical/models |
+| WordEmbeddingsModel      | `embeddings_clinical`      |       | en      | clinical/models |
+| BertEmbeddingsModel      | `biobert_pubmed_cased`     |       | en      | clinical/models |
+| BertEmbeddingsModel      | `biobert_pmc_cased`        |       | en      | clinical/models |
+| BertEmbeddingsModel      | `biobert_pubmed_pmc_cased` |       | en      | clinical/models |
+| BertEmbeddingsModel      | `biobert_clinical_cased`   |       | en      | clinical/models |
+| BertEmbeddingsModel      | `biobert_discharge_cased`  |       | en      | clinical/models |
+| PerceptronModel          | `pos_clinical`             |       | en      | clinical/models |
+| EntityResolverModel      | `resolve_icd10`            |       | en      | clinical/models |
+| EntityResolverModel      | `resolve_icd10cm_cl_em`    |       | en      | clinical/models |
+| EntityResolverModel      | `resolve_icd10pcs_cl_em`   |       | en      | clinical/models |
+| ContextSpellCheckerModel | `context_spell_med`        |       | en      | clinical/models |
 
 ## Contact
 
