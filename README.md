@@ -17,7 +17,7 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
 ## Table of contents
 
 * [Pretrained Models](#pretrained-models)
-  * [Public Models](#public---models)
+  * [Public Models](#public-models)
     * [English](#english---models)
     * [French](#French---models)
     * [German](#german---models)
