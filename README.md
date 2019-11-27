@@ -30,7 +30,6 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
   * [Italian](#italian---pipelines)
 
 * [Licensed Enterprise](#licensed-enterprise)
-  * [English](#english---licensed)
   
 # Pretrained Models
 
@@ -114,7 +113,8 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
 | WordEmbeddings (GloVe)       | `glove_6B_300`     |       |         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/glove_6B_300_xx_2.0.2_2.4_1559059806004.zip)     |
 | BertEmbeddings (multi_cased) | `bert_multi_cased` |       |         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/bert_multi_cased_xx_2.2.0_2.4_1566674716493.zip) |
 
-## English - Pipelines
+## Pretrained Pipelines
+### English - Pipelines
 
 **NOTE:**
 `noncontrib` pipelines are compatible with `Windows` operating systems.
@@ -141,7 +141,7 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
 | Analyze Sentiment            | `analyze_sentiment`                   |       |         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/analyze_sentiment_en_2.1.0_2.4_1563204637489.zip)                   |
 | Dependency Parse             | `dependency_parse`                    |       |         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/dependency_parse_en_2.1.0_2.4_1563224147733.zip)                    |
 
-## French - Pipelines
+### French - Pipelines
 
 | Pipeline                 | Name                       | Build | Details | Offline                                                                                                                         |
 |:-------------------------|:---------------------------|:------|:--------|:--------------------------------------------------------------------------------------------------------------------------------|
@@ -150,7 +150,7 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
 | Entity Recognizer Large  | `entity_recognizer_lg`     |       |         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_lg_fr_2.1.0_2.4_1563180776696.zip) |
 | Entity Recognizer Medium | `entity_recognizer_md`     |       |         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_md_fr_2.1.0_2.4_1563182745366.zip) |
 
-## Italian - Pipelines
+### Italian - Pipelines
 
 | Pipeline                 | Name                        | Build | Details | Offline                                                                                                                         |
 |:-------------------------|:----------------------------|:------|:--------|:--------------------------------------------------------------------------------------------------------------------------------|
@@ -159,11 +159,12 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
 | Entity Recognizer Large  | `entity_recognizer_lg`      |       |         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_lg_it_2.1.0_2.4_1563184543759.zip) |
 | Entity Recognizer Medium | `entity_recognizer_md`      |       |         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_md_it_2.1.0_2.4_1563186026810.zip) |
 
-## Licensed Enterprise - Spark NLP For Healthcare
+# Licensed Enterprise
 
 `pretrained(name, lang)` function to use
 
-### English - Pretrained Models
+## Pretrained Models - Spark NLP For Healthcare
+### English
 
 It is required to specify 3rd argument to `pretrained(name, lang, loc)` function (location) to add the location of these
 
