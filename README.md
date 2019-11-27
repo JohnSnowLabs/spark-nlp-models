@@ -174,8 +174,8 @@ It is required to specify 3rd argument to `pretrained(name, lang, loc)` function
 | NerDLModel               | `ner_bionlp`               | 2.3.4-2019.11.27 |       |             | clinical/models |
 | NerDLModel               | `ner_bionlp_noncontrib`    | 2.3.4-2019.11.27 |       |             | clinical/models |
 | NerDLModel               | `deidentify_dl`            | 2.0.2-2019.06.04 |       |             | clinical/models |
-| AssertionDLModel         | `assertion_dl`             | 2.0.2-2019.04.30 |       |             | clinical/models |
-| AssertionLogRegModel     | `assertion_ml`             | 2.0.2-2019.04.30 |       |             | clinical/models |
+| AssertionDLModel         | `assertion_dl`             | 2.3.4-2019.11.27 |       |             | clinical/models |
+| AssertionLogRegModel     | `assertion_ml`             | 2.3.4-2019.11.27 |       |             | clinical/models |
 | DeIdentificationModel    | `deidentify_rb`            | 2.0.2-2019.06.04 |       |             | clinical/models |
 | WordEmbeddingsModel      | `embeddings_clinical`      | 2.0.2-2019.05.21 |       |             | clinical/models |
 | WordEmbeddingsModel      | `embeddings_icdoem`        | 2.3.2-2019.11.12 |       |             | clinical/models |
