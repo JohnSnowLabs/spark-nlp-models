@@ -64,8 +64,6 @@ val ner = new NerDLApproach()
 .setMaxEpochs(50)
 .setRandomSeed(0)
 .setVerbose(0)
-.setIncludeValidationProp(false) //remove the sample from training
-.setTrainValidationProp(0.1f)
 .setEvaluationLogExtended(true)
 
 val myNerModel = ner.fit(readyTrainingData)
