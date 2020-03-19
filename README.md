@@ -23,6 +23,7 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
     * [German](#german---models)
     * [Italian](#italian---models)
     * [Spanish](#spanish---models)
+    * [Russian](#russian---models)
     * [Multi-language](#multi-language)
 
 * [Pretrained Pipelines](#pretrained-pipelines)
@@ -31,6 +32,7 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
   * [German](#german---pipelines)
   * [Italian](#italian---pipelines)
   * [Spanish](#spanish---pipelines)
+  * [Russian](#russian---pipelines)
 
 * [Licensed Enterprise](#licensed-enterprise)
   
