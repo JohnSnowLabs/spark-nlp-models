@@ -155,9 +155,6 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
 
 ### English - Pipelines
 
-**NOTE:**
-`noncontrib` pipelines are compatible with `Windows` operating systems.
-
 | Pipeline                     | Name                                  | Build            | lang | Description | Offline                                                                                                                                        |
 |:-----------------------------|:--------------------------------------|:-----------------|:------|:------------|:-----------------------------------------------------------------------------------------------------------------------------------------------|
 | Explain Document ML          | `explain_document_ml`                 | 2.4.0 |   `en`    |      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_ml_en_2.4.0_2.4_1580252705962.zip) |
