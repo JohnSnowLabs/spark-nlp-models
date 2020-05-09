@@ -49,7 +49,15 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
 
 ## Public Models
 
-`pretrained(name, lang)` function to use
+If you wish to use a pre-trained model for a specific annotator in your pipeline, you need to use the annotator which is mentioned under `Model` following with `pretrained(name, lang)` function.
+
+Example to load a pretraiand BERT model or NER model:
+
+```python
+bert = BertEmbeddings.pretrained(name='bert_base_cased', lang='en')
+
+ner_onto = NerDLModel.pretrained(name='ner_dl_bert', lang='en')
+```
 
 ### Dutch - Models
 
@@ -193,6 +201,76 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
 | **Lemma** | Trained by **Lemmatizer** annotator on **lemmatization-lists** by `Michal Měchura`                                                                                                                     |
 | **POS**   | Trained by **PerceptronApproach** annotator on the [Universal Dependencies](https://universaldependencies.org/treebanks/es_gsd/index.html)                                                             |
 | **NER**   | Trained by **NerDLApproach** annotator with **Char CNNs - BiLSTM - CRF** and **GloVe Embeddings** on the **WikiNER** corpus and supports the identification of `PER`, `LOC`, `ORG` and `MISC` entities |
+
+### Bulgarian - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| LemmatizerModel (Lemmatizer) | `lemma`            | 2.5.0 |   `bg`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_bg_2.5.0_2.4_1588666297763.zip) |
+| PerceptronModel (POS UD)     | `pos_ud_btb`       | 2.5.0 |   `bg`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_btb_bg_2.5.0_2.4_1588621401140.zip) |
+
+### Czech - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| LemmatizerModel (Lemmatizer) | `lemma`            | 2.5.0 |   `cs`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_cs_2.5.0_2.4_1588666300042.zip) |
+| PerceptronModel (POS UD)     | `pos_ud_pdt`       | 2.5.0 |   `cs`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_pdt_cs_2.5.0_2.4_1588622155494.zip) |
+
+### Greek - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| LemmatizerModel (Lemmatizer) | `lemma`            | 2.5.0 |   `el`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_el_2.5.0_2.4_1588686951720.zip) |
+| PerceptronModel (POS UD)     | `pos_ud_gdt`       | 2.5.0 |   `el`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_gdt_el_2.5.0_2.4_1588686949851.zip) |
+
+### Finnish - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| LemmatizerModel (Lemmatizer) | `lemma`            | 2.5.0 |   `fi`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_fi_2.5.0_2.4_1588671290521.zip) |
+| PerceptronModel (POS UD)     | `pos_ud_tdt`       | 2.5.0 |   `fi`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_tdt_fi_2.5.0_2.4_1588622348985.zip) |
+
+### Hungarian - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| LemmatizerModel (Lemmatizer) | `lemma`            | 2.5.0 |   `hu`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_hu_2.5.0_2.4_1588671968880.zip) |
+| PerceptronModel (POS UD)     | `pos_ud_szeged`       | 2.5.0 |   `hu`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_szeged_hu_2.5.0_2.4_1588671966774.zip) |
+
+### Romanian - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| LemmatizerModel (Lemmatizer) | `lemma`            | 2.5.0 |   `ro`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_ro_2.5.0_2.4_1588666512149.zip) |
+| PerceptronModel (POS UD)     | `pos_ud_rrt`       | 2.5.0 |   `ro`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_rrt_ro_2.5.0_2.4_1588622539956.zip) |
+
+### Slovak - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| LemmatizerModel (Lemmatizer) | `lemma`            | 2.5.0 |   `sk`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_sk_2.5.0_2.4_1588666524270.zip) |
+| PerceptronModel (POS UD)     | `pos_ud_snk`       | 2.5.0 |   `sk`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_snk_sk_2.5.0_2.4_1588622627281.zip) |
+
+### Swedish - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| LemmatizerModel (Lemmatizer) | `lemma`            | 2.5.0 |   `sv`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_sv_2.5.0_2.4_1588666548498.zip) |
+| PerceptronModel (POS UD)     | `pos_ud_tal`       | 2.5.0 |   `sv`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_tal_sv_2.5.0_2.4_1588622711284.zip) |
+
+### Turkish - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| LemmatizerModel (Lemmatizer) | `lemma`            | 2.5.0 |   `tr`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_tr_2.5.0_2.4_1587479962436.zip) |
+| PerceptronModel (POS UD)     | `pos_ud_imst`       | 2.5.0 |   `tr`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_imst_tr_2.5.0_2.4_1587480006078.zip) |
+
+### Ukrainian - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| LemmatizerModel (Lemmatizer) | `lemma`            | 2.5.0 |   `uk`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_uk_2.5.0_2.4_1588671294202.zip) |
+| PerceptronModel (POS UD)     | `pos_ud_iu`       | 2.5.0 |   `uk`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_iu_uk_2.5.0_2.4_1588668890963.zip) |
 
 ### Multi-language
 
