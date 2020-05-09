@@ -18,22 +18,30 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
 
 * [Pretrained Models](#pretrained-models)
   * [Public Models](#public-models)
+    * [Dutch](#dutch---models)
     * [English](#english---models)
     * [French](#french---models)
     * [German](#german---models)
     * [Italian](#italian---models)
-    * [Spanish](#spanish---models)
+    * [Norwegian](#norwegian---models)
+    * [Polish](#polish---models)
+    * [Portuguese](#portuguese---models)
     * [Russian](#russian---models)
+    * [Spanish](#spanish---models)
     * [Multi-language](#multi-language)
 
 * [Pretrained Pipelines](#pretrained-pipelines)
   * [Public Pipelines](#public-pipelines)
+    * [Dutch](#dutch---pipelines)
     * [English](#english---pipelines)
     * [French](#french---pipelines)
     * [German](#german---pipelines)
     * [Italian](#italian---pipelines)
-    * [Spanish](#spanish---pipelines)
+    * [Norwegian](#norwegian---pipelines)
+    * [Polish](#polish---pipelines)
+    * [Portuguese](#portuguese---pipelines)
     * [Russian](#russian---pipelines)
+    * [Spanish](#spanish---pipelines)
 
 * [Licensed Enterprise](#licensed-enterprise)
   
@@ -42,6 +50,16 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
 ## Public Models
 
 `pretrained(name, lang)` function to use
+
+### Dutch - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| LemmatizerModel (Lemmatizer) | `lemma`            | 2.5.0 |   `nl`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_nl_2.5.0_2.4_1588532720582.zip) |
+| PerceptronModel (POS UD)     | `pos_ud_alpino`       | 2.5.0 |   `nl`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_alpino_nl_2.5.0_2.4_1588545949009.zip) |
+| NerDLModel (glove_100d)  | `wikiner_6B_100`       | 2.5.0 |   `nl`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_6B_100_nl_2.5.0_2.4_1588546201140.zip) |
+| NerDLModel (glove_6B_300)  | `wikiner_6B_300`     | 2.5.0 |   `nl`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_6B_300_nl_2.5.0_2.4_1588546201483.zip) |
+| NerDLModel (glove_840B_300)  | `wikiner_840B_300` | 2.5.0 |   `nl`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_840B_300_nl_2.5.0_2.4_1588546201484.zip) |
 
 ### English - Models
 
@@ -113,21 +131,36 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
 | **POS**   | Trained by **PerceptronApproach** annotator on the [Universal Dependencies](https://universaldependencies.org/treebanks/it_isdt/index.html)                                                            |
 | **NER**   | Trained by **NerDLApproach** annotator with **Char CNNs - BiLSTM - CRF** and **GloVe Embeddings** on the **WikiNER** corpus and supports the identification of `PER`, `LOC`, `ORG` and `MISC` entities |
 
-### Spanish - Models
+### Norwegian - Models
 
 | Model                        | Name               | Build            | Lang |  Offline|
 |:-----------------------------|:-------------------|:-----------------|:------|:------------|
-| LemmatizerModel (Lemmatizer) | `lemma`            | 2.4.0 |    `es`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_es_2.4.0_2.4_1581890818386.zip) |
-| PerceptronModel (POS UD)     | `pos_ud_gsd`       | 2.4.0 |   `es`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_gsd_es_2.4.0_2.4_1581891015986.zip) |
-| NerDLModel (glove_100d)  | `wikiner_6B_100` | 2.4.0 |    `es`   | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_6B_100_es_2.4.0_2.4_1581971941700.zip) |
-| NerDLModel (glove_6B_300)  | `wikiner_6B_300` | 2.4.0 |  `es`     | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_6B_300_es_2.4.0_2.4_1581971942090.zip) |
-| NerDLModel (glove_840B_300)  | `wikiner_840B_300` | 2.4.0 |   `es`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_840B_300_es_2.4.0_2.4_1581971942091.zip;) |
+| LemmatizerModel (Lemmatizer) | `lemma`            | 2.5.0 |   `nb`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_nb_2.5.0_2.4_1588693886432.zip) |
+| PerceptronModel (POS UD)     | `pos_ud_nynorsk`       | 2.5.0 |   `nn`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_nynorsk_nn_2.5.0_2.4_1588693690964.zip) |
+| PerceptronModel (POS UD)     | `pos_ud_bokmaal`       | 2.5.0 |   `nb`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_bokmaal_nb_2.5.0_2.4_1588693881973.zip) |
+| NerDLModel (glove_100d)  | `norne_6B_100`       | 2.5.0 |   `no`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/norne_6B_100_no_2.5.0_2.4_1588781289907.zip) |
+| NerDLModel (glove_6B_300)  | `norne_6B_300`     | 2.5.0 |   `no`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/norne_6B_300_no_2.5.0_2.4_1588781290264.zip) |
+| NerDLModel (glove_840B_300)  | `norne_840B_300` | 2.5.0 |   `no`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/norne_840B_300_no_2.5.0_2.4_1588781290267.zip) |
 
-| Feature   | Description                                                                                                                                                                                            |
-|:----------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Lemma** | Trained by **Lemmatizer** annotator on **lemmatization-lists** by `Michal Měchura`                                                                                                                     |
-| **POS**   | Trained by **PerceptronApproach** annotator on the [Universal Dependencies](https://universaldependencies.org/treebanks/es_gsd/index.html)                                                             |
-| **NER**   | Trained by **NerDLApproach** annotator with **Char CNNs - BiLSTM - CRF** and **GloVe Embeddings** on the **WikiNER** corpus and supports the identification of `PER`, `LOC`, `ORG` and `MISC` entities |
+### Polish - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| LemmatizerModel (Lemmatizer) | `lemma`            | 2.5.0 |   `pl`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_pl_2.5.0_2.4_1588518491035.zip) |
+| PerceptronModel (POS UD)     | `pos_ud_lfg`       | 2.5.0 |   `pl`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_lfg_pl_2.5.0_2.4_1588518541171.zip) |
+| NerDLModel (glove_100d)  | `wikiner_6B_100`       | 2.5.0 |   `pl`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_6B_100_pl_2.5.0_2.4_1588519719293.zip) |
+| NerDLModel (glove_6B_300)  | `wikiner_6B_300`     | 2.5.0 |   `pl`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_6B_300_pl_2.5.0_2.4_1588519719571.zip) |
+| NerDLModel (glove_840B_300)  | `wikiner_840B_300` | 2.5.0 |   `pl`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_840B_300_pl_2.5.0_2.4_1588519719572.zip) |
+
+### Portuguese - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| LemmatizerModel (Lemmatizer) | `lemma`            | 2.5.0 |   `pt`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_pt_2.5.0_2.4_1588499301752.zip) |
+| PerceptronModel (POS UD)     | `pos_ud_bosque`       | 2.5.0 |   `pt`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_bosque_pt_2.5.0_2.4_1588499443093.zip) |
+| NerDLModel (glove_100d)  | `wikiner_6B_100`       | 2.5.0 |   `pt`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_6B_100_pt_2.5.0_2.4_1588495233192.zip) |
+| NerDLModel (glove_6B_300)  | `wikiner_6B_300`     | 2.5.0 |   `pt`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_6B_300_pt_2.5.0_2.4_1588495233641.zip) |
+| NerDLModel (glove_840B_300)  | `wikiner_840B_300` | 2.5.0 |   `pt`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_840B_300_pt_2.5.0_2.4_1588495233642.zip) |
 
 ### Russian - Models
 
@@ -145,6 +178,22 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
 | **POS**   | Trained by **PerceptronApproach** annotator on the [Universal Dependencies](https://universaldependencies.org/treebanks/ru_gsd/index.html)                                                             |
 | **NER**   | Trained by **NerDLApproach** annotator with **Char CNNs - BiLSTM - CRF** and **GloVe Embeddings** on the **WikiNER** corpus and supports the identification of `PER`, `LOC`, `ORG` and `MISC` entities |
 
+### Spanish - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| LemmatizerModel (Lemmatizer) | `lemma`            | 2.4.0 |    `es`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_es_2.4.0_2.4_1581890818386.zip) |
+| PerceptronModel (POS UD)     | `pos_ud_gsd`       | 2.4.0 |   `es`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_gsd_es_2.4.0_2.4_1581891015986.zip) |
+| NerDLModel (glove_100d)  | `wikiner_6B_100` | 2.4.0 |    `es`   | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_6B_100_es_2.4.0_2.4_1581971941700.zip) |
+| NerDLModel (glove_6B_300)  | `wikiner_6B_300` | 2.4.0 |  `es`     | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_6B_300_es_2.4.0_2.4_1581971942090.zip) |
+| NerDLModel (glove_840B_300)  | `wikiner_840B_300` | 2.4.0 |   `es`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_840B_300_es_2.4.0_2.4_1581971942091.zip;) |
+
+| Feature   | Description                                                                                                                                                                                            |
+|:----------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Lemma** | Trained by **Lemmatizer** annotator on **lemmatization-lists** by `Michal Měchura`                                                                                                                     |
+| **POS**   | Trained by **PerceptronApproach** annotator on the [Universal Dependencies](https://universaldependencies.org/treebanks/es_gsd/index.html)                                                             |
+| **NER**   | Trained by **NerDLApproach** annotator with **Char CNNs - BiLSTM - CRF** and **GloVe Embeddings** on the **WikiNER** corpus and supports the identification of `PER`, `LOC`, `ORG` and `MISC` entities |
+
 ### Multi-language
 
 | Model                        | Name               | Build            | Lang | Offline |
@@ -157,10 +206,21 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
 
 ## Public Pipelines
 
+### Dutch - Pipelines
+
+| Pipeline                 | Name                   | Build  | lang | Description | Offline   |
+|:-------------------------|:-----------------------|:-------|:-------|:----------|:----------|
+| Explain Document Small    | `explain_document_sm`  | 2.5.0 |   `nl` |           | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_sm_nl_2.5.0_2.4_1588546621618.zip)  |
+| Explain Document Medium   | `explain_document_md`  | 2.5.0 |   `nl` |           | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_md_nl_2.5.0_2.4_1588546605329.zip)  |
+| Explain Document Large    | `explain_document_lg`  | 2.5.0 |   `nl` |           | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_lg_nl_2.5.0_2.4_1588612556770.zip)  |
+| Entity Recognizer Small   | `entity_recognizer_sm`  | 2.5.0 |   `nl` |          | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_sm_nl_2.5.0_2.4_1588546655907.zip)  |
+| Entity Recognizer Medium  | `entity_recognizer_md`  | 2.5.0 |   `nl` |          | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_md_nl_2.5.0_2.4_1588546645304.zip)  |
+| Entity Recognizer Large   | `entity_recognizer_lg`  | 2.5.0 |   `nl` |          | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_lg_nl_2.5.0_2.4_1588612569958.zip)  |  
+
 ### English - Pipelines
 
 | Pipeline                     | Name                                  | Build            | lang | Description | Offline                                                                                                                                        |
-|:-----------------------------|:--------------------------------------|:-----------------|:------|:------------|:-----------------------------------------------------------------------------------------------------------------------------------------------|
+|:-------------------------|:-------------------|:------|:-------|:------------|:------------------|
 | Explain Document ML          | `explain_document_ml`                 | 2.4.0 |   `en`    |      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_ml_en_2.4.0_2.4_1580252705962.zip) |
 | Explain Document DL          | `explain_document_dl`                 | 2.4.3 |   `en`    |      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_dl_en_2.4.3_2.4_1584626657780.zip) |
 | Recognize Entities DL        | `recognize_entities_dl`               | 2.4.3 |   `en`    |      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/recognize_entities_dl_en_2.4.3_2.4_1584626752821.zip) |
@@ -168,7 +228,7 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
 | OntoNotes Entities Small     | `onto_recognize_entities_sm`          | 2.4.0 |   `en`    |      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/onto_recognize_entities_sm_en_2.4.0_2.4_1579730599257.zip) |
 | OntoNotes Entities Large     | `onto_recognize_entities_lg`          | 2.4.0 |   `en`    |      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/onto_recognize_entities_lg_en_2.4.0_2.4_1579729320751.zip) |
 | Match Datetime               | `match_datetime`                      | 2.4.0 |   `en`    |      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/match_datetime_en_2.4.0_2.4_1580246861565.zip) |
-| Match Pattern                | `match_pattern`                       | 2.4.0 |   `en`    |      | [Download]() |
+| Match Pattern                | `match_pattern`                       | 2.4.0 |   `en`    |      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/match_pattern_en_2.4.0_2.4_1582247694074.zip) |
 | Match Chunk                  | `match_chunks`                        | 2.4.0 |   `en`    |      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/match_chunks_en_2.4.0_2.4_1580246868138.zip) |
 | Match Phrases                | `match_phrases`                       | 2.4.0 |   `en`    |      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/match_phrases_en_2.4.0_2.4_1580255815623.zip)|
 | Clean Stop                   | `clean_stop`                          | 2.4.0 |   `en`    |      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/clean_stop_en_2.4.0_2.4_1580255705789.zip)|
@@ -181,7 +241,7 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
 ### French - Pipelines
 
 | Pipeline                 | Name                   | Build            | lang | Description                                                                                                                     | Offline |
-|:-------------------------|:-----------------------|:-----------------|:------|:--------------------------------------------------------------------------------------------------------------------------------|:--------|
+|:-------------------------|:-------------------|:------|:-------|:------------|:------------------|
 | Explain Document Large   | `explain_document_lg`  | 2.4.0 |   `fr`| |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_lg_fr_2.4.0_2.4_1579709189947.zip)  |         |
 | Explain Document Medium  | `explain_document_md`  | 2.4.0 |   `fr`| |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_md_fr_2.4.0_2.4_1579722754344.zip)  |         |
 | Entity Recognizer Large  | `entity_recognizer_lg` | 2.4.0 |   `fr`| |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_lg_fr_2.4.0_2.4_1579710310593.zip) |         |
@@ -190,7 +250,7 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
 ### German - Pipelines
 
 | Pipeline                 | Name                   | Build         | lang | Description | Offline                                                                                                                         |
-|:-------------------------|:-----------------------|:--------------|:------|:------------|:--------------------------------------------------------------------------------------------------------------------------------|
+|:-------------------------|:-------------------|:------|:-------|:------------|:------------------|
 | Explain Document Large   | `explain_document_lg`  | 2.4.0 |  `de` |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_lg_de_2.4.0_2.4_1579722852211.zip)  |
 | Explain Document Medium  | `explain_document_md`  | 2.4.0 |  `de` |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_md_de_2.4.0_2.4_1579722872528.zip)  |
 | Entity Recognizer Large  | `entity_recognizer_lg` | 2.4.0 |  `de` |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_lg_de_2.4.0_2.4_1579722883057.zip) |
@@ -199,23 +259,45 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
 ### Italian - Pipelines
 
 | Pipeline                 | Name                   | Build          | lang | Description | Offline                                                                                                                         |
-|:-------------------------|:-----------------------|:------|:-------|:------------|:--------------------------------------------------------------------------------------------------------------------------------|
+|:-------------------------|:-------------------|:------|:-------|:------------|:------------------|
 | Explain Document Large   | `explain_document_lg`  | 2.4.0 |   `it` |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_lg_it_2.4.0_2.4_1579722789680.zip)  |
 | Explain Document Medium  | `explain_document_md`  | 2.4.0 |   `it` |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_md_it_2.4.0_2.4_1579722813892.zip)  |
 | Entity Recognizer Large  | `entity_recognizer_lg` | 2.4.0 |   `it` |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_lg_it_2.4.0_2.4_1579722823718.zip) |
 | Entity Recognizer Medium | `entity_recognizer_md` | 2.4.0 |   `it` |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_md_it_2.4.0_2.4_1579722834033.zip) |
 
-### Spanish - Pipelines
+### Norwegian - Pipelines
 
 | Pipeline                 | Name                   | Build  | lang | Description | Offline   |
 |:-------------------------|:-----------------------|:-------|:-------|:----------|:----------|
-| Explain Document Small    | `explain_document_sm`  | 2.4.0 |   `es` |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_sm_es_2.4.0_2.4_1581977077084.zip)  |
-| Explain Document Medium   | `explain_document_md`  | 2.4.0 |   `es` |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_md_es_2.4.0_2.4_1581976836224.zip)  |
-| Explain Document Large    | `explain_document_lg`  | 2.4.0 |   `es` |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_lg_es_2.4.0_2.4_1581975536033.zip)  |
-| Entity Recognizer Small   | `entity_recognizer_sm`  | 2.4.0 |   `es` |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_sm_es_2.4.0_2.4_1581978479912.zip)  |
-| Entity Recognizer Medium  | `entity_recognizer_md`  | 2.4.0 |   `es` |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_md_es_2.4.0_2.4_1581978260094.zip)  |
-| Entity Recognizer Large   | `entity_recognizer_lg`  | 2.4.0 |   `es` |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_lg_es_2.4.0_2.4_1581977172660.zip)  |
-  
+| Explain Document Small    | `explain_document_sm`  | 2.5.0 |   `no` |           | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_sm_no_2.5.0_2.4_1588784132955.zip)  |
+| Explain Document Medium   | `explain_document_md`  | 2.5.0 |   `no` |           | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_md_no_2.5.0_2.4_1588783879809.zip)  |
+| Explain Document Large    | `explain_document_lg`  | 2.5.0 |   `no` |           | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_lg_no_2.5.0_2.4_1588782610672.zip)  |
+| Entity Recognizer Small   | `entity_recognizer_sm`  | 2.5.0 |   `no` |          | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_sm_no_2.5.0_2.4_1588794567766.zip)  |
+| Entity Recognizer Medium  | `entity_recognizer_md`  | 2.5.0 |   `no` |          | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_md_no_2.5.0_2.4_1588794357614.zip)  |
+| Entity Recognizer Large   | `entity_recognizer_lg`  | 2.5.0 |   `no` |          | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_lg_no_2.5.0_2.4_1588793261642.zip)  |  
+
+### Polish - Pipelines
+
+| Pipeline                 | Name                   | Build  | lang | Description | Offline   |
+|:-------------------------|:-----------------------|:-------|:-------|:----------|:----------|
+| Explain Document Small    | `explain_document_sm`  | 2.5.0 |   `pl` |           | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_sm_pl_2.5.0_2.4_1588531081173.zip)  |
+| Explain Document Medium   | `explain_document_md`  | 2.5.0 |   `pl` |           | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_md_pl_2.5.0_2.4_1588530841737.zip)  |
+| Explain Document Large    | `explain_document_lg`  | 2.5.0 |   `pl` |           | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_lg_pl_2.5.0_2.4_1588529695577.zip)  |
+| Entity Recognizer Small   | `entity_recognizer_sm`  | 2.5.0 |   `pl` |          | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_sm_pl_2.5.0_2.4_1588532616080.zip)  |
+| Entity Recognizer Medium  | `entity_recognizer_md`  | 2.5.0 |   `pl` |          | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_md_pl_2.5.0_2.4_1588532376753.zip)  |
+| Entity Recognizer Large   | `entity_recognizer_lg`  | 2.5.0 |   `pl` |          | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_lg_pl_2.5.0_2.4_1588531171903.zip)  |  
+
+### Portuguese - Pipelines
+
+| Pipeline                 | Name                   | Build  | lang | Description | Offline   |
+|:-------------------------|:-----------------------|:-------|:-------|:----------|:----------|
+| Explain Document Small    | `explain_document_sm`  | 2.5.0 |   `pt` |           | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_sm_pt_2.5.0_2.4_1588501423743.zip)  |
+| Explain Document Medium   | `explain_document_md`  | 2.5.0 |   `pt` |           | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_md_pt_2.5.0_2.4_1588501189804.zip)  |
+| Explain Document Large    | `explain_document_lg`  | 2.5.0 |   `pt` |           | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_lg_pt_2.5.0_2.4_1588500056427.zip)  |
+| Entity Recognizer Small   | `entity_recognizer_sm`  | 2.5.0 |   `pt` |          | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_sm_pt_2.5.0_2.4_1588502815900.zip)  |
+| Entity Recognizer Medium  | `entity_recognizer_md`  | 2.5.0 |   `pt` |          | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_md_pt_2.5.0_2.4_1588502606198.zip)  |
+| Entity Recognizer Large   | `entity_recognizer_lg`  | 2.5.0 |   `pt` |          | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_lg_pt_2.5.0_2.4_1588501526324.zip)  |  
+
 ### Russian - Pipelines
 
 | Pipeline                 | Name                   | Build  | lang | Description | Offline   |
@@ -227,13 +309,24 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
 | Entity Recognizer Medium  | `entity_recognizer_md`  | 2.4.4 |   `ru` |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_md_ru_2.4.4_2.4_1584018332357.zip)  |
 | Entity Recognizer Large   | `entity_recognizer_lg`  | 2.4.4 |   `ru` |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_lg_ru_2.4.4_2.4_1584017227871.zip)  |  
 
+### Spanish - Pipelines
+
+| Pipeline                 | Name                   | Build  | lang | Description | Offline   |
+|:-------------------------|:-----------------------|:-------|:-------|:----------|:----------|
+| Explain Document Small    | `explain_document_sm`  | 2.4.0 |   `es` |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_sm_es_2.4.0_2.4_1581977077084.zip)  |
+| Explain Document Medium   | `explain_document_md`  | 2.4.0 |   `es` |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_md_es_2.4.0_2.4_1581976836224.zip)  |
+| Explain Document Large    | `explain_document_lg`  | 2.4.0 |   `es` |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_lg_es_2.4.0_2.4_1581975536033.zip)  |
+| Entity Recognizer Small   | `entity_recognizer_sm`  | 2.4.0 |   `es` |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_sm_es_2.4.0_2.4_1581978479912.zip)  |
+| Entity Recognizer Medium  | `entity_recognizer_md`  | 2.4.0 |   `es` |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_md_es_2.4.0_2.4_1581978260094.zip)  |
+| Entity Recognizer Large   | `entity_recognizer_lg`  | 2.4.0 |   `es` |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_lg_es_2.4.0_2.4_1581977172660.zip)  |
+
 # Licensed Enterprise
 
 It is required to specify 3rd argument to `pretrained(name, lang, location)` function to add the location of these
 
 ## Pretrained Models - Spark NLP For Healthcare
 
-### English Language, Clinical/Models Location   
+### English Language, Clinical/Models Location
 
 `{Model}.pretrained({Name}, 'en', 'clinical/models')`
 
