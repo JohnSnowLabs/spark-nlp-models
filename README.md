@@ -47,6 +47,42 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
   
 # Pretrained Pipelines
 
+Example of how to use Spark NLP pretrained pipelines:
+
+```python
+# Import Spark NLP
+from sparknlp.base import *
+from sparknlp.annotator import *
+
+from sparknlp.pretrained import PretrainedPipeline
+import sparknlp
+
+# Start Spark Session with Spark NLP
+spark = sparknlp.start()
+
+# Download a pre-trained pipeline
+pipeline = PretrainedPipeline('explain_document_dl', lang='en')
+
+# Your testing dataset
+text = """
+The Mona Lisa is a 16th century oil painting created by Leonardo. 
+It's held at the Louvre in Paris.
+"""
+
+# Annotate your testing dataset
+result = pipeline.annotate(text)
+
+# What's in the pipeline
+list(result.keys())
+Output: ['entities', 'stem', 'checked', 'lemma', 'document',
+'pos', 'token', 'ner', 'embeddings', 'sentence']
+
+# Check the results
+result['entities']
+Output: ['Mona Lisa', 'Leonardo', 'Louvre', 'Paris']
+
+```
+
 ## Public Pipelines
 
 ### Dutch - Pipelines
@@ -181,6 +217,32 @@ ner_onto = NerDLModel.pretrained(name='ner_dl_bert', lang='en')
 ```
 
 **NOTE:** `build` means the model can be downloaded or loaded for that specific version or above. For instance, `2.4.0` can be used in all the releases after `2.4.x` but not before.
+
+Pretrained models are great to creatae custom pipeline when the pretrained pipelines don't offer a feature or you need more flexibility:
+
+```python
+
+document = DocumentAssembler()\
+    .setInputCol("description")\
+    .setOutputCol("document")
+
+use = UniversalSentenceEncoder.pretrained(name="tfhub_use", lang="en")\
+ .setInputCols(["document"])\
+ .setOutputCol("sentence_embeddings")
+
+# the classes/labels/categories are in category column
+sentimentdl = ClassifierDLModel.pretrained(name="sentimentdl_use_imdb", lang="en")\
+  .setInputCols(["sentence_embeddings"])\
+  .setOutputCol("sentiment")
+
+pipeline = Pipeline(
+    stages = [
+        document,
+        use,
+        sentimentdl
+    ])
+
+```
 
 ### Dutch - Models
 
