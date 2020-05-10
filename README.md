@@ -41,6 +41,17 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
     * [Portuguese](#portuguese---models)
     * [Russian](#russian---models)
     * [Spanish](#spanish---models)
+    * [Bulgarian](#bulgarian---models)
+    * [Czech](#czech---models)
+    * [Greek](#greek---models)
+    * [Finnish](#finnish---models)
+    * [Hungarian](#Hungarian---models)
+    * [Romanian](#romanian---models)
+    * [Slovak](#slovak---models)
+    * [Swedish](#swedish---models)
+    * [Turkish](#turkish---models)
+    * [Ukrainian](#ukrainian---models)
+
     * [Multi-language](#multi-language)
 
 * [Licensed Enterprise](#licensed-enterprise)
