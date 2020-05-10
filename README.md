@@ -77,7 +77,7 @@ ner_onto = NerDLModel.pretrained(name='ner_dl_bert', lang='en')
 |:-----------------------------------------|:--------------------------|:-----------------|:------------|:------|
 | LemmatizerModel (Lemmatizer)             | `lemma_antbnc`            | 2.0.2 |      `en`         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_antbnc_en_2.0.2_2.4_1556480454569.zip) |
 | PerceptronModel (POS)                    | `pos_anc`                 | 2.0.2 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_anc_en_2.0.2_2.4_1556659930154.zip) |
-| PerceptronModel (POS UD)                    | `pos_ud_ewt`          | 2.2.2 |       `en`       | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_ewt_en_2.2.2_2.4_1570464827452.zip) |
+| PerceptronModel (POS UD)                    | `pos_ud_ewt`           | 2.2.2 |       `en`       | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_ewt_en_2.2.2_2.4_1570464827452.zip) |
 | NerCrfModel (NER with GloVe)             | `ner_crf`                 | 2.4.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/ner_crf_en_2.4.0_2.4_1580237286004.zip) |
 | NerDLModel (NER with GloVe)              | `ner_dl`                  | 2.4.3 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/ner_dl_en_2.4.3_2.4_1584624950746.zip) |
 | NerDLModel (NER with BERT)              | `ner_dl_bert`              | 2.4.3 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/ner_dl_bert_en_2.4.3_2.4_1584624951079.zip) |
@@ -116,15 +116,16 @@ ner_onto = NerDLModel.pretrained(name='ner_dl_bert', lang='en')
 | ClassifierDL (with tfhub_use)          | `classifierdl_use_trec6`        | 2.5.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/classifierdl_use_trec6_en_2.5.0_2.4_1588492648979.zip) |
 | ClassifierDL (with tfhub_use)          | `classifierdl_use_trec50`       | 2.5.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/classifierdl_use_trec50_en_2.5.0_2.4_1588493558481.zip) |
 | SentimentDL (with tfhub_use)           | `sentimentdl_use_imdb`          | 2.5.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sentimentdl_use_imdb_en_2.5.0_2.4_1588679956272.zip) |
+| SentimentDL (with tfhub_use)           | `sentimentdl_use_twitter`       | 2.5.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sentimentdl_use_twitter_en_2.5.0_2.4_1589108892106.zip) |
 | SentimentDL (with glove_100d)          | `sentimentdl_glove_imdb`         | 2.5.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sentimentdl_glove_imdb_en_2.5.0_2.4_1588682682507.zip) |
 
 ### French - Models
 
-| Model                        | Name               | Build | Lang |  Offline                                                                                                                                                                                                |
+| Model                        | Name               | Build | Lang |  Offline|
 |:-----------------------------|:-------------------|:------|:------|:------------|
-| LemmatizerModel (Lemmatizer) | `lemma`            |   2.0.2    |   `fr`     | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_fr_2.0.2_2.4_1556531462843.zip)                                                                                       |
-| PerceptronModel (POS UD)     | `pos_ud_gsd`       |   2.0.2    |    `fr`   | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_gsd_fr_2.0.2_2.4_1556531457346.zip)                                                                                  |
-| NerDLModel (glove_840B_300)  | `wikiner_840B_300` |   2.0.2    |    `fr`   | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_840B_300_fr_2.4.0_2.4_1579699913554.zip)                                                                            |
+| LemmatizerModel (Lemmatizer) | `lemma`            |   2.0.2    |   `fr`     | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_fr_2.0.2_2.4_1556531462843.zip)|
+| PerceptronModel (POS UD)     | `pos_ud_gsd`       |   2.0.2    |    `fr`   | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_gsd_fr_2.0.2_2.4_1556531457346.zip)|
+| NerDLModel (glove_840B_300)  | `wikiner_840B_300` |   2.0.2    |    `fr`   | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_840B_300_fr_2.4.0_2.4_1579699913554.zip)|
 
 | Feature   | Description                                                                                                                                                                                            |    |
 |:----------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---|
@@ -134,10 +135,10 @@ ner_onto = NerDLModel.pretrained(name='ner_dl_bert', lang='en')
 
 ### German - Models
 
-| Model                        | Name               | Build            | Lang | Offline                                                                                                                                                                                                |
+| Model                        | Name               | Build            | Lang | Offline|
 |:-----------------------------|:-------------------|:-----------------|:------|:------------|
-| LemmatizerModel (Lemmatizer) | `lemma`            | 2.0.8 |       `de`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_de_2.0.8_2.4_1561248996126.zip)                                                                                             |
-| PerceptronModel (POS UD)     | `pos_ud_hdt`       | 2.0.8 |       `de`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_hdt_de_2.0.8_2.4_1561232528570.zip)                                                                                        |
+| LemmatizerModel (Lemmatizer) | `lemma`            | 2.0.8 |       `de`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_de_2.0.8_2.4_1561248996126.zip)|
+| PerceptronModel (POS UD)     | `pos_ud_hdt`       | 2.0.8 |       `de`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_hdt_de_2.0.8_2.4_1561232528570.zip)|
 | NerDLModel (glove_840B_300)  | `wikiner_840B_300` | 2.4.0 |       `de`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_840B_300_de_2.4.0_2.4_1579699913555.zip)|
 
 | Feature   | Description                                                                                                                                                                                            |
@@ -298,9 +299,9 @@ ner_onto = NerDLModel.pretrained(name='ner_dl_bert', lang='en')
 
 | Model                        | Name               | Build            | Lang | Offline |
 |:-----------------------------|:-------------------|:-----------------|:------|:------|
-| WordEmbeddings (GloVe)       | `glove_840B_300`   | 2.4.0 |  `xx`   | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/glove_840B_300_xx_2.4.0_2.4_1579698926752.zip)   |         |
-| WordEmbeddings (GloVe)       | `glove_6B_300`     | 2.4.0 |   `xx`   | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/glove_6B_300_xx_2.4.0_2.4_1579698630432.zip)     |         |
-| BertEmbeddings (multi_cased) | `bert_multi_cased` | 2.4.0 |   `xx`   | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/bert_multi_cased_xx_2.4.0_2.4_1580582335793.zip) |         |
+| WordEmbeddings (GloVe)       | `glove_840B_300`   | 2.4.0 |  `xx`   | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/glove_840B_300_xx_2.4.0_2.4_1579698926752.zip)   |
+| WordEmbeddings (GloVe)       | `glove_6B_300`     | 2.4.0 |   `xx`   | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/glove_6B_300_xx_2.4.0_2.4_1579698630432.zip)     |
+| BertEmbeddings (multi_cased) | `bert_multi_cased` | 2.4.0 |   `xx`   | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/bert_multi_cased_xx_2.4.0_2.4_1580582335793.zip) |
 
 ## Pretrained Pipelines
 
@@ -319,7 +320,7 @@ ner_onto = NerDLModel.pretrained(name='ner_dl_bert', lang='en')
 
 ### English - Pipelines
 
-| Pipeline                     | Name                                  | Build            | lang | Description | Offline                                                                                                                                        |
+| Pipeline                     | Name                                  | Build            | lang | Description | Offline|
 |:-------------------------|:-------------------|:------|:-------|:------------|:------------------|
 | Explain Document ML          | `explain_document_ml`                 | 2.4.0 |   `en`    |      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_ml_en_2.4.0_2.4_1580252705962.zip) |
 | Explain Document DL          | `explain_document_dl`                 | 2.4.3 |   `en`    |      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_dl_en_2.4.3_2.4_1584626657780.zip) |
@@ -337,20 +338,22 @@ ner_onto = NerDLModel.pretrained(name='ner_dl_bert', lang='en')
 | Check Spelling               | `check_spelling`                      | 2.4.0 |   `en`    |      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/check_spelling_en_2.4.0_2.4_1580246859135.zip)|
 | Check Spelling DL            | `check_spelling_dl`                   | 2.5.0 |   `en`    |      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/check_spelling_dl_en_2.5.0_2.4_1589015487144.zip)|
 | Analyze Sentiment            | `analyze_sentiment`                   | 2.4.0 |   `en`    |      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/analyze_sentiment_en_2.4.0_2.4_1580483464667.zip)|
+| Analyze Sentiment DL         | `analyze_sentimentdl_use_imdb`        | 2.5.0 |   `en`    |      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/analyze_sentimentdl_use_imdb_en_2.5.0_2.4_1589108067729.zip)|
+| Analyze Sentiment DL         | `analyze_sentimentdl_use_twitter`     | 2.5.0 |   `en`    |      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/analyze_sentimentdl_use_twitter_en_2.5.0_2.4_1589108892106.zip)|
 | Dependency Parse             | `dependency_parse`                    | 2.4.0 |   `en`    |      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/dependency_parse_en_2.4.0_2.4_1580255669655.zip)|
 
 ### French - Pipelines
 
-| Pipeline                 | Name                   | Build            | lang | Description                                                                                                                     | Offline |
+| Pipeline                 | Name                   | Build            | lang | Description | Offline |
 |:-------------------------|:-------------------|:------|:-------|:------------|:------------------|
-| Explain Document Large   | `explain_document_lg`  | 2.4.0 |   `fr`| |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_lg_fr_2.4.0_2.4_1579709189947.zip)  |         |
-| Explain Document Medium  | `explain_document_md`  | 2.4.0 |   `fr`| |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_md_fr_2.4.0_2.4_1579722754344.zip)  |         |
-| Entity Recognizer Large  | `entity_recognizer_lg` | 2.4.0 |   `fr`| |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_lg_fr_2.4.0_2.4_1579710310593.zip) |         |
-| Entity Recognizer Medium | `entity_recognizer_md` | 2.4.0 |   `fr`| |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_md_fr_2.4.0_2.4_1579722764594.zip) |         |
+| Explain Document Large   | `explain_document_lg`  | 2.4.0 |   `fr`| |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_lg_fr_2.4.0_2.4_1579709189947.zip)  |
+| Explain Document Medium  | `explain_document_md`  | 2.4.0 |   `fr`| |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_md_fr_2.4.0_2.4_1579722754344.zip)  |
+| Entity Recognizer Large  | `entity_recognizer_lg` | 2.4.0 |   `fr`| |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_lg_fr_2.4.0_2.4_1579710310593.zip) |
+| Entity Recognizer Medium | `entity_recognizer_md` | 2.4.0 |   `fr`| |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_md_fr_2.4.0_2.4_1579722764594.zip) |
 
 ### German - Pipelines
 
-| Pipeline                 | Name                   | Build         | lang | Description | Offline                                                                                                                         |
+| Pipeline                 | Name                   | Build         | lang | Description | Offline|
 |:-------------------------|:-------------------|:------|:-------|:------------|:------------------|
 | Explain Document Large   | `explain_document_lg`  | 2.4.0 |  `de` |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_lg_de_2.4.0_2.4_1579722852211.zip)  |
 | Explain Document Medium  | `explain_document_md`  | 2.4.0 |  `de` |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_md_de_2.4.0_2.4_1579722872528.zip)  |
@@ -359,7 +362,7 @@ ner_onto = NerDLModel.pretrained(name='ner_dl_bert', lang='en')
 
 ### Italian - Pipelines
 
-| Pipeline                 | Name                   | Build          | lang | Description | Offline                                                                                                                         |
+| Pipeline                 | Name                   | Build          | lang | Description | Offline|
 |:-------------------------|:-------------------|:------|:-------|:------------|:------------------|
 | Explain Document Large   | `explain_document_lg`  | 2.4.0 |   `it` |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_lg_it_2.4.0_2.4_1579722789680.zip)  |
 | Explain Document Medium  | `explain_document_md`  | 2.4.0 |   `it` |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_md_it_2.4.0_2.4_1579722813892.zip)  |
