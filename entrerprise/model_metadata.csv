@@ -10,7 +10,6 @@
 "chunkresolve_icd10cm_clinical","ChunkEntityResolverModel","Trained on ICD10 Clinical Modification datasetwith tenths of variations per code","ICD10-CM Codes and their normalized definition","https://www.icd10data.com/ICD10CM/Codes/"
 "chunkresolve_icd10pcs_clinical","ChunkEntityResolverModel","Trained on ICD10 Procedure Coding System dataset","ICD10-PCS Codes and their normalized definition","https://www.icd10data.com/ICD10PCS/Codes"
 "chunkresolve_icdo_clinical","ChunkEntityResolverModel","Trained on ICD-O Histology Behaviour dataset","ICD-O Codes and their normalized definition","https://apps.who.int/iris/bitstream/handle/10665/96612/9789241548496_eng.pdf"
-"context_spell_med","ContextSpellCheckerModel",,,
 "deidentify_dl","NerDLModel","Trained on n2c2 Demographic dataset",,
 "deidentify_rb","DeIdentificationModel","Rule based DeIdentifier based on `deidentify_dl`",,
 "embeddings_clinical","WordEmbeddingsModel","Trained on PubMed corpora",,
@@ -27,13 +26,12 @@
 "ner_posology","NerDLModel","Trained on the 2018 i2b2 dataset and FDA Drug datasets with `embeddings_clinical`.","Dosage, Drug, Duration, Form,  Frequency, Route, Strength.","https://open.fda.gov/"
 "pos_clinical","PerceptronModel","Trained with MedPost dataset",,
 "spellcheck_clinical","ContextSpellCheckerModel","",,
-"spellcheck_dl","ContextSpellCheckerModel","",,
 "textmatch_cpt_token","TextMatcherModel","Trai,ned on NER Synonym Augmented Procedural Terminology bigram tokens combined up to a window of one",,
 "textmatch_icdo_ner","TextMatcherModel","Trained on NER Synonym Augmented ICD Histology Behaviour bigram tokens up to a window of four",,
 "ner_cellular","NerDLModel","Trained on the JNLPBA corpus containing more than 2.404 publication abstracts with `embeddings_clinical`","DNA, Cell_type, Cell_line, RNA, Protein.","http://www.geniaproject.org/"
 "ner_anatomy","NerDLModel","Trained on the Anatomical Entity Mention (AnEM) corpus with `embeddings_clinical`","Anatomical_system, Cell, Cellular_component, Developing_anatomical_structure, Immaterial_anatomical_entity, Multi-tissue_structure, Organ, Organism_subdivision, Organism_substance, Pathological_formation, Tissue.","http://www.nactem.ac.uk/anatomy/"
 "ner_deid_enriched","NerDLModel","Trained on JSL enriched n2c2 2014: De-identification and Heart Disease Risk Factors Challenge datasets with `embeddings_clinical`","Age, City, Country, Date, Doctor, Hospital, Idnum, Medicalrecord, Organization, Patient, Phone, Profession, State, Street, Username, Zip.","https://portal.dbmi.hms.harvard.edu/projects/n2c2-2014/"
-"ner_deid_large","NerDLModel","Trained on plain n2c2 2014: De-identification and Heart Disease Risk Factors Challenge datasets with `embeddings_clinical`","Age, City, Country, Date, Doctor, Hospital, Idnum, Medicalrecord, Organization, Patient, Phone, Profession, State, Street, Username, Zip.","https://portal.dbmi.hms.harvard.edu/projects/n2c2-2014/"
+"ner_deid_large","NerDLModel","Trained on plain n2c2 2014: De-identification and Heart Disease Risk Factors Challenge datasets with `embeddings_clinical`","Age, Contact, Date, Id, Location, Name, Profession.","https://portal.dbmi.hms.harvard.edu/projects/n2c2-2014/"
 "ner_jsl","NerDLModel","Trained on data gathered and manually annotated by John Snow Labs","Age, Diagnosis, Dosage, Drug_name, Frequency, Gender, Lab_name, Lab_result, Modifier, Name, Negation, Symptom_name","https://www.johnsnowlabs.com/data/"
 "ner_jsl_enriched","NerDLModel","Trained on data gathered and manually annotated by John Snow Labs","Age, Diagnosis, Dosage, Drug_name, Frequency, Gender, Lab_name, Lab_result, Modifier, Name, Negation, Symptom_name","https://www.johnsnowlabs.com/data/"
 "ner_posology_large","NerDLModel","Trained on the 2018 i2b2 dataset and FDA Drug datasets with `embeddings_clinical`.","Dosage, Drug, Duration, Form,  Frequency, Route, Strength.","https://open.fda.gov/"
