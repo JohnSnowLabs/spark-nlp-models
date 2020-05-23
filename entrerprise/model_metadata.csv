@@ -46,7 +46,6 @@
 "chunkresolve_icd10cm_poisoning_ext_clinical","ChunkEntityResolverModel","Trained on ICD10CM Dataset Range: T1500XA-T879","ICD10-CM Codes and their normalized definition","https://www.icd10data.com/ICD10CM/Codes/S00-T88"
 "ensembleresolve_icd10cm_clinical","EnsembleEntityResolverModel","Trained on ICD10 Clinical Modification dataset with hundreds of variations per code","ICD10-CM Codes and their normalized definition","https://www.icd10data.com/ICD10CM/Codes/"
 "ner_events_clinical","NerDLModel","Trained on i2b2 events data","Problem, Test, Treatment, Occurence, Clinical_Dept, Date, Evidential, Duration, Frequency, Admission, Discharge, Time","https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/"
-"ner_large_clinical","NerDLModel","Trained on i2b2 augmented data","Problem, Test, Treatment","https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/"
-"assertion_dl_large","NerDLModel","Trained on i2b2","",""
+"ner_clinical_large","NerDLModel","Trained on i2b2 augmented data","Problem, Test, Treatment","https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/"
 "chunkresolve_loinc_clinical","ChunkEntityResolverModel","Trained on LOINC dataset with `embeddings_clinical`","LOINC Codes and ther Standard Name","https://loinc.org/"
 "deidentify_large","DeIdentificatoinModel","Trained on 10.000 Contact, Location, Name and Profession random replacements","Contact, Location, Name, Profession.","https://portal.dbmi.hms.harvard.edu/projects/n2c2-2014/"
