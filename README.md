@@ -28,6 +28,7 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
     * [Portuguese](#portuguese---pipelines)
     * [Russian](#russian---pipelines)
     * [Spanish](#spanish---pipelines)
+    * [Multi-language](#multi-language---pipelines)
 
 * [Pretrained Models](#pretrained-models)
   * [Public Models](#public-models)
