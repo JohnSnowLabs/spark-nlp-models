@@ -1,0 +1,151 @@
+[
+
+
+    {
+      "title": "Bert",
+      "date"     : "July 06, 2020",
+      "name": "bert",
+       "categories"  : [
+         "Open Source"
+        ,
+         "Models"
+        
+        
+        ],
+      
+      
+      "url": "/posts/Bert-EN/",
+       "tags"  : [
+         "embeddings"
+        ,
+         "transformer"
+        ,
+         "deep learning"
+        
+        
+        ]
+      
+      
+
+    }
+
+    ,
+
+
+
+    {
+      "title": "Explain Document",
+      "date"     : "July 06, 2020",
+      "name": "",
+       "categories"  : [
+         "Pipeline"
+        ,
+         "Community"
+        
+        
+        ],
+      
+      
+      "url": "/posts/Explain-Document/",
+       "tags"  : [
+         "english"
+        ,
+         "pipeline"
+        
+        
+        ]
+      
+      
+
+    }
+
+    ,
+
+
+
+    {
+      "title": "NER DL EN",
+      "date"     : "June 29, 2020",
+      "name": "ner_dl",
+       "categories"  : [
+         "Models"
+        
+        
+        ],
+      
+      
+      "url": "/posts/NER-DL-EN/",
+       "tags"  : [
+         "english"
+        ,
+         "ner"
+        
+        
+        ]
+      
+      
+
+    }
+
+    ,
+
+
+
+    {
+      "title": "NER Wiki",
+      "date"     : "June 26, 2020",
+      "name": "",
+       "categories"  : [
+         "Models"
+        ,
+         "Community"
+        
+        
+        ],
+      
+      
+      "url": "/posts/NER-Wiki/",
+       "tags"  : [
+         "english"
+        ,
+         "ner"
+        ,
+         "wiki data"
+        
+        
+        ]
+      
+      
+
+    }
+
+    ,
+
+
+
+    {
+      "title": "Explain Document Small Dutch",
+      "date"     : "June 26, 2020",
+      "name": "",
+       "categories"  : [
+         "Pipelines"
+        
+        
+        ],
+      
+      
+      "url": "/posts/Explain-Document-Small-Dutch/",
+       "tags"  : [
+         "dutch"
+        
+        
+        ]
+      
+      
+
+    }
+
+    
+
+
+]
