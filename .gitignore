@@ -135,3 +135,10 @@ glove.*
 .idea
 **/graphs_log/**
 **/wikiner/**
+
+
+# docs
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
