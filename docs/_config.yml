@@ -13,9 +13,7 @@ title: Spark NLP Models                          # the main title
 tagline: A place for both community and premium Spark NLP models.  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A minimal, portfolio, sidebar,
-  bootstrap Jekyll theme with responsive web design
-  and focuses on text presentation.
+  A simple model hub where the Spark NLP community can store and share pre-trained models and pipelines.
 
 # Replace with the website url, e.g. 'https://username.github.io'
 url: 'https://models.johnsnowlabs.com'
