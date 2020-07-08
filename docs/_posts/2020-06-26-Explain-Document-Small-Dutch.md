@@ -9,7 +9,7 @@ tags: [dutch]
 
 #### Model name: *explain_document_sm*
 #### Type: *pipeline*
-#### Size: *xxxMb* 
+#### Size: *164Mb* 
 #### Compatibility: *Spark NLP 2.5.0*
 #### License: *Open Source*
 #### Inputs: *[document, sentence, token]*
