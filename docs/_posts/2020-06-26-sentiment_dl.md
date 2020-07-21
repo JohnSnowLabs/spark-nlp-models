@@ -45,13 +45,9 @@ nlpPipeline = Pipeline(
 ```
 ## Run in colab
 
-<p style="text-align:left"> 
-
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JohnSnowLabs/spark-nlp-workshop/blob/master/tutorials/streamlit_notebooks/SENTIMENT_EN.ipynb)
 
-
-</p>
 
 
 ## Streamlit example
