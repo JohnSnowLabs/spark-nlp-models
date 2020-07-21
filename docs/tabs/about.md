@@ -11,14 +11,23 @@ title: FAQ
 * [Are there any naming conventions?](#q2)
 * [Where are the models stored?](#q2)
 
+---
+
 
 # <a id="q1">What type of models can  a user upload</a>
 This model hub is currently focussed on Spark NLP pretrained models and pipelines. 
 
 # <a id="q3">Where are the models stored</a>
 The models are stored on AWS on the following public s3 bucket: <https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/>.
-They will be published as open source. Any other models hub user can download and used them.  
+Any models hub user can download and used the published models via the **nlu** library or directly using the pretrained call on a Spark NLP Model.
 
+**Python Example**:
+``` 
+# load NER model trained by deep learning approach and GloVe word embeddings
+ner_dl = NerDLModel.pretrained('ner_dl')
+# load NER model trained by deep learning approach and BERT word embeddings
+ner_bert = NerDLModel.pretrained('ner_dl_bert')  
+```
  
 # <a id="q2">How to name your model</a>
 The name of a pretrained model/pipeline is formed by several elements separated by "." (dot). 
