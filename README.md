@@ -42,16 +42,41 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
     * [Portuguese](#portuguese---models)
     * [Russian](#russian---models)
     * [Spanish](#spanish---models)
+    * [Afrikaans](#afrikaans---models)
+    * [Arabic](#arabic---models)
+    * [Armenian](#armenian---models)
+    * [Basque](#basque---models)
+    * [Bengali](#bengali---models)
+    * [Breton](#breton---models)
     * [Bulgarian](#bulgarian---models)
+    * [Catalan](#catalan---models)
     * [Czech](#czech---models)
-    * [Greek](#greek---models)
+    * [Esperanto](#esperanto---models)
     * [Finnish](#finnish---models)
-    * [Hungarian](#Hungarian---models)
+    * [Galician](#galician---models)
+    * [Greek](#greek---models)
+    * [Hausa](#hausa---models)
+    * [Hebrew](#hebrew---models)
+    * [Hindi](#hindi---models)
+    * [Hungarian](#hungarian---models)
+    * [Indonesian](#indonesian---models)
+    * [Irish](#irish---models)
+    * [Japanese](#japanese---models)
+    * [Latin](#latin---models)
+    * [Latvian](#latvian---models)
+    * [Marathi](#marathi---models)
+    * [Persian](#persian---models)
     * [Romanian](#romanian---models)
     * [Slovak](#slovak---models)
+    * [Slovenian](#slovenian---models)
+    * [Somali](#somali---models)
+    * [Southern Sotho](#southern-sotho---models)
+    * [Swahili](#swahili---models)
     * [Swedish](#swedish---models)
+    * [Tswana](#tswana---models)
     * [Turkish](#turkish---models)
     * [Ukrainian](#ukrainian---models)
+    * [Zulu](#zulu---models)
     * [Multi-language](#multi-language)
 
 * [Licensed Enterprise](#licensed-enterprise)
@@ -217,8 +242,8 @@ Output: ['Mona Lisa', 'Leonardo', 'Louvre', 'Paris']
 
 | Pipeline                 | Name                   | Build  | lang | Description | Offline   |
 |:-------------------------|:-----------------------|:-------|:-------|:----------|:----------|
-| LanguageDetectorDL    | `detect_language_7`        | 2.5.2 |      `xx` |        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/detect_language_7_xx_2.5.0_2.4_1591875676774.zip) |
-| LanguageDetectorDL    | `detect_language_20`        | 2.5.2 |      `xx` |        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/detect_language_20_xx_2.5.0_2.4_1591875683182.zip) |
+| LanguageDetectorDL    | `detect_language_7`        | 2.5.2 |      `xx` |        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/detect_language_7_xx_2.5.2_2.4_1594580832687.zip) |
+| LanguageDetectorDL    | `detect_language_20`        | 2.5.2 |      `xx` |        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/detect_language_20_xx_2.5.2_2.4_1594580840930.zip) |
 
 * The model with 7 languages: Czech, German, English, Spanish, French, Italy, and Slovak
 * The model with 20 languages: Bulgarian, Czech, German, Greek, English, Spanish, Finnish, French, Croatian, Hungarian, Italy, Norwegian, Polish, Portuguese, Romanian, Russian, Slovak, Swedish, Turkish, and Ukrainian
@@ -293,6 +318,7 @@ pipeline = Pipeline(
 | ViveknSentimentModel (Sentiment)         | `sentiment_vivekn`        | 2.0.2 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sentiment_vivekn_en_2.0.2_2.4_1556663184035.zip)|
 | DependencyParser (Dependency)            | `dependency_conllu`       | 2.0.8 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/dependency_conllu_en_2.0.8_2.4_1561435004077.zip)|
 | TypedDependencyParser (Dependency)       | `dependency_typed_conllu` | 2.0.8 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/dependency_typed_conllu_en_2.0.8_2.4_1561473259215.zip) |
+| StopWordsCleaner  | `stopwords_en`            | 2.5.4 |   `en`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_en_en_2.5.3_2.4_1594737512110.zip) |
 
 #### Embeddings
 
@@ -325,6 +351,11 @@ pipeline = Pipeline(
 |:--------------|:--------------------------|:-----------------|:------------|:------|
 | ClassifierDLModel (with tfhub_use)          | `classifierdl_use_trec6`        | 2.5.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/classifierdl_use_trec6_en_2.5.0_2.4_1588492648979.zip) |
 | ClassifierDLModel (with tfhub_use)          | `classifierdl_use_trec50`       | 2.5.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/classifierdl_use_trec50_en_2.5.0_2.4_1588493558481.zip) |
+| ClassifierDLModel (with tfhub_use)   | `classifierdl_use_spam`        | 2.5.3 |      `en` | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/classifierdl_use_spam_en_2.5.3_2.4_1593783318934.zip) |
+| ClassifierDLModel (with tfhub_use)   | `classifierdl_use_fakenews`        | 2.5.3 |      `en` | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/classifierdl_use_fakenews_en_2.5.3_2.4_1593783319296.zip) |
+| ClassifierDLModel (with tfhub_use)   | `classifierdl_use_emotion`        | 2.5.3 |      `en`  | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/classifierdl_use_emotion_en_2.5.3_2.4_1593783319297.zip) |
+| ClassifierDLModel (with tfhub_use)   | `classifierdl_use_cyberbullying`        | 2.5.3 |      `en`  | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/classifierdl_use_cyberbullying_en_2.5.3_2.4_1593783319298.zip) |
+| ClassifierDLModel (with tfhub_use)   | `classifierdl_use_sarcasm`        | 2.5.3 |      `en` | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/classifierdl_use_sarcasm_en_2.5.3_2.4_1593783319298.zip) |
 | SentimentDLModel (with tfhub_use)           | `sentimentdl_use_imdb`          | 2.5.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sentimentdl_use_imdb_en_2.5.0_2.4_1591608094321.zip) |
 | SentimentDLModel (with tfhub_use)           | `sentimentdl_use_twitter`       | 2.5.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sentimentdl_use_twitter_en_2.5.0_2.4_1589108892106.zip) |
 | SentimentDLModel (with glove_100d)          | `sentimentdl_glove_imdb`         | 2.5.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sentimentdl_glove_imdb_en_2.5.0_2.4_1588682682507.zip) |
@@ -336,6 +367,7 @@ pipeline = Pipeline(
 | LemmatizerModel (Lemmatizer) | `lemma`            |   2.0.2    |   `fr`     | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_fr_2.0.2_2.4_1556531462843.zip)|
 | PerceptronModel (POS UD)     | `pos_ud_gsd`       |   2.0.2    |    `fr`   | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_gsd_fr_2.0.2_2.4_1556531457346.zip)|
 | NerDLModel (glove_840B_300)  | `wikiner_840B_300` |   2.0.2    |    `fr`   | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_840B_300_fr_2.4.0_2.4_1579699913554.zip)|
+| StopWordsCleaner  | `stopwords_fr`            | 2.5.4 |   `fr`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_fr_fr_2.5.4_2.4_1594742439495.zip) |
 
 | Feature   | Description                                                                                                                                                                                            |    |
 |:----------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---|
@@ -350,6 +382,7 @@ pipeline = Pipeline(
 | LemmatizerModel (Lemmatizer) | `lemma`            | 2.0.8 |       `de`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_de_2.0.8_2.4_1561248996126.zip)|
 | PerceptronModel (POS UD)     | `pos_ud_hdt`       | 2.0.8 |       `de`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_hdt_de_2.0.8_2.4_1561232528570.zip)|
 | NerDLModel (glove_840B_300)  | `wikiner_840B_300` | 2.4.0 |       `de`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_840B_300_de_2.4.0_2.4_1579699913555.zip)|
+| StopWordsCleaner  | `stopwords_de`            | 2.5.4 |   `de`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_de_de_2.5.4_2.4_1594742442247.zip) |
 
 | Feature   | Description                                                                                                                                                                                            |
 |:----------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -364,7 +397,8 @@ pipeline = Pipeline(
 | LemmatizerModel (Lemmatizer)  | `lemma_dxc`        | 2.0.2 |    `it`   |  [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_dxc_it_2.0.2_2.4_1556531469058.zip)        |
 | ViveknSentimentAnalysis (Sentiment) | `sentiment_dxc`    | 2.0.2 |    `it`   | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sentiment_dxc_it_2.0.2_2.4_1556531477694.zip)    |
 | PerceptronModel (POS UD)      | `pos_ud_isdt`      | 2.0.8 |    `it`   | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_isdt_it_2.0.8_2.4_1560168427464.zip)      |
-| NerDLModel (glove_840B_300)   | `wikiner_840B_300` | 2.4.0 |   `it`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_840B_300_it_2.4.0_2.4_1579699913554.zip) |
+| NerDLModel (glove_840B_300)   | `wikiner_840B_300` | 2.4.0 |   `it`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_840B_300_it_2.4.0_2.4_1579699913554.zip)|
+| StopWordsCleaner  | `stopwords_it`            | 2.5.4 |   `it`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_it_it_2.5.4_2.4_1594742442063.zip) |
 
 | Feature   | Description                                                                                                                                                                                            |
 |:----------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -391,7 +425,8 @@ pipeline = Pipeline(
 | PerceptronModel (POS UD)     | `pos_ud_lfg`       | 2.5.0 |   `pl`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_lfg_pl_2.5.0_2.4_1588518541171.zip) |
 | NerDLModel (glove_100d)  | `wikiner_6B_100`       | 2.5.0 |   `pl`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_6B_100_pl_2.5.0_2.4_1588519719293.zip) |
 | NerDLModel (glove_6B_300)  | `wikiner_6B_300`     | 2.5.0 |   `pl`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_6B_300_pl_2.5.0_2.4_1588519719571.zip) |
-| NerDLModel (glove_840B_300)  | `wikiner_840B_300` | 2.5.0 |   `pl`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_840B_300_pl_2.5.0_2.4_1588519719572.zip) |
+| NerDLModel (glove_840B_300)  | `wikiner_840B_300` | 2.5.0 |   `pl`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_840B_300_pl_2.5.0_2.4_1588519719572.zip)|
+| StopWordsCleaner  | `stopwords_pl`            | 2.5.4 |   `pl`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_sw_sw_2.5.4_2.4_1594742438383.zip) |
 
 ### Portuguese - Models
 
@@ -401,7 +436,8 @@ pipeline = Pipeline(
 | PerceptronModel (POS UD)     | `pos_ud_bosque`       | 2.5.0 |   `pt`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_bosque_pt_2.5.0_2.4_1588499443093.zip) |
 | NerDLModel (glove_100d)  | `wikiner_6B_100`       | 2.5.0 |   `pt`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_6B_100_pt_2.5.0_2.4_1588495233192.zip) |
 | NerDLModel (glove_6B_300)  | `wikiner_6B_300`     | 2.5.0 |   `pt`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_6B_300_pt_2.5.0_2.4_1588495233641.zip) |
-| NerDLModel (glove_840B_300)  | `wikiner_840B_300` | 2.5.0 |   `pt`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_840B_300_pt_2.5.0_2.4_1588495233642.zip) |
+| NerDLModel (glove_840B_300)  | `wikiner_840B_300` | 2.5.0 |   `pt`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_840B_300_pt_2.5.0_2.4_1588495233642.zip)|
+| StopWordsCleaner  | `stopwords_pt`            | 2.5.4 |   `pt`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_pt_pt_2.5.4_2.4_1594742441703.zip) |
 
 ### Russian - Models
 
@@ -412,6 +448,7 @@ pipeline = Pipeline(
 | NerDLModel (glove_100d)  | `wikiner_6B_100` | 2.4.4 |    `ru`   | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_6B_100_ru_2.4.4_2.4_1584014001452.zip) |
 | NerDLModel (glove_6B_300)  | `wikiner_6B_300` | 2.4.4 |  `ru`     | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_6B_300_ru_2.4.4_2.4_1584014001694.zip) |
 | NerDLModel (glove_840B_300)  | `wikiner_840B_300` | 2.4.4 |   `ru`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_840B_300_ru_2.4.4_2.4_1584014001695.zip) |
+| StopWordsCleaner  | `stopwords_ru`            | 2.5.4 |   `ru`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_ru_ru_2.5.4_2.4_1594742439248.zip) |
 
 | Feature   | Description                                                                                                                                                                                            |
 |:----------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -428,6 +465,7 @@ pipeline = Pipeline(
 | NerDLModel (glove_100d)  | `wikiner_6B_100` | 2.4.0 |    `es`   | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_6B_100_es_2.4.0_2.4_1581971941700.zip) |
 | NerDLModel (glove_6B_300)  | `wikiner_6B_300` | 2.4.0 |  `es`     | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_6B_300_es_2.4.0_2.4_1581971942090.zip) |
 | NerDLModel (glove_840B_300)  | `wikiner_840B_300` | 2.4.0 |   `es`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_840B_300_es_2.4.0_2.4_1581971942091.zip;) |
+| StopWordsCleaner  | `stopwords_es`            | 2.5.4 |   `es`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_es_es_2.5.4_2.4_1594742441303.zip) |
 
 | Feature   | Description                                                                                                                                                                                            |
 |:----------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -435,12 +473,55 @@ pipeline = Pipeline(
 | **POS**   | Trained by **PerceptronApproach** annotator on the [Universal Dependencies](https://universaldependencies.org/treebanks/es_gsd/index.html)                                                             |
 | **NER**   | Trained by **NerDLApproach** annotator with **Char CNNs - BiLSTM - CRF** and **GloVe Embeddings** on the **WikiNER** corpus and supports the identification of `PER`, `LOC`, `ORG` and `MISC` entities |
 
+### Afrikaans - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| StopWordsCleaner  | `stopwords_af`            | 2.5.4 |   `af`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_af_af_2.5.4_2.4_1594742440083.zip) |
+
+### Arabic - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| StopWordsCleaner  | `stopwords_ar`            | 2.5.4 |   `ar`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_ar_ar_2.5.4_2.4_1594742440256.zip) |
+
+### Armenian - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| StopWordsCleaner  | `stopwords_hy`            | 2.5.4 |   `hy`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_hy_hy_2.5.4_2.4_1594742439626.zip) |
+
+### Basque - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| StopWordsCleaner  | `stopwords_eu`            | 2.5.4 |   `eu`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_eu_eu_2.5.4_2.4_1594742441951.zip) |
+
+### Bengali - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| StopWordsCleaner  | `stopwords_bn`            | 2.5.4 |   `bn`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_bn_bn_2.5.4_2.4_1594742440339.zip) |
+
+### Breton - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| StopWordsCleaner  | `stopwords_br`            | 2.5.4 |   `br`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_br_br_2.5.4_2.4_1594742440778.zip) |
+
 ### Bulgarian - Models
 
 | Model                        | Name               | Build            | Lang |  Offline|
 |:-----------------------------|:-------------------|:-----------------|:------|:------------|
 | LemmatizerModel (Lemmatizer) | `lemma`            | 2.5.0 |   `bg`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_bg_2.5.0_2.4_1588666297763.zip) |
 | PerceptronModel (POS UD)     | `pos_ud_btb`       | 2.5.0 |   `bg`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_btb_bg_2.5.0_2.4_1588621401140.zip) |
+| StopWordsCleaner  | `stopwords_bg`            | 2.5.4 |   `bg`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_bg_bg_2.5.4_2.4_1594742440962.zip) |
+
+### Catalan - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| StopWordsCleaner  | `stopwords_ca`            | 2.5.4 |   `ca`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_ca_ca_2.5.4_2.4_1594742440888.zip) |
 
 ### Czech - Models
 
@@ -448,13 +529,13 @@ pipeline = Pipeline(
 |:-----------------------------|:-------------------|:-----------------|:------|:------------|
 | LemmatizerModel (Lemmatizer) | `lemma`            | 2.5.0 |   `cs`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_cs_2.5.0_2.4_1588666300042.zip) |
 | PerceptronModel (POS UD)     | `pos_ud_pdt`       | 2.5.0 |   `cs`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_pdt_cs_2.5.0_2.4_1588622155494.zip) |
+| StopWordsCleaner  | `stopwords_cs`            | 2.5.4 |   `cs`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_cs_cs_2.5.4_2.4_1594742440427.zip) |
 
-### Greek - Models
+### Esperanto - Models
 
 | Model                        | Name               | Build            | Lang |  Offline|
 |:-----------------------------|:-------------------|:-----------------|:------|:------------|
-| LemmatizerModel (Lemmatizer) | `lemma`            | 2.5.0 |   `el`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_el_2.5.0_2.4_1588686951720.zip) |
-| PerceptronModel (POS UD)     | `pos_ud_gdt`       | 2.5.0 |   `el`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_gdt_el_2.5.0_2.4_1588686949851.zip) |
+| StopWordsCleaner  | `stopwords_eo`            | 2.5.4 |   `eo`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_eo_eo_2.5.4_2.4_1594742438724.zip) |
 
 ### Finnish - Models
 
@@ -462,6 +543,37 @@ pipeline = Pipeline(
 |:-----------------------------|:-------------------|:-----------------|:------|:------------|
 | LemmatizerModel (Lemmatizer) | `lemma`            | 2.5.0 |   `fi`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_fi_2.5.0_2.4_1588671290521.zip) |
 | PerceptronModel (POS UD)     | `pos_ud_tdt`       | 2.5.0 |   `fi`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_tdt_fi_2.5.0_2.4_1588622348985.zip) |
+| StopWordsCleaner  | `stopwords_fi`            | 2.5.4 |   `fi`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_fi_fi_2.5.4_2.4_1594742441054.zip) |
+
+### Galician - Models
+
+| StopWordsCleaner  | `stopwords_gl`            | 2.5.4 |   `gl`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_gl_gl_2.5.4_2.4_1594742441210.zip) |
+
+### Greek - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| LemmatizerModel (Lemmatizer) | `lemma`            | 2.5.0 |   `el`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_el_2.5.0_2.4_1588686951720.zip) |
+| PerceptronModel (POS UD)     | `pos_ud_gdt`       | 2.5.0 |   `el`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_gdt_el_2.5.0_2.4_1588686949851.zip) |
+| StopWordsCleaner  | `stopwords_el`            | 2.5.4 |   `el`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_el_el_2.5.4_2.4_1594742437880.zip) |
+
+### Hausa - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| StopWordsCleaner  | `stopwords_ha`            | 2.5.4 |   `ha`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_ha_ha_2.5.4_2.4_1594742441392.zip) |
+
+### Hebrew - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| StopWordsCleaner  | `stopwords_he`            | 2.5.4 |   `he`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_he_he_2.5.4_2.4_1594742441877.zip) |
+
+### Hindi - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| StopWordsCleaner  | `stopwords_hi`            | 2.5.4 |   `hi`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_hi_hi_2.5.4_2.4_1594742439035.zip) |
 
 ### Hungarian - Models
 
@@ -469,6 +581,49 @@ pipeline = Pipeline(
 |:-----------------------------|:-------------------|:-----------------|:------|:------------|
 | LemmatizerModel (Lemmatizer) | `lemma`            | 2.5.0 |   `hu`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_hu_2.5.0_2.4_1588671968880.zip) |
 | PerceptronModel (POS UD)     | `pos_ud_szeged`       | 2.5.0 |   `hu`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_szeged_hu_2.5.0_2.4_1588671966774.zip) |
+| StopWordsCleaner  | `stopwords_hu`            | 2.5.4 |   `hu`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_hu_hu_2.5.4_2.4_1594742441137.zip) |
+
+### Indonesian - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| StopWordsCleaner  | `stopwords_id`            | 2.5.4 |   `id`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_id_id_2.5.4_2.4_1594742441630.zip) |
+
+### Irish - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| StopWordsCleaner  | `stopwords_ga`            | 2.5.4 |   `ga`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_ga_ga_2.5.4_2.4_1594742439377.zip) |
+
+### Japanese - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| StopWordsCleaner  | `stopwords_ja`            | 2.5.4 |   `ja`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_ja_ja_2.5.4_2.4_1594742438927.zip) |
+
+### Latin - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| StopWordsCleaner  | `stopwords_la`            | 2.5.4 |   `la`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_la_la_2.5.4_2.4_1594742439769.zip) |
+
+### Latvian - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| StopWordsCleaner  | `stopwords_lv`            | 2.5.4 |   `lv`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_lv_lv_2.5.4_2.4_1594742439893.zip) |
+
+### Marathi - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| StopWordsCleaner  | `stopwords_mr`            | 2.5.4 |   `mr`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_mr_mr_2.5.4_2.4_1594742439994.zip) |
+
+### Persian - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| StopWordsCleaner  | `stopwords_fa`            | 2.5.4 |   `fa`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_fa_fa_2.5.4_2.4_1594742438615.zip) |
 
 ### Romanian - Models
 
@@ -476,6 +631,7 @@ pipeline = Pipeline(
 |:-----------------------------|:-------------------|:-----------------|:------|:------------|
 | LemmatizerModel (Lemmatizer) | `lemma`            | 2.5.0 |   `ro`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_ro_2.5.0_2.4_1588666512149.zip) |
 | PerceptronModel (POS UD)     | `pos_ud_rrt`       | 2.5.0 |   `ro`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_rrt_ro_2.5.0_2.4_1588622539956.zip) |
+| StopWordsCleaner  | `stopwords_ro`            | 2.5.4 |   `ro`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_ro_ro_2.5.4_2.4_1594742441548.zip) |
 
 ### Slovak - Models
 
@@ -483,6 +639,31 @@ pipeline = Pipeline(
 |:-----------------------------|:-------------------|:-----------------|:------|:------------|
 | LemmatizerModel (Lemmatizer) | `lemma`            | 2.5.0 |   `sk`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_sk_2.5.0_2.4_1588666524270.zip) |
 | PerceptronModel (POS UD)     | `pos_ud_snk`       | 2.5.0 |   `sk`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_snk_sk_2.5.0_2.4_1588622627281.zip) |
+| StopWordsCleaner  | `stopwords_sk`            | 2.5.4 |   `sk`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_sk_sk_2.5.4_2.4_1594742441462.zip) |
+
+### Slovenian - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| StopWordsCleaner  | `stopwords_sl`            | 2.5.4 |   `sl`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_sl_sl_2.5.4_2.4_1594742442155.zip) |
+
+### Somali - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| StopWordsCleaner  | `stopwords_so`            | 2.5.4 |   `so`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_so_so_2.5.4_2.4_1594742441799.zip) |
+
+### Southern Sotho - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| StopWordsCleaner  | `stopwords_st`            | 2.5.4 |   `st`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_st_st_2.5.4_2.4_1594742438831.zip) |
+
+### Swahili - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| StopWordsCleaner  | `stopwords_sw`            | 2.5.4 |   `sw`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_sw_sw_2.5.4_2.4_1594742438383.zip) |
 
 ### Swedish - Models
 
@@ -490,6 +671,13 @@ pipeline = Pipeline(
 |:-----------------------------|:-------------------|:-----------------|:------|:------------|
 | LemmatizerModel (Lemmatizer) | `lemma`            | 2.5.0 |   `sv`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_sv_2.5.0_2.4_1588666548498.zip) |
 | PerceptronModel (POS UD)     | `pos_ud_tal`       | 2.5.0 |   `sv`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_tal_sv_2.5.0_2.4_1588622711284.zip) |
+| StopWordsCleaner  | `stopwords_sv`            | 2.5.4 |   `sv`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_sv_sv_2.5.4_2.4_1594742438273.zip) |
+
+### Tswana - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| StopWordsCleaner  | `stopwords_th`            | 2.5.4 |   `th`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_th_th_2.5.4_2.4_1594742440606.zip) |
 
 ### Turkish - Models
 
@@ -497,6 +685,7 @@ pipeline = Pipeline(
 |:-----------------------------|:-------------------|:-----------------|:------|:------------|
 | LemmatizerModel (Lemmatizer) | `lemma`            | 2.5.0 |   `tr`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_tr_2.5.0_2.4_1587479962436.zip) |
 | PerceptronModel (POS UD)     | `pos_ud_imst`       | 2.5.0 |   `tr`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_imst_tr_2.5.0_2.4_1587480006078.zip) |
+| StopWordsCleaner  | `stopwords_tr`            | 2.5.4 |   `tr`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_tr_tr_2.5.4_2.4_1594742440173.zip) |
 
 ### Ukrainian - Models
 
@@ -505,6 +694,18 @@ pipeline = Pipeline(
 | LemmatizerModel (Lemmatizer) | `lemma`            | 2.5.0 |   `uk`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_uk_2.5.0_2.4_1588671294202.zip) |
 | PerceptronModel (POS UD)     | `pos_ud_iu`       | 2.5.0 |   `uk`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_iu_uk_2.5.0_2.4_1588668890963.zip) |
 
+### Yoruba - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| StopWordsCleaner  | `stopwords_yo`            | 2.5.4 |   `yo`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_yo_yo_2.5.4_2.4_1594742440695.zip) |
+
+### Zulu - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| StopWordsCleaner  | `stopwords_zu`            | 2.5.4 |   `zu`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_zu_zu_2.5.4_2.4_1594742440504.zip) |
+
 ### Multi-language
 
 | Model                        | Name               | Build            | Lang | Offline |
@@ -512,8 +713,8 @@ pipeline = Pipeline(
 | WordEmbeddings (GloVe)       | `glove_840B_300`   | 2.4.0 |  `xx`   | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/glove_840B_300_xx_2.4.0_2.4_1579698926752.zip)   |
 | WordEmbeddings (GloVe)       | `glove_6B_300`     | 2.4.0 |   `xx`   | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/glove_6B_300_xx_2.4.0_2.4_1579698630432.zip)     |
 | BertEmbeddings (multi_cased) | `bert_multi_cased` | 2.4.0 |   `xx`   | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/bert_multi_cased_xx_2.4.0_2.4_1580582335793.zip) |
-| LanguageDetectorDL    | `ld_wiki_7`        | 2.5.2 |      `xx`         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/ld_wiki_7_xx_2.5.0_2.4_1591875673486.zip) |
-| LanguageDetectorDL    | `ld_wiki_20`        | 2.5.2 |      `xx`         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/ld_wiki_20_xx_2.5.0_2.4_1591875680011.zip) |
+| LanguageDetectorDL    | `ld_wiki_7`        | 2.5.2 |      `xx`         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/ld_wiki_7_xx_2.5.2_2.4_1594580829482.zip) |
+| LanguageDetectorDL    | `ld_wiki_20`        | 2.5.2 |      `xx`         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/ld_wiki_20_xx_2.5.2_2.4_1594580837846.zip) |
 
 * The model with 7 languages: Czech, German, English, Spanish, French, Italy, and Slovak
 * The model with 20 languages: Bulgarian, Czech, German, Greek, English, Spanish, Finnish, French, Croatian, Hungarian, Italy, Norwegian, Polish, Portuguese, Romanian, Russian, Slovak, Swedish, Turkish, and Ukrainian
