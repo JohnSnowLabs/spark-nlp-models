@@ -60,3 +60,6 @@
 "chunkresolve_snomed_findings_clinical","ChunkEntityResolverModel","Trained on SNOMED CT Findings","Snomed Codes and their normalized definition","http://www.snomed.org/"
 "ner_diag_proc","NerDLModel","Trained on CodiEsp Challenge dataset","Diagnostico, Procedimiento","https://temu.bsc.es/codiesp/"
 "ner_neoplasms","NerDLModel","Trained on MedMentions dataset","MalignantNeoplasm","https://temu.bsc.es/cantemist/"
+"chunkresolve_rxnorm_cd_clinical","ChunkEntityResolverModel","Trained on December 2019 RxNorm Clinical Drugs (TTY=CD) ontology graph with `embeddings_clinical`","RxNorm Codes and their normalized definition","https://www.nlm.nih.gov/pubs/techbull/nd19/brief/nd19_rxnorm_december_2019_release.html"
+"chunkresolve_rxnorm_scd_clinical","ChunkEntityResolverModel","Trained on December 2019 RxNorm Clinical Drugs (TTY=SCD) ontology graph with `embeddings_clinical`","RxNorm Codes and their normalized definition","https://www.nlm.nih.gov/pubs/techbull/nd19/brief/nd19_rxnorm_december_2019_release.html"
+"chunkresolve_rxnorm_sbd_clinical","ChunkEntityResolverModel","Trained on December 2019 RxNorm Clinical Drugs (TTY=SBD) ontology graph with `embeddings_clinical`","RxNorm Codes and their normalized definition","https://www.nlm.nih.gov/pubs/techbull/nd19/brief/nd19_rxnorm_december_2019_release.html"
