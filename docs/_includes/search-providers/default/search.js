@@ -34,7 +34,7 @@ window.Lazyload.js([SOURCES.jquery, PAHTS.search_js], function() {
   }
 
   var renderHeader = memorize(function(header) {
-    return $('<p class="search-result__header">' + header + '</p>');
+    return $('<p class="search-result__header">' + 'Models' + '</p>');
   });
 
   var renderItem = function(index, title, url) {
