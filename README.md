@@ -547,6 +547,8 @@ pipeline = Pipeline(
 
 ### Galician - Models
 
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
 | StopWordsCleaner  | `stopwords_gl`            | 2.5.4 |   `gl`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_gl_gl_2.5.4_2.4_1594742441210.zip) |
 
 ### Greek - Models
