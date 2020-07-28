@@ -5,6 +5,8 @@ name: sentiment_dl
 date: 2020-07-21 11:33:00 +0800
 categories: [Open Source, Model]
 tags: [sentiment]
+article_header:
+  type: cover
 ---
 
 ## Model name: *sentiment_dl*

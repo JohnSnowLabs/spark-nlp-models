@@ -1,0 +1,18 @@
+header:
+  - titles:
+      # @start locale config
+      en      : &EN       Home
+      # @end locale config
+    url: /
+
+  - titles:
+      # @start locale config
+      en      : &EN       Timeline
+      # @end locale config
+    url: /latest.html
+
+  - titles:
+      # @start locale config
+      en      : &EN       FAQ
+       # @end locale config
+    url: /FAQ.html
