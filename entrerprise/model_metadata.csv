@@ -47,7 +47,6 @@
 "chunkresolve_icd10cm_injuries_clinical","ChunkEntityResolverModel","Trained on ICD10CM Dataset Range: S0000XA-S98929S ","ICD10-CM Codes and their normalized definition","https://www.icd10data.com/ICD10CM/Codes/S00-T88"
 "chunkresolve_icd10cm_musculoskeletal_clinical","ChunkEntityResolverModel","Trained on ICD10CM Dataset Range: M0000-M9979XXS","ICD10-CM Codes and their normalized definition","https://www.icd10data.com/ICD10CM/Codes/M00-M99"
 "chunkresolve_icd10cm_poisoning_ext_clinical","ChunkEntityResolverModel","Trained on ICD10CM Dataset Range: T1500XA-T879","ICD10-CM Codes and their normalized definition","https://www.icd10data.com/ICD10CM/Codes/S00-T88"
-"ensembleresolve_icd10cm_clinical","EnsembleEntityResolverModel","Trained on ICD10 Clinical Modification dataset with hundreds of variations per code","ICD10-CM Codes and their normalized definition","https://www.icd10data.com/ICD10CM/Codes/"
 "ner_events_clinical","NerDLModel","Trained on i2b2 events data with `clinical_embeddings`","Problem, Test, Treatment, Occurence, Clinical_Dept, Date, Evidential, Duration, Frequency, Admission, Discharge, Time","https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/"
 "ner_clinical_large","NerDLModel","Trained on i2b2 augmented data with `clinical_embeddings`","Problem, Test, Treatment","https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/"
 "chunkresolve_loinc_clinical","ChunkEntityResolverModel","Trained on LOINC dataset with `embeddings_clinical`","LOINC Codes and ther Standard Name","https://loinc.org/"
