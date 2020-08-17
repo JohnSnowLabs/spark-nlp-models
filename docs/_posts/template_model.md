@@ -1,8 +1,6 @@
 ---
 title:
 author: John Snow Labs
-name:
-date:
 tags: [embeddings, en, glove_100d]
 article_header:
   type: cover
