@@ -5,8 +5,9 @@
 {%- else -%}
   <header class="header" {%- if include.background -%} style="background: {{ include.background }};" {%- endif -%}>
 {%- endif -%}
-    <div class="main">
+    <div class="main header_main">
       <div class="header__title">
+        <a href="#" id="responsive_menu"></a>
         <div class="header__brand">
            <a title="{%- if site.description -%}{{ site.description }}{%- endif -%}" href="https://www.johnsnowlabs.com" target="_blank">
             {%- include svg/logo.svg -%}
@@ -19,8 +20,8 @@
         {%- endif -%}
       </div>
       {%- if site.data.navigation.header -%}
-      <nav class="navigation">
-        <ul>
+      <nav class="navigation top_navigation">
+        <ul class="top-menu">
           {%- for _item in site.data.navigation.header -%}
             {%- include snippets/get-nav-url.html path=_item.url -%}
             {%- assign _nav_url = __return -%}
@@ -38,6 +39,7 @@
           {%- endif -%}
         </ul>
       </nav>
+      <a href="#" id="aside_menu"></a>
       {%- endif -%}
     </div>
   </header>
