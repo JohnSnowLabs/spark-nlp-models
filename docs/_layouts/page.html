@@ -179,17 +179,16 @@ layout: base
 
 
         {%- if _full_width == false -%}
-          <div class ="main">
+          <div class ="main model_t">
         {%- endif -%}
-            <div class="grid grid--reverse">
-
-              <div class="col-aside d-print-none js-col-aside">
-                {%- if page.aside -%}
-                  <aside class="page__aside js-page-aside">
-                    {%- include aside/toc.html -%}
-                  </aside>
-                {%- endif -%}
-              </div>
+            <div class="aside-menu">
+              {%- if page.aside -%}
+                <aside class="page__aside js-page-aside">
+                  {%- include aside/toc.html -%}
+                </aside>
+              {%- endif -%}
+            </div>
+            <div class="grid grid--reverse">              
 
               <div class="col-main cell cell--auto">
                 {%- include main/top/custom.html -%}
@@ -206,7 +205,7 @@ layout: base
                   {%- include article-info.html article=page html=false -%}
                 {%- else -%}
                   {%- include article-header.html article=page -%}
-                  {%- include article-info.html article=page -%}
+                  {%- include article-info-tags.html article=page -%}
                 {%- endif -%}
 
                     <div class="js-article-content">{{ content }}</div>

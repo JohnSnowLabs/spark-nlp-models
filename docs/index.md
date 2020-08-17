@@ -1,6 +1,6 @@
 ---
 layout: landing
-title: 'Spark NLP Models Hub <br />'
+title: 'Spark NLP Models Hub'
 excerpt: >
    <br> A place for sharing and discovery of both community and premium Spark NLP models.
 permalink: /
