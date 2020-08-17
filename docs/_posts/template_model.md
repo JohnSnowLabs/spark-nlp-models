@@ -1,6 +1,8 @@
 ---
 title:
 author: John Snow Labs
+name: 
+date: 2020-03-19 00:00:00 +0800
 tags: [embeddings, en, glove_100d]
 article_header:
   type: cover

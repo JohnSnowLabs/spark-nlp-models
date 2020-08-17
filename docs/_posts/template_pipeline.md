@@ -1,9 +1,9 @@
 ---
 title:
 author: John Snow Labs
-name:
-date:
-tags: [embeddings, en, glove_100d]
+name: 
+date: 2020-03-19 00:00:00 +0800
+tags: [pipeline, en]
 article_header:
   type: cover
 ---
@@ -36,6 +36,7 @@ code example
 ## Type: *word_embeddings*
 ## Compatibility: *Spark NLP 2.4.0*
 ## Edition: *one of Healthcare, Community, OCR*
+## Language: 
 
 ## Included Models 
  - 
