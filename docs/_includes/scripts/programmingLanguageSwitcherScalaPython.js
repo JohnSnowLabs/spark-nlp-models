@@ -47,6 +47,6 @@ function defer(method) { //wait until jquery ready
 }
 
 defer(function () { // load inital language
-    toggleScala()
+    togglePython()
 });
 

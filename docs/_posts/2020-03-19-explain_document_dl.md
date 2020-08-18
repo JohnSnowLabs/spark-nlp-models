@@ -21,14 +21,14 @@ The *explain_document_dl* is a pretrained pipeline that we can use to process te
 
 {% include programmingLanguageSelectScalaPython.html %}
 
-```python
-
-pipeline = PretrainedPipeline('explain_document_dl', lang =' en').annotate(' Hello world!')
-```
-
 ```scala
 
 code example
+```
+
+```python
+
+pipeline = PretrainedPipeline('explain_document_dl', lang =' en').annotate(' Hello world!')
 ```
 
 {:.model-param}
@@ -55,12 +55,13 @@ The explain_document_ml has one Transformer and six annotators:
 
 ## Results
 
+{:.result_box}
 ```python
 
 result = pipeline.annotate(testDoc, "text")
 result.printSchema()
 result.show()
-___
+
 root
  |-- text: string (nullable = true)
  |-- document: array (nullable = true)

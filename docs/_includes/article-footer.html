@@ -3,16 +3,6 @@
   source0=layout.show_author_profile source1=page.show_author_profile -%}
 {%- assign _show_author_profile = __return -%}
 
-{%- include snippets/assign.html
-  target=site.data.variables.default.page.show_subscribe
-  source0=layout.show_subscribe source1=page.show_subscribe -%}
-{%- assign _show_subscribe = __return -%}
-
-{%- include snippets/assign.html
-  target=site.data.variables.default.page.license
-  source0=layout.license source1=page.license -%}
-{%- assign _license = __return -%}
-
 <footer class="article__footer">
   {%- if page.modify_date -%}
     {%- include snippets/get-locale-string.html key='ARTICLE_DATE_FORMAT' -%}
@@ -38,20 +28,6 @@
     {%- include article/footer/author-profile.html author=_author -%}
   {%- endif -%}
 
-  {%- if _show_subscribe -%}
-    <div class="article__subscribe">{%- include article/footer/subscribe.html -%}</div>
-  {%- endif -%}
-
-  {%- if _license != false -%}
-    {%- assign _data_license = site.data.licenses-%}
-    {%- if site.license -%}
-      {%- assign _license_data = _data_license[site.license] -%}
-    {%- endif -%}
-    {%- if _license != true -%}
-      {%- assign _license_data = _data_license[_license] -%}
-    {%- endif -%}
-    <div class="article__license">{%- include article/footer/license.html license=_license_data -%}</div>
-  {%- endif -%}
 </footer>
 <script>
 
