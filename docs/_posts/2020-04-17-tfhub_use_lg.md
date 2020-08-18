@@ -1,5 +1,5 @@
 ---
-title: BERT Word Embeddings
+title: Universal Sentence Encoder Large
 author: John Snow Labs
 name: tfhub_use_lg
 date: 2020-04-17
