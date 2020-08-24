@@ -5,7 +5,8 @@ name: ner_healthcare_en
 date: 2020-03-26
 tags: [ner, en, ner_healthcare]
 article_header:
-  type: cover
+type: cover
+use_language_switcher: "Python-Scala-Java"
 ---
 
 ## Description
@@ -16,8 +17,7 @@ Pretrained named entity recognition deep learning model for healthcare. Includes
 {:.btn-box}
 [Live Demo](){:.button.button-orange}
 [Open in Colab](https://github.com/JohnSnowLabs/spark-nlp-workshop/blob/master/tutorials/Certification_Trainings/Healthcare/1.Clinical_Named_Entity_Recognition_Model.ipynb){:.button.button-orange.button-orange-trans.co.button-icon}
-[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/clinical/models/ner_healthcare_en_2.4.4_2.4_1585188313964.zip)
-{:.button.button-orange.button-orange-trans.arr.button-icon}
+[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/clinical/models/ner_healthcare_en_2.4.4_2.4_1585188313964.zip){:.button.button-orange.button-orange-trans.arr.button-icon}
 
 
 ## How to use

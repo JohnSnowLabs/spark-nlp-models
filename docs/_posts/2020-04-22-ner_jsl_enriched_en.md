@@ -5,7 +5,8 @@ name: ner_jsl_enriched_en
 date: 2020-04-22
 tags: [ner, en, ner_jsl]
 article_header:
-  type: cover
+type: cover
+use_language_switcher: "Python-Scala-Java"
 ---
 
 ## Description
@@ -15,8 +16,7 @@ Pretrained named entity recognition deep learning model for clinical terminology
 {:.btn-box}
 [Live Demo](){:.button.button-orange}
 [Open in Colab](https://github.com/JohnSnowLabs/spark-nlp-workshop/blob/master/tutorials/Certification_Trainings/Healthcare/1.Clinical_Named_Entity_Recognition_Model.ipynb){:.button.button-orange.button-orange-trans.co.button-icon}
-[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/clinical/models/ner_jsl_enriched_en_2.4.2_2.4_1587513303751.zip)
-{:.button.button-orange.button-orange-trans.arr.button-icon}
+[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/clinical/models/ner_jsl_enriched_en_2.4.2_2.4_1587513303751.zip){:.button.button-orange.button-orange-trans.arr.button-icon}
 
 
 ## How to use

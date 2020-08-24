@@ -5,7 +5,8 @@ name: ner_posology_en
 date: 2020-04-15
 tags: [ner, en, ner_posology]
 article_header:
-  type: cover
+type: cover
+use_language_switcher: "Python-Scala-Java"
 ---
 
 ## Description
