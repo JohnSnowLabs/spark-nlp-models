@@ -5,7 +5,8 @@ name: re_clinical_en
 date: 2020-08-09
 tags: [re, en, re_clinical]
 article_header:
-  type: cover
+type: cover
+use_language_switcher: "Python-Scala-Java"
 ---
 
 ## Description
@@ -32,8 +33,7 @@ PIP: Two problems are related to each other (eg, ‘Azotemia presumed secondary 
 {:.btn-box}
 [Live Demo](){:.button.button-orange}
 [Open in Colab](https://colab.research.google.com/github/JohnSnowLabs/spark-nlp-workshop/blob/master/tutorials/Certification_Trainings/Healthcare/10.Clinical_Relation_Extraction.ipynb){:.button.button-orange.button-orange-trans.co.button-icon}
-[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/clinical/models/re_clinical_en_2.5.5_2.4_1596928426753.zip)
-{:.button.button-orange.button-orange-trans.arr.button-icon}
+[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/clinical/models/re_clinical_en_2.5.5_2.4_1596928426753.zip){:.button.button-orange.button-orange-trans.arr.button-icon}
 
 ## How to use
 

@@ -5,7 +5,8 @@ name: assertion_ml_en
 date: 2020-01-30
 tags: [ner, en, assertion_ml]
 article_header:
-  type: cover
+type: cover
+use_language_switcher: "Python-Scala-Java"
 ---
 
 ## Description
@@ -15,8 +16,7 @@ Logistic regression named entity recognition model for assertion entities. Inclu
 {:.btn-box}
 [Live Demo](){:.button.button-orange}
 [Open in Colab](https://github.com/JohnSnowLabs/spark-nlp-workshop/blob/master/tutorials/Certification_Trainings/Healthcare/2.Clinical_Assertion_Model.ipynb){:.button.button-orange.button-orange-trans.co.button-icon}
-[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/clinical/models/assertion_dl_large_en_2.5.0_2.4_1590022282256.zip)
-{:.button.button-orange.button-orange-trans.arr.button-icon}
+[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/clinical/models/assertion_dl_large_en_2.5.0_2.4_1590022282256.zip){:.button.button-orange.button-orange-trans.arr.button-icon}
 
 
 ## How to use
