@@ -78,5 +78,4 @@ https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/
 ## Results
 The output is a dataframe with a sentence per row and a "ner" column containing all of the entity labels in the sentence, entity character indices, and other metadata. To get only the tokens and entity labels, without the metadata, select "token.result" and "ner.result" from your output dataframe or add the "Finisher" to the end of your pipeline.
 
-![](ner_clinical.png)
 ![](https://raw.githubusercontent.com/JohnSnowLabs/spark-nlp-models/master/docs/_posts/ner_clinical.png)
