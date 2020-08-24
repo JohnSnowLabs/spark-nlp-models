@@ -21,7 +21,7 @@ Logistic regression named entity recognition model for assertion entities. Inclu
 
 ## How to use
 
-Use as part of an nlp pipeline with the following stages: DocumentAssembler, SentenceDetector, Tokenizer, WordEmbeddingsModel, PerceptronModel, NerDLModel, NerConverter, AssertionLogRegModel.
+Use as part of an nlp pipeline with the following stages: DocumentAssembler, SentenceDetector, Tokenizer, WordEmbeddingsModel, NerDLModel, NerConverter, AssertionLogRegModel.
 
 {% include programmingLanguageSelectScalaPython.html %}
 
