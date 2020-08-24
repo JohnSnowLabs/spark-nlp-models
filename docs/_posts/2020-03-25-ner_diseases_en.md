@@ -6,6 +6,7 @@ date: 2020-03-25
 tags: [ner, en, ner_diseases]
 article_header:
   type: cover
+use_language_switcher: "Python-Scala-Java"
 ---
 
 ## Description
@@ -13,10 +14,9 @@ article_header:
 Pretrained named entity recognition deep learning model for diseases. Includes 'Disease' entity. The SparkNLP deep learning model (NerDL) is inspired by a former state of the art model for NER: Chiu & Nicols, Named Entity Recognition with Bidirectional LSTM-CNN. 
 
 {:.btn-box}
-[Live Demo](){:.button.button-orange}
+[Live Demo](https://demo.johnsnowlabs.com/public/NER_EN/){:.button.button-orange}
 [Open in Colab](https://github.com/JohnSnowLabs/spark-nlp-workshop/blob/master/tutorials/Certification_Trainings/Healthcare/1.Clinical_Named_Entity_Recognition_Model.ipynb){:.button.button-orange.button-orange-trans.co.button-icon}
-[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/clinical/models/ner_diseases_en_2.4.4_2.4_1584452534235.zip)
-{:.button.button-orange.button-orange-trans.arr.button-icon}
+[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/clinical/models/ner_diseases_en_2.4.4_2.4_1584452534235.zip){:.button.button-orange.button-orange-trans.arr.button-icon}
 
 
 ## How to use
