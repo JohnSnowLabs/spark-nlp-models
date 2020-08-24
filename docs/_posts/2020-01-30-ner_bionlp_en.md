@@ -22,7 +22,7 @@ Pretrained named entity recognition deep learning model for biology and genetics
 
 ## How to use
 
-Use as part of a pipeline. Add the NerConverter to the end of the pipeline to convert entity tokens into full entity chunks.
+Use as part of an nlp pipeline with the following stages: DocumentAssembler, SentenceDetector, Tokenizer, WordEmbeddingsModel, NerDLModel. Add the NerConverter to the end of the pipeline to convert entity tokens into full entity chunks.
 
 {% include programmingLanguageSelectScalaPython.html %}
 
@@ -33,12 +33,7 @@ clinical_ner = NerDLModel.pretrained("ner_bionlp", "en", "clinical/models") \
   .setInputCols(["sentence", "token", "embeddings"]) \
   .setOutputCol("ner")
 
-nlpPipeline = Pipeline(stages=[
-    documentAssembler, 
-    sentenceDetector,
-    tokenizer,
-    word_embeddings,
-    clinical_ner])
+nlpPipeline = Pipeline(stages=[clinical_ner])
 
 empty_data = spark.createDataFrame([[""]]).toDF("text")
 
@@ -54,7 +49,7 @@ val ner = NerDLModel.pretrained("ner_bionlp", "en", "clinical/models") \
   .setInputCols(["sentence", "token", "embeddings"]) \
   .setOutputCol("ner")
 
-val pipeline = new Pipeline().setStages(Array(document, token, normalizer, wordEmbeddings, ner))
+val pipeline = new Pipeline().setStages(Array(ner))
 
 val result = pipeline.fit(Seq.empty[String].toDS.toDF("text")).transform(data)
 
@@ -77,11 +72,11 @@ val result = pipeline.fit(Seq.empty[String].toDS.toDF("text")).transform(data)
 
 {:.h2_title}
 ## Dataset used for training
-"Trained on Cancer Genetics (CG) task of the BioNLP Shared Task 2013 with 'embeddings_clinical'.
+Trained on Cancer Genetics (CG) task of the BioNLP Shared Task 2013 with 'embeddings_clinical'.
 http://2013.bionlp-st.org/tasks/cancer-genetics
 
 {:.h2_title}
 ## Results
-The output is a dataframe with a sentence per row and a "ner" column containing all of the entity labels in the sentence, entity character indices, and other metadata. To get only the tokens and entity labels select "token.result" and "ner.result" from your output dataframe or add the "Finisher" to the end of your pipeline.
+The output is a dataframe with a sentence per row and a "ner" column containing all of the entity labels in the sentence, entity character indices, and other metadata. To get only the tokens and entity labels, without the metadata, select "token.result" and "ner.result" from your output dataframe or add the "Finisher" to the end of your pipeline.
 
 ![](ner_bionlp.png) 

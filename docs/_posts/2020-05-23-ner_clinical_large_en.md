@@ -21,44 +21,18 @@ Pretrained named entity recognition deep learning model for clinical terms. Incl
 
 ## How to use
 
-Your input text data should be in a spark dataframe in a column labeled "text".
+Use as part of an nlp pipeline with the following stages: DocumentAssembler, SentenceDetector, Tokenizer, WordEmbeddingsModel, NerDLModel. Add the NerConverter to the end of the pipeline to convert entity tokens into full entity chunks.
 
 {% include programmingLanguageSelectScalaPython.html %}
 
 
 ```python
 
-documentAssembler = DocumentAssembler()\
-  .setInputCol("text")\
-  .setOutputCol("document")
-
-sentenceDetector = SentenceDetector()\
-  .setInputCols(["document"])\
-  .setOutputCol("sentence")
-
-tokenizer = Tokenizer()\
-  .setInputCols(["sentence"])\
-  .setOutputCol("token")
-
-word_embeddings = WordEmbeddingsModel.pretrained("embeddings_clinical", "en", "clinical/models")\
-  .setInputCols(["sentence", "token"])\
-  .setOutputCol("embeddings")
-
 clinical_ner = NerDLModel.pretrained("ner_clinical_large", "en", "clinical/models") \
   .setInputCols(["sentence", "token", "embeddings"]) \
   .setOutputCol("ner")
 
-ner_converter = NerConverter() \
-  .setInputCols(["sentence", "token", "ner"]) \
-  .setOutputCol("ner_chunk")
-
-nlpPipeline = Pipeline(stages=[
-    documentAssembler, 
-    sentenceDetector,
-    tokenizer,
-    word_embeddings,
-    clinical_ner,
-    ner_converter])
+nlpPipeline = Pipeline(stages=[clinical_ner])
 
 empty_data = spark.createDataFrame([[""]]).toDF("text")
 
@@ -69,7 +43,13 @@ results = model.transform(data)
 ```
 
 ```scala
+val ner = NerDLModel.pretrained("ner_clinical_large", "en", "clinical/models") \
+  .setInputCols(["sentence", "token", "embeddings"]) \
+  .setOutputCol("ner")
 
+val pipeline = new Pipeline().setStages(Array(ner))
+
+val result = pipeline.fit(Seq.empty[String].toDS.toDF("text")).transform(data)
 
 ```
 {:.model-param}
@@ -94,6 +74,6 @@ https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/
 
 {:.h2_title}
 ## Results
-The output is a dataframe with a sentence per row and a "ner" column containing all of the entity labels in the sentence, entity character indices, and other metadata. To get only the tokens and entity labels select "token.result" and "ner.result" from your output dataframe:
+The output is a dataframe with a sentence per row and a "ner" column containing all of the entity labels in the sentence, entity character indices, and other metadata. To get only the tokens and entity labels, without the metadata, select "token.result" and "ner.result" from your output dataframe:
 
 ![](ner_clinical.png) 

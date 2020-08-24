@@ -37,7 +37,9 @@ PIP: Two problems are related to each other (eg, ‘Azotemia presumed secondary 
 
 ## How to use
 
-Use as part of a pipeline. The precision of the RE model is controlled by "setMaxSyntacticDistance(4)", which sets the maximum syntactic distance between named entities to 4. A larger value will improve recall at the expense at lower precision.
+Use as part of an nlp pipeline with the following stages: DocumentAssembler, SentenceDetector, Tokenizer, WordEmbeddingsModel, PerceptronModel, NerDLModel, NerConverter, DependencyParserModel, RelationExtractionModel.
+
+The precision of the RE model is controlled by "setMaxSyntacticDistance(4)", which sets the maximum syntactic distance between named entities to 4. A larger value will improve recall at the expense at lower precision.
 
 
 {% include programmingLanguageSelectScalaPython.html %}
@@ -53,17 +55,7 @@ clinical_re_Model = RelationExtractionModel()\
     .setMaxSyntacticDistance(4)\
     .setRelationPairs(["problem-test", "problem-treatment"]) # Possible relation pairs. Default is all relations.
 
-loaded_pipeline = Pipeline(stages=[
-    documenter,
-    sentencer,
-    tokenizer, 
-    words_embedder, 
-    pos_tagger, 
-    clinical_ner_tagger,
-    ner_chunker,
-    dependency_parser,
-    clinical_re_Model
-])
+loaded_pipeline = Pipeline(stages=[clinical_re_Model])
 
 empty_data = spark.createDataFrame([[""]]).toDF("text")
 
