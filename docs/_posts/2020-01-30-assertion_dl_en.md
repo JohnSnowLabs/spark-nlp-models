@@ -21,7 +21,7 @@ Deep learning named entity recognition model for assertion entities. Includes 'h
 
 ## How to use
 
-Use as part of an nlp pipeline with the following stages: DocumentAssembler, SentenceDetector, Tokenizer, WordEmbeddingsModel, PerceptronModel, NerDLModel, NerConverter, AssertionDLModel.
+Use as part of an nlp pipeline with the following stages: DocumentAssembler, SentenceDetector, Tokenizer, WordEmbeddingsModel, NerDLModel, NerConverter, AssertionDLModel.
 
 {% include programmingLanguageSelectScalaPython.html %}
 
