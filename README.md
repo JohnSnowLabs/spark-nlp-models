@@ -325,25 +325,85 @@ pipeline = Pipeline(
 | Model    | Name                      | Build            | Lang | Offline
 |:--------------|:--------------------------|:-----------------|:------------|:------|
 | WordEmbeddingsModel (GloVe)            | `glove_100d`              | 2.4.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/glove_100d_en_2.4.0_2.4_1579690104032.zip) |
-| BertEmbeddings                    | `bert_base_uncased`       | 2.4.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/bert_base_uncased_en_2.4.0_2.4_1580579889322.zip) |
-| BertEmbeddings                    | `bert_base_cased`         | 2.4.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/bert_base_cased_en_2.4.0_2.4_1580579557778.zip) |
-| BertEmbeddings                    | `bert_large_uncased`      | 2.4.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/bert_large_uncased_en_2.4.0_2.4_1580581306683.zip) |
-| BertEmbeddings                    | `bert_large_cased`        | 2.4.0 |      `en`         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/bert_large_cased_en_2.4.0_2.4_1580580251298.zip) |
-| BertEmbeddings                    | `biobert_pubmed_base_cased`        | 2.5.0 |      `en`         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/biobert_pubmed_base_cased_en_2.5.0_2.4_1590487367971.zip) |
-| BertEmbeddings                    | `biobert_pubmed_large_cased`        | 2.5.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/biobert_pubmed_large_cased_en_2.5.0_2.4_1590487739645.zip) |
-| BertEmbeddings                    | `biobert_pmc_base_cased`        | 2.5.0 |      `en`            | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/biobert_pmc_base_cased_en_2.5.0_2.4_1590489029151.zip) |
-| BertEmbeddings                    | `biobert_pubmed_pmc_base_cased`        | 2.5.0 |      `en`     | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/biobert_pubmed_pmc_base_cased_en_2.5.0_2.4_1590489367180.zip) |
-| BertEmbeddings                    | `biobert_clinical_base_cased`        | 2.5.0 |      `en`       | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/biobert_clinical_base_cased_en_2.5.0_2.4_1590489819943.zip) |
-| BertEmbeddings                    | `biobert_discharge_base_cased`        | 2.5.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/biobert_discharge_base_cased_en_2.5.0_2.4_1590490193605.zip) |
+| BertEmbeddings                    | `bert_base_uncased`       | 2.6.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/bert_base_uncased_en_2.6.0_2.4_1598340514223.zip) |
+| BertEmbeddings                    | `bert_base_cased`         | 2.6.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/bert_base_cased_en_2.6.0_2.4_1598340336670.zip) |
+| BertEmbeddings                    | `bert_large_uncased`      | 2.6.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/bert_large_uncased_en_2.6.0_2.4_1598341287005.zip) |
+| BertEmbeddings                    | `bert_large_cased`        | 2.6.0 |      `en`         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/bert_large_cased_en_2.6.0_2.4_1598340717429.zip) |
+| BertEmbeddings                    | `biobert_pubmed_base_cased`        | 2.6.0 |      `en`         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/biobert_pubmed_base_cased_en_2.6.0_2.4_1598342186392.zip) |
+| BertEmbeddings                    | `biobert_pubmed_large_cased`        | 2.6.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/biobert_pubmed_large_cased_en_2.6.0_2.4_1598342382907.zip) |
+| BertEmbeddings                    | `biobert_pmc_base_cased`        | 2.6.0 |      `en`            | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/biobert_pmc_base_cased_en_2.6.0_2.4_1598343018425.zip) |
+| BertEmbeddings                    | `biobert_pubmed_pmc_base_cased`        | 2.6.0 |      `en`     | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/biobert_pubmed_pmc_base_cased_en_2.6.0_2.4_1598343200280.zip) |
+| BertEmbeddings                    | `biobert_clinical_base_cased`        | 2.6.0 |      `en`       | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/biobert_clinical_base_cased_en_2.6.0_2.4_1598343387227.zip) |
+| BertEmbeddings                    | `biobert_discharge_base_cased`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/biobert_discharge_base_cased_en_2.6.0_2.4_1598343571130.zip) |
+| BertEmbeddings                    | `covidbert_large_uncased`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/covidbert_large_uncased_en_2.6.0_2.4_1598343754671.zip) |
+| BertEmbeddings                    | `small_bert_L2_128`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/small_bert_L2_128_en_2.6.0_2.4_1598344320681.zip) |
+| BertEmbeddings                    | `small_bert_L4_128`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/small_bert_L4_128_en_2.6.0_2.4_1598344330158.zip) |
+| BertEmbeddings                    | `small_bert_L6_128`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/small_bert_L6_128_en_2.6.0_2.4_1598344340449.zip) |
+| BertEmbeddings                    | `small_bert_L8_128`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/small_bert_L8_128_en_2.6.0_2.4_1598344352001.zip) |
+| BertEmbeddings                    | `small_bert_L10_128`        | 2.6.0 |      `en`     | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/small_bert_L10_128_en_2.6.0_2.4_1598344364541.zip) |
+| BertEmbeddings                    | `small_bert_L12_128`        | 2.6.0 |      `en`     | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/small_bert_L12_128_en_2.6.0_2.4_1598344378220.zip) |
+| BertEmbeddings                    | `small_bert_L2_256`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/small_bert_L2_256_en_2.6.0_2.4_1598344391697.zip) |
+| BertEmbeddings                    | `small_bert_L4_256`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/small_bert_L4_256_en_2.6.0_2.4_1598344409205.zip) |
+| BertEmbeddings                    | `small_bert_L6_256`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/small_bert_L6_256_en_2.6.0_2.4_1598344429629.zip) |
+| BertEmbeddings                    | `small_bert_L8_256`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/small_bert_L8_256_en_2.6.0_2.4_1598344454830.zip) |
+| BertEmbeddings                    | `small_bert_L10_256`        | 2.6.0 |      `en`     | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/small_bert_L10_256_en_2.6.0_2.4_1598344485022.zip) |
+| BertEmbeddings                    | `small_bert_L12_256`        | 2.6.0 |      `en`     | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/small_bert_L12_256_en_2.6.0_2.4_1598344517363.zip) |
+| BertEmbeddings                    | `small_bert_L2_512`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/small_bert_L2_512_en_2.6.0_2.4_1598344551843.zip) |
+| BertEmbeddings                    | `small_bert_L4_512`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/small_bert_L4_512_en_2.6.0_2.4_1598344591466.zip) |
+| BertEmbeddings                    | `small_bert_L6_512`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/small_bert_L6_512_en_2.6.0_2.4_1598344643979.zip) |
+| BertEmbeddings                    | `small_bert_L8_512`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/small_bert_L8_512_en_2.6.0_2.4_1598344705269.zip) |
+| BertEmbeddings                    | `small_bert_L10_512`        | 2.6.0 |      `en`     | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/small_bert_L10_512_en_2.6.0_2.4_1598344780916.zip) |
+| BertEmbeddings                    | `small_bert_L12_512`        | 2.6.0 |      `en`     | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/small_bert_L12_512_en_2.6.0_2.4_1598344865471.zip) |
+| BertEmbeddings                    | `small_bert_L2_768`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/small_bert_L2_768_en_2.6.0_2.4_1598344957042.zip) |
+| BertEmbeddings                    | `small_bert_L4_768`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/small_bert_L4_768_en_2.6.0_2.4_1598345024690.zip) |
+| BertEmbeddings                    | `small_bert_L6_768`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/small_bert_L6_768_en_2.6.0_2.4_1598345125237.zip) |
+| BertEmbeddings                    | `small_bert_L8_768`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/small_bert_L8_768_en_2.6.0_2.4_1598345245072.zip) |
+| BertEmbeddings                    | `small_bert_L10_768`        | 2.6.0 |      `en`     | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/small_bert_L10_768_en_2.6.0_2.4_1598345383155.zip) |
+| BertEmbeddings                    | `small_bert_L12_768`        | 2.6.0 |      `en`     | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/small_bert_L12_768_en_2.6.0_2.4_1598345548247.zip) |
 | ElmoEmbeddings                    | `elmo`                    | 2.4.0 |      `en`         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/elmo_en_2.4.0_2.4_1580488815299.zip)
-| UniversalSentenceEncoder  (USE)   | `tfhub_use`              | 2.4.0 |       `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/tfhub_use_en_2.4.0_2.4_1587136330099.zip)
-| UniversalSentenceEncoder  (USE)   | `tfhub_use_lg`           | 2.4.0 |       `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/tfhub_use_lg_en_2.4.0_2.4_1587136993894.zip)
 | AlbertEmbeddings                  | `albert_base_uncased`    | 2.5.0 |      `en`         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/albert_base_uncased_en_2.5.0_2.4_1588073363475.zip)
 | AlbertEmbeddings                  | `albert_large_uncased`    | 2.5.0 |      `en`         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/albert_large_uncased_en_2.5.0_2.4_1588073397355.zip)
 | AlbertEmbeddings                  | `albert_xlarge_uncased`    | 2.5.0 |      `en`         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/albert_xlarge_uncased_en_2.5.0_2.4_1588073443653.zip)
 | AlbertEmbeddings                  | `albert_xxlarge_uncased`    | 2.5.0 |      `en`         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/albert_xxlarge_uncased_en_2.5.0_2.4_1588073588232.zip)
 | XlnetEmbeddings                  | `xlnet_base_cased`    | 2.5.0 |      `en`         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/xlnet_base_cased_en_2.5.0_2.4_1588074114942.zip)
 | XlnetEmbeddings                  | `xlnet_large_cased`    | 2.5.0 |      `en`         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/xlnet_large_cased_en_2.5.0_2.4_1588074397954.zip)
+| BertSentenceEmbeddings   | `sent_bert_base_uncased`       | 2.6.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_bert_base_uncased_en_2.6.0_2.4_1598346203624.zip) |
+| BertSentenceEmbeddings   | `sent_bert_base_cased`         | 2.6.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_bert_base_cased_en_2.6.0_2.4_1598346030732.zip) |
+| BertSentenceEmbeddings   | `sent_bert_large_uncased`      | 2.6.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_bert_large_uncased_en_2.6.0_2.4_1598347026632.zip) |
+| BertSentenceEmbeddings   | `sent_bert_large_cased`        | 2.6.0 |      `en`         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_bert_large_cased_en_2.6.0_2.4_1598346401930.zip) |
+| BertSentenceEmbeddings   | `sent_biobert_pubmed_base_cased`        | 2.6.0 |      `en`         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_biobert_pubmed_base_cased_en_2.6.0_2.4_1598348028762.zip) |
+| BertSentenceEmbeddings   | `sent_biobert_pubmed_large_cased`        | 2.6.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_biobert_pubmed_large_cased_en_2.6.0_2.4_1598348255724.zip) |
+| BertSentenceEmbeddings   | `sent_biobert_pmc_base_cased`        | 2.6.0 |      `en`            | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_biobert_pmc_base_cased_en_2.6.0_2.4_1598348966950.zip) |
+| BertSentenceEmbeddings   | `sent_biobert_pubmed_pmc_base_cased`        | 2.6.0 |      `en`     | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_biobert_pubmed_pmc_base_cased_en_2.6.0_2.4_1598349155555.zip) |
+| BertSentenceEmbeddings   | `sent_biobert_clinical_base_cased`        | 2.6.0 |      `en`       | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_biobert_clinical_base_cased_en_2.6.0_2.4_1598349343675.zip) |
+| BertSentenceEmbeddings   | `sent_biobert_discharge_base_cased`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_biobert_discharge_base_cased_en_2.6.0_2.4_1598349530721.zip) |
+| BertSentenceEmbeddings   | `sent_covidbert_large_uncased`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_covidbert_large_uncased_en_2.6.0_2.4_1598349719112.zip) |
+| BertSentenceEmbeddings   | `sent_small_bert_L2_128`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_small_bert_L2_128_en_2.6.0_2.4_1598350305687.zip) |
+| BertSentenceEmbeddings   | `sent_small_bert_L4_128`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_small_bert_L4_128_en_2.6.0_2.4_1598350314094.zip) |
+| BertSentenceEmbeddings   | `sent_small_bert_L6_128`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_small_bert_L6_128_en_2.6.0_2.4_1598350323564.zip) |
+| BertSentenceEmbeddings   | `sent_small_bert_L8_128`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_small_bert_L8_128_en_2.6.0_2.4_1598350334113.zip) |
+| BertSentenceEmbeddings   | `sent_small_bert_L10_128`        | 2.6.0 |      `en`     | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_small_bert_L10_128_en_2.6.0_2.4_1598350346103.zip) |
+| BertSentenceEmbeddings   | `sent_small_bert_L12_128`        | 2.6.0 |      `en`     | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_small_bert_L12_128_en_2.6.0_2.4_1598350359233.zip) |
+| BertSentenceEmbeddings   | `sent_small_bert_L2_256`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_small_bert_L2_256_en_2.6.0_2.4_1598350372298.zip) |
+| BertSentenceEmbeddings   | `sent_small_bert_L4_256`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_small_bert_L4_256_en_2.6.0_2.4_1598350389644.zip) |
+| BertSentenceEmbeddings   | `sent_small_bert_L6_256`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_small_bert_L6_256_en_2.6.0_2.4_1598350409969.zip) |
+| BertSentenceEmbeddings   | `sent_small_bert_L8_256`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_small_bert_L8_256_en_2.6.0_2.4_1598350433990.zip) |
+| BertSentenceEmbeddings   | `sent_small_bert_L10_256`        | 2.6.0 |      `en`     | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_small_bert_L10_256_en_2.6.0_2.4_1598350461634.zip) |
+| BertSentenceEmbeddings   | `sent_small_bert_L12_256`        | 2.6.0 |      `en`     | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_small_bert_L12_256_en_2.6.0_2.4_1598350492180.zip) |
+| BertSentenceEmbeddings   | `sent_small_bert_L2_512`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_small_bert_L2_512_en_2.6.0_2.4_1598350526043.zip) |
+| BertSentenceEmbeddings   | `sent_small_bert_L4_512`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_small_bert_L4_512_en_2.6.0_2.4_1598350568942.zip) |
+| BertSentenceEmbeddings   | `sent_small_bert_L6_512`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_small_bert_L6_512_en_2.6.0_2.4_1598350624049.zip) |
+| BertSentenceEmbeddings   | `sent_small_bert_L8_512`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_small_bert_L8_512_en_2.6.0_2.4_1598350686215.zip) |
+| BertSentenceEmbeddings   | `sent_small_bert_L10_512`        | 2.6.0 |      `en`     | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_small_bert_L10_512_en_2.6.0_2.4_1598350765497.zip) |
+| BertSentenceEmbeddings   | `sent_small_bert_L12_512`        | 2.6.0 |      `en`     | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_small_bert_L12_512_en_2.6.0_2.4_1598350859875.zip) |
+| BertSentenceEmbeddings   | `sent_small_bert_L2_768`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_small_bert_L2_768_en_2.6.0_2.4_1598350960245.zip) |
+| BertSentenceEmbeddings   | `sent_small_bert_L4_768`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_small_bert_L4_768_en_2.6.0_2.4_1598351030380.zip) |
+| BertSentenceEmbeddings   | `sent_small_bert_L6_768`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_small_bert_L6_768_en_2.6.0_2.4_1598351137007.zip) |
+| BertSentenceEmbeddings   | `sent_small_bert_L8_768`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_small_bert_L8_768_en_2.6.0_2.4_1598351300711.zip) |
+| BertSentenceEmbeddings   | `sent_small_bert_L10_768`        | 2.6.0 |      `en`     | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_small_bert_L10_768_en_2.6.0_2.4_1598351479319.zip) |
+| BertSentenceEmbeddings   | `sent_small_bert_L12_768`        | 2.6.0 |      `en`     | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_small_bert_L12_768_en_2.6.0_2.4_1598351662548.zip) |
+| UniversalSentenceEncoder  (USE)   | `tfhub_use`              | 2.4.0 |       `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/tfhub_use_en_2.4.0_2.4_1587136330099.zip)
+| UniversalSentenceEncoder  (USE)   | `tfhub_use_lg`           | 2.4.0 |       `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/tfhub_use_lg_en_2.4.0_2.4_1587136993894.zip)
 
 #### Classification
 
@@ -513,7 +573,7 @@ pipeline = Pipeline(
 |:-----------------------------|:-------------------|:-----------------|:------|:------------|
 | StopWordsCleaner  | `stopwords_br`            | 2.5.4 |   `br`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_br_br_2.5.4_2.4_1594742440778.zip) |
 | LemmatizerModel (Lemmatizer) | `lemma`            | 2.5.5 |   `br`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_br_2.5.5_2.4_1596054394143.zip) |
-| PerceptronModel (POS UD) | `pos_ud_keb `            | 2.5.5 |   `br`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_keb_br_2.5.5_2.4_1596053588899.zip) |
+| PerceptronModel (POS UD) | `pos_ud_keb`            | 2.5.5 |   `br`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_keb_br_2.5.5_2.4_1596053588899.zip) |
 
 ### Bulgarian - Models
 
@@ -529,7 +589,7 @@ pipeline = Pipeline(
 |:-----------------------------|:-------------------|:-----------------|:------|:------------|
 | StopWordsCleaner  | `stopwords_ca`            | 2.5.4 |   `ca`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_ca_ca_2.5.4_2.4_1594742440888.zip) |
 | LemmatizerModel (Lemmatizer) | `lemma`            | 2.5.5 |   `ca` | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_ca_2.5.5_2.4_1596054394549.zip)|
-| PerceptronModel (POS UD) | `pos_ud_ancora `            | 2.5.5 |   `ca` | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_ancora_ca_2.5.5_2.4_1596053819077.zip)|
+| PerceptronModel (POS UD) | `pos_ud_ancora`            | 2.5.5 |   `ca` | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_ancora_ca_2.5.5_2.4_1596053819077.zip)|
 
 ### Czech - Models
 
@@ -566,7 +626,7 @@ pipeline = Pipeline(
 |:-----------------------------|:-------------------|:-----------------|:------|:------------|
 | StopWordsCleaner  | `stopwords_gl`            | 2.5.4 |   `gl`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_gl_gl_2.5.4_2.4_1594742441210.zip) |
 | LemmatizerModel (Lemmatizer) | `lemma`            | 2.5.5 |   `gl` | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_gl_2.5.5_2.4_1596054395787.zip)|
-| PerceptronModel (POS UD) | `pos_ud_treegal `            | 2.5.5 |   `gl` | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_treegal_gl_2.5.5_2.4_1596053906222.zip) |
+| PerceptronModel (POS UD) | `pos_ud_treegal`            | 2.5.5 |   `gl` | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_treegal_gl_2.5.5_2.4_1596053906222.zip) |
 
 ### Greek - Models
 
@@ -594,7 +654,7 @@ pipeline = Pipeline(
 |:-----------------------------|:-------------------|:-----------------|:------|:------------|
 | StopWordsCleaner  | `stopwords_hi`            | 2.5.4 |   `hi`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_hi_hi_2.5.4_2.4_1594742439035.zip) |
 | LemmatizerModel (Lemmatizer) | `lemma`            | 2.5.5 |   `hi` | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_hi_2.5.5_2.4_1596054396201.zip)|
-| PerceptronModel (POS UD) | `pos_ud_hdtb `            | 2.5.5 |   `hi`  | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_hdtb_hi_2.5.5_2.4_1596054066666.zip)|
+| PerceptronModel (POS UD) | `pos_ud_hdtb`            | 2.5.5 |   `hi`  | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_hdtb_hi_2.5.5_2.4_1596054066666.zip)|
 
 ### Hungarian - Models
 
@@ -618,7 +678,7 @@ pipeline = Pipeline(
 |:-----------------------------|:-------------------|:-----------------|:------|:------------|
 | StopWordsCleaner  | `stopwords_ga`            | 2.5.4 |   `ga`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_ga_ga_2.5.4_2.4_1594742439377.zip) |
 | LemmatizerModel (Lemmatizer) | `lemma`            | 2.5.5 |   `ga` | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_ga_2.5.5_2.4_1596054397576.zip)|
-| PerceptronModel (POS UD) | `pos_ud_idt `            | 2.5.5 |   `ga`   | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_idt_ga_2.5.5_2.4_1596054150271.zip)|
+| PerceptronModel (POS UD) | `pos_ud_idt`            | 2.5.5 |   `ga`   | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_idt_ga_2.5.5_2.4_1596054150271.zip)|
 
 ### Japanese - Models
 
@@ -747,7 +807,9 @@ pipeline = Pipeline(
 |:-----------------------------|:-------------------|:-----------------|:------|:------|
 | WordEmbeddingsModel (GloVe)       | `glove_840B_300`   | 2.4.0 |  `xx`   | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/glove_840B_300_xx_2.4.0_2.4_1579698926752.zip)   |
 | WordEmbeddingsModel (GloVe)       | `glove_6B_300`     | 2.4.0 |   `xx`   | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/glove_6B_300_xx_2.4.0_2.4_1579698630432.zip)     |
-| BertEmbeddings (multi_cased) | `bert_multi_cased` | 2.4.0 |   `xx`   | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/bert_multi_cased_xx_2.4.0_2.4_1580582335793.zip) |
+| BertEmbeddings | `bert_multi_cased` | 2.6.0 |   `xx`   | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/bert_multi_cased_xx_2.6.0_2.4_1598341875191.zip) |
+| BertSentenceEmbeddings | `sent_bert_multi_cased` | 2.6.0 |   `xx`   | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_bert_multi_cased_xx_2.6.0_2.4_1598347692999.zip) |
+| BertSentenceEmbeddings | `labse` | 2.6.0 |   `xx`   | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/labse_xx_2.6.0_2.4_1598351883248.zip) |
 | LanguageDetectorDL    | `ld_wiki_7`        | 2.5.2 |      `xx`         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/ld_wiki_7_xx_2.5.2_2.4_1594580829482.zip) |
 | LanguageDetectorDL    | `ld_wiki_20`        | 2.5.2 |      `xx`         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/ld_wiki_20_xx_2.5.2_2.4_1594580837846.zip) |
 
