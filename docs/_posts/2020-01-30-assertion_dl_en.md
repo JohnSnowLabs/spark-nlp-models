@@ -11,7 +11,16 @@ use_language_switcher: "Python-Scala-Java"
 
 ## Description
 
-Deep learning named entity recognition model for assertion entities. Includes 'hypothetical', 'present', 'absent', 'possible', 'conditional', and 'associated_with_someone_else' entities. 
+Deep learning named entity recognition model for assertions. The SparkNLP deep learning model (NerDL) is inspired by a former state of the art model for NER: Chiu & Nicols, Named Entity Recognition with Bidirectional LSTM-CNN.
+
+## Included Assertions
+
+ - hypothetical
+ - present
+ - absent
+ - possible
+ - conditional
+ - associated_with_someone_else 
 
 {:.btn-box}
 [Live Demo](){:.button.button-orange}
@@ -76,4 +85,4 @@ https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/
 ## Results
 The output is a dataframe with a sentence per row and an "assertion" column containing all of the assertion labels in the sentence. The assertion column also contains assertion character indices, and other metadata. To get only the entity chunks and assertion labels, without the metadata, select "ner_chunk.result" and "assertion.result" from your output dataframe.
 
-![](assertiondl.png) 
+![image](\assets\images\assertiondl.png) 

@@ -11,7 +11,10 @@ use_language_switcher: "Python-Scala-Java"
 
 ## Description
 
-Models the set of clinical relations defined in the 2010 i2b2 relation challenge:
+Models the set of clinical relations defined in the 2010 i2b2 relation challenge.
+
+{:.h2_title}
+## Included Relations 
 
 TrIP: A certain treatment has improved or cured a medical problem (eg, ‘infection resolved with antibiotic course’)
 
@@ -91,4 +94,4 @@ https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/
 {:.h2_title}
 ## Results
 The output is a dataframe with a Relation column and a Confidence column.
-![](re_clinical.png) 
+![image](\assets\images\re_clinical.png)
