@@ -326,6 +326,9 @@ pipeline = Pipeline(
 | Model    | Name                      | Build            | Lang | Offline
 |:--------------|:--------------------------|:-----------------|:------------|:------|
 | WordEmbeddingsModel (GloVe)            | `glove_100d`              | 2.4.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/glove_100d_en_2.4.0_2.4_1579690104032.zip) |
+| BertEmbeddings                    | `electra_small_uncased`       | 2.6.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/electra_small_uncased_en_2.6.0_2.4_1598485458536.zip) |
+| BertEmbeddings                    | `electra_base_uncased`       | 2.6.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/electra_base_uncased_en_2.6.0_2.4_1598485481403.zip) |
+| BertEmbeddings                    | `electra_large_uncased`       | 2.6.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/electra_large_uncased_en_2.6.0_2.4_1598485645331.zip) |
 | BertEmbeddings                    | `bert_base_uncased`       | 2.6.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/bert_base_uncased_en_2.6.0_2.4_1598340514223.zip) |
 | BertEmbeddings                    | `bert_base_cased`         | 2.6.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/bert_base_cased_en_2.6.0_2.4_1598340336670.zip) |
 | BertEmbeddings                    | `bert_large_uncased`      | 2.6.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/bert_large_uncased_en_2.6.0_2.4_1598341287005.zip) |
@@ -336,7 +339,7 @@ pipeline = Pipeline(
 | BertEmbeddings                    | `biobert_pubmed_pmc_base_cased`        | 2.6.0 |      `en`     | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/biobert_pubmed_pmc_base_cased_en_2.6.0_2.4_1598343200280.zip) |
 | BertEmbeddings                    | `biobert_clinical_base_cased`        | 2.6.0 |      `en`       | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/biobert_clinical_base_cased_en_2.6.0_2.4_1598343387227.zip) |
 | BertEmbeddings                    | `biobert_discharge_base_cased`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/biobert_discharge_base_cased_en_2.6.0_2.4_1598343571130.zip) |
-| BertEmbeddings                    | `covidbert_large_uncased`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/covidbert_large_uncased_en_2.6.0_2.4_1598343754671.zip) |
+| BertEmbeddings                    | `covidbert_large_uncased`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/covidbert_large_uncased_en_2.6.0_2.4_1598484981419.zip) |
 | BertEmbeddings                    | `small_bert_L2_128`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/small_bert_L2_128_en_2.6.0_2.4_1598344320681.zip) |
 | BertEmbeddings                    | `small_bert_L4_128`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/small_bert_L4_128_en_2.6.0_2.4_1598344330158.zip) |
 | BertEmbeddings                    | `small_bert_L6_128`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/small_bert_L6_128_en_2.6.0_2.4_1598344340449.zip) |
@@ -368,6 +371,11 @@ pipeline = Pipeline(
 | AlbertEmbeddings                  | `albert_xxlarge_uncased`    | 2.5.0 |      `en`         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/albert_xxlarge_uncased_en_2.5.0_2.4_1588073588232.zip)
 | XlnetEmbeddings                  | `xlnet_base_cased`    | 2.5.0 |      `en`         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/xlnet_base_cased_en_2.5.0_2.4_1588074114942.zip)
 | XlnetEmbeddings                  | `xlnet_large_cased`    | 2.5.0 |      `en`         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/xlnet_large_cased_en_2.5.0_2.4_1588074397954.zip)
+| UniversalSentenceEncoder  (USE)   | `tfhub_use`              | 2.4.0 |       `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/tfhub_use_en_2.4.0_2.4_1587136330099.zip)
+| UniversalSentenceEncoder  (USE)   | `tfhub_use_lg`           | 2.4.0 |       `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/tfhub_use_lg_en_2.4.0_2.4_1587136993894.zip)
+| BertSentenceEmbeddings   | ``       | 2.6.0 |      `en`        | [Download]() |
+| BertSentenceEmbeddings   | ``         | 2.6.0 |      `en`        | [Download]() |
+| BertSentenceEmbeddings   | ``      | 2.6.0 |      `en`        | [Download]() |
 | BertSentenceEmbeddings   | `sent_bert_base_uncased`       | 2.6.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_bert_base_uncased_en_2.6.0_2.4_1598346203624.zip) |
 | BertSentenceEmbeddings   | `sent_bert_base_cased`         | 2.6.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_bert_base_cased_en_2.6.0_2.4_1598346030732.zip) |
 | BertSentenceEmbeddings   | `sent_bert_large_uncased`      | 2.6.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_bert_large_uncased_en_2.6.0_2.4_1598347026632.zip) |
@@ -378,7 +386,7 @@ pipeline = Pipeline(
 | BertSentenceEmbeddings   | `sent_biobert_pubmed_pmc_base_cased`        | 2.6.0 |      `en`     | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_biobert_pubmed_pmc_base_cased_en_2.6.0_2.4_1598349155555.zip) |
 | BertSentenceEmbeddings   | `sent_biobert_clinical_base_cased`        | 2.6.0 |      `en`       | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_biobert_clinical_base_cased_en_2.6.0_2.4_1598349343675.zip) |
 | BertSentenceEmbeddings   | `sent_biobert_discharge_base_cased`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_biobert_discharge_base_cased_en_2.6.0_2.4_1598349530721.zip) |
-| BertSentenceEmbeddings   | `sent_covidbert_large_uncased`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_covidbert_large_uncased_en_2.6.0_2.4_1598349719112.zip) |
+| BertSentenceEmbeddings   | `sent_covidbert_large_uncased`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_covidbert_large_uncased_en_2.6.0_2.4_1598488155401.zip) |
 | BertSentenceEmbeddings   | `sent_small_bert_L2_128`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_small_bert_L2_128_en_2.6.0_2.4_1598350305687.zip) |
 | BertSentenceEmbeddings   | `sent_small_bert_L4_128`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_small_bert_L4_128_en_2.6.0_2.4_1598350314094.zip) |
 | BertSentenceEmbeddings   | `sent_small_bert_L6_128`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_small_bert_L6_128_en_2.6.0_2.4_1598350323564.zip) |
@@ -403,8 +411,6 @@ pipeline = Pipeline(
 | BertSentenceEmbeddings   | `sent_small_bert_L8_768`        | 2.6.0 |      `en`      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_small_bert_L8_768_en_2.6.0_2.4_1598351300711.zip) |
 | BertSentenceEmbeddings   | `sent_small_bert_L10_768`        | 2.6.0 |      `en`     | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_small_bert_L10_768_en_2.6.0_2.4_1598351479319.zip) |
 | BertSentenceEmbeddings   | `sent_small_bert_L12_768`        | 2.6.0 |      `en`     | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_small_bert_L12_768_en_2.6.0_2.4_1598351662548.zip) |
-| UniversalSentenceEncoder  (USE)   | `tfhub_use`              | 2.4.0 |       `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/tfhub_use_en_2.4.0_2.4_1587136330099.zip)
-| UniversalSentenceEncoder  (USE)   | `tfhub_use_lg`           | 2.4.0 |       `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/tfhub_use_lg_en_2.4.0_2.4_1587136993894.zip)
 
 #### Classification
 
@@ -810,7 +816,7 @@ pipeline = Pipeline(
 | WordEmbeddingsModel (GloVe)       | `glove_6B_300`     | 2.4.0 |   `xx`   | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/glove_6B_300_xx_2.4.0_2.4_1579698630432.zip)     |
 | BertEmbeddings | `bert_multi_cased` | 2.6.0 |   `xx`   | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/bert_multi_cased_xx_2.6.0_2.4_1598341875191.zip) |
 | BertSentenceEmbeddings | `sent_bert_multi_cased` | 2.6.0 |   `xx`   | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_bert_multi_cased_xx_2.6.0_2.4_1598347692999.zip) |
-| BertSentenceEmbeddings | `labse` | 2.6.0 |   `xx`   | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/labse_xx_2.6.0_2.4_1598351883248.zip) |
+| BertSentenceEmbeddings | `labse` | 2.6.0 |   `xx`   | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/labse_xx_2.6.0_2.4_1598492501922.zip) |
 | LanguageDetectorDL    | `ld_wiki_7`        | 2.5.2 |      `xx`         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/ld_wiki_7_xx_2.5.2_2.4_1594580829482.zip) |
 | LanguageDetectorDL    | `ld_wiki_20`        | 2.5.2 |      `xx`         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/ld_wiki_20_xx_2.5.2_2.4_1594580837846.zip) |
 
