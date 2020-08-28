@@ -830,6 +830,16 @@ It is required to specify 3rd argument to `pretrained(name, lang, location)` fun
 | `WordEmbeddingsModel` | `embeddings_scielowiki_300d` | `2.5.0` |                                                   | [:clipboard:](https://zenodo.org/record/3744326#.XtViinVKh_U 'Trained on Scielo Articles + Clinical Wikipedia Articles') | [:floppy_disk:](https://s3.console.aws.amazon.com/s3/object/auxdata.johnsnowlabs.com/clinical/models/embeddings_scielowiki_300d_es_2.5.0_2.4_1590467643391.zip 'Download') |
 | `WordEmbeddingsModel` | `embeddings_scielowiki_50d`  | `2.5.0` |                                                   | [:clipboard:](https://zenodo.org/record/3744326#.XtViinVKh_U 'Trained on Scielo Articles + Clinical Wikipedia Articles') | [:floppy_disk:](https://s3.console.aws.amazon.com/s3/object/auxdata.johnsnowlabs.com/clinical/models/embeddings_scielowiki_50d_es_2.5.0_2.4_1590467602230.zip 'Download')  |
 
+### Pretrained Healthcare Pipelines
+
+`PretrainedPipeline({Name}, 'en', 'clinical/models')`
+
+| Pipeline                 | Name                   | Build  | lang | Description | Offline   |
+|:-------------------------|:-----------------------|:-------|:-------|:----------|:----------|
+| Explain Clinical Document (type-1)    | `explain_clinical_doc_carp`  | 2.5.5 |   `nl` |           | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/clinical/models/explain_clinical_doc_carp_en_2.5.5_2.4_1597841630062.zip)  |
+| Explain Clinical Document (type-2)    | `explain_clinical_doc_era`  | 2.5.5 |   `nl` |           | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/clinical/models/explain_clinical_doc_era_en_2.5.5_2.4_1597845753750.zip)  |
+| Explain Clinical Document (type-3)     | `recognize_entities_posology`  | 2.5.5 |   `nl` |           | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/clinical/models/recognize_entities_posology_en_2.5.5_2.4_1597846280279.zip)  |
+
 ## Contact
 
 nlp@johnsnowlabs.com
