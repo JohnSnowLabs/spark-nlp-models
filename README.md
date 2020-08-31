@@ -18,6 +18,7 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
 
 * [Pretrained Pipelines](#pretrained-pipelines)
   * [Public Pipelines](#public-pipelines)
+    * [Danish](#danish---pipelines)
     * [Dutch](#dutch---pipelines)
     * [English](#english---pipelines)
     * [French](#french---pipelines)
@@ -28,10 +29,12 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
     * [Portuguese](#portuguese---pipelines)
     * [Russian](#russian---pipelines)
     * [Spanish](#spanish---pipelines)
+    * [Swedish](#swedish---pipelines)
     * [Multi-language](#multi-language---pipelines)
 
 * [Pretrained Models](#pretrained-models)
   * [Public Models](#public-models)
+    * [Danish](#danish---models)
     * [Dutch](#dutch---models)
     * [English](#english---models)
     * [French](#french---models)
@@ -42,6 +45,7 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
     * [Portuguese](#portuguese---models)
     * [Russian](#russian---models)
     * [Spanish](#spanish---models)
+    * [Swedish](#swedish---models)
     * [Afrikaans](#afrikaans---models)
     * [Arabic](#arabic---models)
     * [Armenian](#armenian---models)
@@ -72,7 +76,6 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
     * [Somali](#somali---models)
     * [Southern Sotho](#southern-sotho---models)
     * [Swahili](#swahili---models)
-    * [Swedish](#swedish---models)
     * [Tswana](#tswana---models)
     * [Turkish](#turkish---models)
     * [Ukrainian](#ukrainian---models)
@@ -120,6 +123,17 @@ Output: ['Mona Lisa', 'Leonardo', 'Louvre', 'Paris']
 ```
 
 ## Public Pipelines
+
+### Danish - Pipelines
+
+| Pipeline                 | Name                   | Build  | lang | Description | Offline   |
+|:-------------------------|:-----------------------|:-------|:-------|:----------|:----------|
+| Explain Document Small    | `explain_document_sm`  | 2.6.0 |   `da` |           | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_sm_da_2.6.0_2.4_1598817450878.zip)  |
+| Explain Document Medium   | `explain_document_md`  | 2.6.0 |   `da` |           | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_md_da_2.6.0_2.4_1598817214832.zip)  |
+| Explain Document Large    | `explain_document_lg`  | 2.6.0 |   `da` |           | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_lg_da_2.6.0_2.4_1598816023826.zip)  |
+| Entity Recognizer Small   | `entity_recognizer_sm`  | 2.6.0 |   `da` |          | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_sm_da_2.6.0_2.4_1598818908295.zip)  |
+| Entity Recognizer Medium  | `entity_recognizer_md`  | 2.6.0 |   `da` |          | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_md_da_2.6.0_2.4_1598818680084.zip)  |
+| Entity Recognizer Large   | `entity_recognizer_lg`  | 2.6.0 |   `da` |          | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_lg_da_2.6.0_2.4_1598817534570.zip)  |  
 
 ### Dutch - Pipelines
 
@@ -238,6 +252,17 @@ Output: ['Mona Lisa', 'Leonardo', 'Louvre', 'Paris']
 | Entity Recognizer Medium  | `entity_recognizer_md`  | 2.4.0 |   `es` |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_md_es_2.4.0_2.4_1581978260094.zip)  |
 | Entity Recognizer Large   | `entity_recognizer_lg`  | 2.4.0 |   `es` |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_lg_es_2.4.0_2.4_1581977172660.zip)  |
 
+### Swedish - Pipelines
+
+| Pipeline                 | Name                   | Build  | lang | Description | Offline   |
+|:-------------------------|:-----------------------|:-------|:-------|:----------|:----------|
+| Explain Document Small    | `explain_document_sm`  | 2.6.0 |   `sv` |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_sm_sv_2.6.0_2.4_1598814474447.zip)  |
+| Explain Document Medium   | `explain_document_md`  | 2.6.0 |   `sv` |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_md_sv_2.6.0_2.4_1598814189476.zip)  |
+| Explain Document Large    | `explain_document_lg`  | 2.6.0 |   `sv` |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_lg_sv_2.6.0_2.4_1598812951336.zip)  |
+| Entity Recognizer Small   | `entity_recognizer_sm`  | 2.6.0 |   `sv` |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_sm_sv_2.6.0_2.4_1598815928569.zip)  |
+| Entity Recognizer Medium  | `entity_recognizer_md`  | 2.6.0 |   `sv` |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_md_sv_2.6.0_2.4_1598815702563.zip)  |
+| Entity Recognizer Large   | `entity_recognizer_lg`  | 2.6.0 |   `sv` |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_lg_sv_2.6.0_2.4_1598814573031.zip)  |  
+
 ### Multi-language - Pipelines
 
 | Pipeline                 | Name                   | Build  | lang | Description | Offline   |
@@ -289,6 +314,16 @@ pipeline = Pipeline(
     ])
 
 ```
+
+### Danish - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| LemmatizerModel (Lemmatizer) | `lemma`            | 2.5.5 |   `da`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_da_2.5.5_2.4_1596054395311.zip) |
+| PerceptronModel (POS UD)     | `pos_ud_ddt`       | 2.5.5 |   `da`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_ddt_da_2.5.5_2.4_1596053892919.zip) |
+| NerDLModel (glove_100d)    | `dane_ner_6B_100`     | 2.6.0 |   `da`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/dane_ner_6B_100_da_2.6.0_2.4_1598810267725.zip) |
+| NerDLModel (glove_6B_300)  | `dane_ner_6B_300`     | 2.6.0 |   `da`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/dane_ner_6B_300_da_2.6.0_2.4_1598810268069.zip) |
+| NerDLModel (glove_840B_300)| `dane_ner_840B_100`     | 2.6.0 |   `da`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/dane_ner_840B_300_da_2.6.0_2.4_1598810268070.zip) |
 
 ### Dutch - Models
 
@@ -373,9 +408,9 @@ pipeline = Pipeline(
 | XlnetEmbeddings                  | `xlnet_large_cased`    | 2.5.0 |      `en`         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/xlnet_large_cased_en_2.5.0_2.4_1588074397954.zip)
 | UniversalSentenceEncoder  (USE)   | `tfhub_use`              | 2.4.0 |       `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/tfhub_use_en_2.4.0_2.4_1587136330099.zip)
 | UniversalSentenceEncoder  (USE)   | `tfhub_use_lg`           | 2.4.0 |       `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/tfhub_use_lg_en_2.4.0_2.4_1587136993894.zip)
-| BertSentenceEmbeddings   | ``       | 2.6.0 |      `en`        | [Download]() |
-| BertSentenceEmbeddings   | ``         | 2.6.0 |      `en`        | [Download]() |
-| BertSentenceEmbeddings   | ``      | 2.6.0 |      `en`        | [Download]() |
+| BertSentenceEmbeddings   | `sent_electra_small_uncased`       | 2.6.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_electra_small_uncased_en_2.6.0_2.4_1598489761661.zip) |
+| BertSentenceEmbeddings   | `sent_electra_base_uncased`         | 2.6.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_electra_base_uncased_en_2.6.0_2.4_1598489784655.zip) |
+| BertSentenceEmbeddings   | `sent_electra_large_uncased`      | 2.6.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_electra_large_uncased_en_2.6.0_2.4_1598489955147.zip) |
 | BertSentenceEmbeddings   | `sent_bert_base_uncased`       | 2.6.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_bert_base_uncased_en_2.6.0_2.4_1598346203624.zip) |
 | BertSentenceEmbeddings   | `sent_bert_base_cased`         | 2.6.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_bert_base_cased_en_2.6.0_2.4_1598346030732.zip) |
 | BertSentenceEmbeddings   | `sent_bert_large_uncased`      | 2.6.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_bert_large_uncased_en_2.6.0_2.4_1598347026632.zip) |
@@ -540,6 +575,17 @@ pipeline = Pipeline(
 | **POS**   | Trained by **PerceptronApproach** annotator on the [Universal Dependencies](https://universaldependencies.org/treebanks/es_gsd/index.html)                                                             |
 | **NER**   | Trained by **NerDLApproach** annotator with **Char CNNs - BiLSTM - CRF** and **GloVe Embeddings** on the **WikiNER** corpus and supports the identification of `PER`, `LOC`, `ORG` and `MISC` entities |
 
+### Swedish - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| LemmatizerModel (Lemmatizer) | `lemma`            | 2.5.0 |   `sv`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_sv_2.5.0_2.4_1588666548498.zip) |
+| PerceptronModel (POS UD)     | `pos_ud_tal`       | 2.5.0 |   `sv`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_tal_sv_2.5.0_2.4_1588622711284.zip) |
+| StopWordsCleaner  | `stopwords_sv`            | 2.5.4 |   `sv`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_sv_sv_2.5.4_2.4_1594742438273.zip) |
+| NerDLModel (glove_100d)    | `swedish_ner_6B_100`     | 2.6.0 |   `sv`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/swedish_ner_6B_100_sv_2.6.0_2.4_1598810268071.zip) |
+| NerDLModel (glove_6B_300)  | `swedish_ner_6B_300`     | 2.6.0 |   `sv`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/swedish_ner_6B_300_sv_2.6.0_2.4_1598810268071.zip) |
+| NerDLModel (glove_840B_300)| `swedish_ner_840B_300`     | 2.6.0 |   `sv`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/swedish_ner_840B_300_sv_2.6.0_2.4_1598810268072.zip) |
+
 ### Afrikaans - Models
 
 | Model                        | Name               | Build            | Lang |  Offline|
@@ -606,13 +652,6 @@ pipeline = Pipeline(
 | PerceptronModel (POS UD)     | `pos_ud_pdt`       | 2.5.0 |   `cs`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_pdt_cs_2.5.0_2.4_1588622155494.zip) |
 | StopWordsCleaner  | `stopwords_cs`            | 2.5.4 |   `cs`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_cs_cs_2.5.4_2.4_1594742440427.zip) |
 
-### Danish - Models
-
-| Model                        | Name               | Build            | Lang |  Offline|
-|:-----------------------------|:-------------------|:-----------------|:------|:------------|
-| LemmatizerModel (Lemmatizer) | `lemma`            | 2.5.5 |   `da`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_da_2.5.5_2.4_1596054395311.zip) |
-| PerceptronModel (POS UD)     | `pos_ud_ddt`       | 2.5.5 |   `da`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_ddt_da_2.5.5_2.4_1596053892919.zip) |
-
 ### Esperanto - Models
 
 | Model                        | Name               | Build            | Lang |  Offline|
@@ -626,6 +665,10 @@ pipeline = Pipeline(
 | LemmatizerModel (Lemmatizer) | `lemma`            | 2.5.0 |   `fi`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_fi_2.5.0_2.4_1588671290521.zip) |
 | PerceptronModel (POS UD)     | `pos_ud_tdt`       | 2.5.0 |   `fi`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_tdt_fi_2.5.0_2.4_1588622348985.zip) |
 | StopWordsCleaner  | `stopwords_fi`            | 2.5.4 |   `fi`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_fi_fi_2.5.4_2.4_1594742441054.zip) |
+| BertEmbeddings   | ``       | 2.6.0 |      `fi`        | [Download]() |
+| BertEmbeddings   | ``       | 2.6.0 |      `fi`        | [Download]() |
+| BertSentenceEmbeddings   | ``       | 2.6.0 |      `fi`        | [Download]() |
+| BertSentenceEmbeddings   | ``       | 2.6.0 |      `fi`        | [Download]() |
 
 ### Galician - Models
 
@@ -764,14 +807,6 @@ pipeline = Pipeline(
 | Model                        | Name               | Build            | Lang |  Offline|
 |:-----------------------------|:-------------------|:-----------------|:------|:------------|
 | StopWordsCleaner  | `stopwords_sw`            | 2.5.4 |   `sw`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_sw_sw_2.5.4_2.4_1594742438383.zip) |
-
-### Swedish - Models
-
-| Model                        | Name               | Build            | Lang |  Offline|
-|:-----------------------------|:-------------------|:-----------------|:------|:------------|
-| LemmatizerModel (Lemmatizer) | `lemma`            | 2.5.0 |   `sv`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_sv_2.5.0_2.4_1588666548498.zip) |
-| PerceptronModel (POS UD)     | `pos_ud_tal`       | 2.5.0 |   `sv`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_tal_sv_2.5.0_2.4_1588622711284.zip) |
-| StopWordsCleaner  | `stopwords_sv`            | 2.5.4 |   `sv`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_sv_sv_2.5.4_2.4_1594742438273.zip) |
 
 ### Tswana - Models
 
