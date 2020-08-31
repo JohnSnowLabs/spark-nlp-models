@@ -54,4 +54,4 @@ annotations.keys()
 {:.h2_title}
 ## Results
 
-THe output is a dictionary with the following keys: 'sentences', 'clinical_ner_tags', 'document', 'ner_chunks', 'clinical_ner_chunks', 'ner_tags', 'assertion', 'clinical_relations', 'tokens', 'embeddings', 'pos_tags', 'dependencies'.
+The output is a dictionary with the following keys: 'sentences', 'clinical_ner_tags', 'document', 'ner_chunks', 'clinical_ner_chunks', 'ner_tags', 'assertion', 'clinical_relations', 'tokens', 'embeddings', 'pos_tags', 'dependencies'.

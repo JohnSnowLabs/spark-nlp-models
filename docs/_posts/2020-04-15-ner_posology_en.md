@@ -11,7 +11,18 @@ use_language_switcher: "Python-Scala-Java"
 
 ## Description
 
-Pretrained named entity recognition deep learning model for posology. Includes Dosage, Drug, Duration, Form, Frequency, Route, and Strength entities. The SparkNLP deep learning model (NerDL) is inspired by a former state of the art model for NER: Chiu & Nicols, Named Entity Recognition with Bidirectional LSTM-CNN. 
+Pretrained named entity recognition deep learning model for posology. The SparkNLP deep learning model (NerDL) is inspired by a former state of the art model for NER: Chiu & Nicols, Named Entity Recognition with Bidirectional LSTM-CNN. 
+
+{:.h2_title}
+## Included Entities 
+
+ - Dosage
+ - Drug
+ - Duration
+ - Form
+ - Frequency
+ - Route
+ - Strength
 
 {:.btn-box}
 [Live Demo](){:.button.button-orange}
@@ -53,8 +64,7 @@ val pipeline = new Pipeline().setStages(Array(ner))
 val result = pipeline.fit(Seq.empty[String].toDS.toDF("text")).transform(data)
 
 
-```
-```
+``````
 {:.model-param}
 ## Model Parameters
 
@@ -79,4 +89,4 @@ https://open.fda.gov/
 ## Results
 The output is a dataframe with a sentence per row and a "ner" column containing all of the entity labels in the sentence, entity character indices, and other metadata. To get only the tokens and entity labels, without the metadata, select "token.result" and "ner.result" from your output dataframe or add the "Finisher" to the end of your pipeline.
 
-![](ner_posology.png) 
+![image](\assets\images\ner_posology.png)

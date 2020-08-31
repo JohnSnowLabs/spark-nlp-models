@@ -11,7 +11,13 @@ use_language_switcher: "Python-Scala-Java"
 
 ## Description
 
-Pretrained named entity recognition deep learning model for clinical terms. Includes Problem, Test and Treatment entities. The SparkNLP deep learning model (NerDL) is inspired by a former state of the art model for NER: Chiu & Nicols, Named Entity Recognition with Bidirectional LSTM-CNN.
+Pretrained named entity recognition deep learning model for clinical terms. The SparkNLP deep learning model (NerDL) is inspired by a former state of the art model for NER: Chiu & Nicols, Named Entity Recognition with Bidirectional LSTM-CNN.
+
+{:.h2_title}
+## Included Entities 
+ - Problem
+ - Test
+ - Treatment
 
 {:.btn-box}
 [Live Demo](){:.button.button-orange}
@@ -78,4 +84,4 @@ https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/
 ## Results
 The output is a dataframe with a sentence per row and a "ner" column containing all of the entity labels in the sentence, entity character indices, and other metadata. To get only the tokens and entity labels, without the metadata, select "token.result" and "ner.result" from your output dataframe or add the "Finisher" to the end of your pipeline.
 
-![](https://raw.githubusercontent.com/JohnSnowLabs/spark-nlp-models/master/docs/_posts/ner_clinical.png)
+![image](\assets\images\ner_clinical.png)

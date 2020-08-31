@@ -11,7 +11,22 @@ use_language_switcher: "Python-Scala-Java"
 
 ## Description
 
-Pretrained named entity recognition deep learning model for clinical events. Includes Date, Time, Problem, Test, Treatment, Occurence, Clinical_Dept, Evidential, Duration, Frequency, Admission, and Discharge entities. The SparkNLP deep learning model (NerDL) is inspired by a former state of the art model for NER: Chiu & Nicols, Named Entity Recognition with Bidirectional LSTM-CNN. 
+Pretrained named entity recognition deep learning model for clinical events. The SparkNLP deep learning model (NerDL) is inspired by a former state of the art model for NER: Chiu & Nicols, Named Entity Recognition with Bidirectional LSTM-CNN. 
+
+{:.h2_title}
+## Included Entities 
+ - Date
+ - Time
+ - Problem
+ - Test
+ - Treatment
+ - Occurence
+ - Clinical_Dept
+ - Evidential
+ - Duration
+ - Frequency
+ - Admission
+ - Discharge
 
 {:.btn-box}
 [Live Demo](){:.button.button-orange}
@@ -77,4 +92,4 @@ https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/
 ## Results
 The output is a dataframe with a sentence per row and a "ner" column containing all of the entity labels in the sentence, entity character indices, and other metadata. To get only the tokens and entity labels, without the metadata, select "token.result" and "ner.result" from your output dataframe or add the "Finisher" to the end of your pipeline.
 
-![](ner_clinical.png) 
+![image](\assets\images\ner_clinical.png) 
