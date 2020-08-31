@@ -665,10 +665,10 @@ pipeline = Pipeline(
 | LemmatizerModel (Lemmatizer) | `lemma`            | 2.5.0 |   `fi`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_fi_2.5.0_2.4_1588671290521.zip) |
 | PerceptronModel (POS UD)     | `pos_ud_tdt`       | 2.5.0 |   `fi`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_tdt_fi_2.5.0_2.4_1588622348985.zip) |
 | StopWordsCleaner  | `stopwords_fi`            | 2.5.4 |   `fi`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_fi_fi_2.5.4_2.4_1594742441054.zip) |
-| BertEmbeddings   | ``       | 2.6.0 |      `fi`        | [Download]() |
-| BertEmbeddings   | ``       | 2.6.0 |      `fi`        | [Download]() |
-| BertSentenceEmbeddings   | ``       | 2.6.0 |      `fi`        | [Download]() |
-| BertSentenceEmbeddings   | ``       | 2.6.0 |      `fi`        | [Download]() |
+| BertEmbeddings   | `bert_finnish_cased`       | 2.6.0 |      `fi`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/bert_finnish_cased_fi_2.6.0_2.4_1598896927571.zip) |
+| BertEmbeddings   | `bert_finnish_uncased`       | 2.6.0 |      `fi`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/bert_finnish_uncased_fi_2.6.0_2.4_1598897239983.zip) |
+| BertSentenceEmbeddings   | `sent_bert_finnish_cased`       | 2.6.0 |      `fi`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_bert_finnish_cased_fi_2.6.0_2.4_1598897560014.zip) |
+| BertSentenceEmbeddings   | `sent_bert_finnish_uncased`       | 2.6.0 |      `fi`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_bert_finnish_uncased_fi_2.6.0_2.4_1598897885576.zip) |
 
 ### Galician - Models
 
