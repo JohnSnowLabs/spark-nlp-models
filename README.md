@@ -21,6 +21,7 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
     * [Danish](#danish---pipelines)
     * [Dutch](#dutch---pipelines)
     * [English](#english---pipelines)
+    * [Finnish](#finnish---pipelines)
     * [French](#french---pipelines)
     * [German](#german---pipelines)
     * [Italian](#italian---pipelines)
@@ -37,6 +38,7 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
     * [Danish](#danish---models)
     * [Dutch](#dutch---models)
     * [English](#english---models)
+    * [Finnish](#finnish---models)
     * [French](#french---models)
     * [German](#german---models)
     * [Italian](#italian---models)
@@ -56,7 +58,6 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
     * [Catalan](#catalan---models)
     * [Czech](#czech---models)
     * [Esperanto](#esperanto---models)
-    * [Finnish](#finnish---models)
     * [Galician](#galician---models)
     * [Greek](#greek---models)
     * [Hausa](#hausa---models)
@@ -169,6 +170,17 @@ Output: ['Mona Lisa', 'Leonardo', 'Louvre', 'Paris']
 | Analyze Sentiment DL         | `analyze_sentimentdl_use_imdb`        | 2.5.0 |   `en`    |      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/analyze_sentimentdl_use_imdb_en_2.5.0_2.4_1591608106144.zip)|
 | Analyze Sentiment DL         | `analyze_sentimentdl_use_twitter`     | 2.5.0 |   `en`    |      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/analyze_sentimentdl_use_twitter_en_2.5.0_2.4_1589108892106.zip)|
 | Dependency Parse             | `dependency_parse`                    | 2.4.0 |   `en`    |      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/dependency_parse_en_2.4.0_2.4_1580255669655.zip)|
+
+### Finnish - Pipelines
+
+| Pipeline                 | Name                   | Build  | lang | Description | Offline   |
+|:-------------------------|:-----------------------|:-------|:-------|:----------|:----------|
+| Explain Document Small    | `explain_document_sm`  | 2.6.0 |   `fi` |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_sm_fi_2.6.0_2.4_1598969916062.zip)  |
+| Explain Document Medium   | `explain_document_md`  | 2.6.0 |   `fi` |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_md_fi_2.6.0_2.4_1598969670205.zip)  |
+| Explain Document Large    | `explain_document_lg`  | 2.6.0 |   `fi` |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_lg_fi_2.6.0_2.4_1598968459075.zip)  |
+| Entity Recognizer Small   | `entity_recognizer_sm`  | 2.6.0 |   `fi` |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_sm_fi_2.6.0_2.4_1598971407192.zip)  |
+| Entity Recognizer Medium  | `entity_recognizer_md`  | 2.6.0 |   `fi` |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_md_fi_2.6.0_2.4_1598971186842.zip)  |
+| Entity Recognizer Large   | `entity_recognizer_lg`  | 2.6.0 |   `fi` |             | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_lg_fi_2.6.0_2.4_1598970014560.zip)  |
 
 ### French - Pipelines
 
@@ -462,6 +474,21 @@ pipeline = Pipeline(
 | SentimentDLModel (with tfhub_use)           | `sentimentdl_use_twitter`       | 2.5.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sentimentdl_use_twitter_en_2.5.0_2.4_1589108892106.zip) |
 | SentimentDLModel (with glove_100d)          | `sentimentdl_glove_imdb`         | 2.5.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sentimentdl_glove_imdb_en_2.5.0_2.4_1588682682507.zip) |
 
+### Finnish - Models
+
+| Model                        | Name               | Build            | Lang |  Offline|
+|:-----------------------------|:-------------------|:-----------------|:------|:------------|
+| LemmatizerModel (Lemmatizer) | `lemma`            | 2.5.0 |   `fi`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_fi_2.5.0_2.4_1588671290521.zip) |
+| PerceptronModel (POS UD)     | `pos_ud_tdt`       | 2.5.0 |   `fi`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_tdt_fi_2.5.0_2.4_1588622348985.zip) |
+| StopWordsCleaner  | `stopwords_fi`            | 2.5.4 |   `fi`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_fi_fi_2.5.4_2.4_1594742441054.zip) |
+| NerDLModel (glove_100d)  | `wikiner_6B_100`       | 2.6.0 |   `fi`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/finnish_ner_6B_100_fi_2.6.0_2.4_1598965807300.zip) |
+| NerDLModel (glove_6B_300)  | `wikiner_6B_300`     | 2.6.0 |   `fi`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/finnish_ner_6B_300_fi_2.6.0_2.4_1598965807718.zip) |
+| NerDLModel (glove_840B_300)  | `wikiner_840B_300` | 2.6.0 |   `fi`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/finnish_ner_840B_300_fi_2.6.0_2.4_1598965807720.zip)|
+| BertEmbeddings   | `bert_finnish_cased`       | 2.6.0 |      `fi`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/bert_finnish_cased_fi_2.6.0_2.4_1598896927571.zip) |
+| BertEmbeddings   | `bert_finnish_uncased`       | 2.6.0 |      `fi`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/bert_finnish_uncased_fi_2.6.0_2.4_1598897239983.zip) |
+| BertSentenceEmbeddings   | `sent_bert_finnish_cased`       | 2.6.0 |      `fi`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_bert_finnish_cased_fi_2.6.0_2.4_1598897560014.zip) |
+| BertSentenceEmbeddings   | `sent_bert_finnish_uncased`       | 2.6.0 |      `fi`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_bert_finnish_uncased_fi_2.6.0_2.4_1598897885576.zip) |
+
 ### French - Models
 
 | Model                        | Name               | Build | Lang |  Offline|
@@ -657,18 +684,6 @@ pipeline = Pipeline(
 | Model                        | Name               | Build            | Lang |  Offline|
 |:-----------------------------|:-------------------|:-----------------|:------|:------------|
 | StopWordsCleaner  | `stopwords_eo`            | 2.5.4 |   `eo`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_eo_eo_2.5.4_2.4_1594742438724.zip) |
-
-### Finnish - Models
-
-| Model                        | Name               | Build            | Lang |  Offline|
-|:-----------------------------|:-------------------|:-----------------|:------|:------------|
-| LemmatizerModel (Lemmatizer) | `lemma`            | 2.5.0 |   `fi`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_fi_2.5.0_2.4_1588671290521.zip) |
-| PerceptronModel (POS UD)     | `pos_ud_tdt`       | 2.5.0 |   `fi`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_tdt_fi_2.5.0_2.4_1588622348985.zip) |
-| StopWordsCleaner  | `stopwords_fi`            | 2.5.4 |   `fi`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_fi_fi_2.5.4_2.4_1594742441054.zip) |
-| BertEmbeddings   | `bert_finnish_cased`       | 2.6.0 |      `fi`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/bert_finnish_cased_fi_2.6.0_2.4_1598896927571.zip) |
-| BertEmbeddings   | `bert_finnish_uncased`       | 2.6.0 |      `fi`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/bert_finnish_uncased_fi_2.6.0_2.4_1598897239983.zip) |
-| BertSentenceEmbeddings   | `sent_bert_finnish_cased`       | 2.6.0 |      `fi`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_bert_finnish_cased_fi_2.6.0_2.4_1598897560014.zip) |
-| BertSentenceEmbeddings   | `sent_bert_finnish_uncased`       | 2.6.0 |      `fi`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_bert_finnish_uncased_fi_2.6.0_2.4_1598897885576.zip) |
 
 ### Galician - Models
 
