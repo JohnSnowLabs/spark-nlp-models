@@ -10,3 +10,5 @@ jobs:
     - uses: actions/checkout@v1
     - name: Release to S3
       run: bash scripts/pipeline/release.sh ${{secrets.AWS_Bucket_Name}} "public/models/public_dummy_metadata.json" "clinical/models/clinical_dummy_metadata.json" ${{secrets.AWS_Access_Key}} ${{secrets.AWS_Access_Secret}} "public/public_dummy_metadata.json" "clinical/clinical_dummy_metadata.json"
+      if: "contains(github.event.head_commit.message, '[meta]')"
+
