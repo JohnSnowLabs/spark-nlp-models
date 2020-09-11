@@ -569,6 +569,8 @@ pipeline = Pipeline(
 | NerDLModel (glove_6B_300)  | `wikiner_6B_300`     | 2.5.0 |   `pt`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_6B_300_pt_2.5.0_2.4_1588495233641.zip) |
 | NerDLModel (glove_840B_300)  | `wikiner_840B_300` | 2.5.0 |   `pt`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_840B_300_pt_2.5.0_2.4_1588495233642.zip)|
 | StopWordsCleaner  | `stopwords_pt`            | 2.5.4 |   `pt`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_pt_pt_2.5.4_2.4_1594742441703.zip) |
+| BertEmbeddings   | `bert_portuguese_base_cased`   | 2.6.0 |      `pt`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/bert_portuguese_base_cased_pt_2.6.0_2.4_1599740263165.zip) |
+| BertEmbeddings   | `bert_portuguese_large_cased`  | 2.6.0 |      `pt`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/bert_portuguese_large_cased_pt_2.6.0_2.4_1599740263521.zip) |
 
 ### Russian - Models
 
