@@ -154,7 +154,7 @@ Output: ['Mona Lisa', 'Leonardo', 'Louvre', 'Paris']
 | Explain Document ML          | `explain_document_ml`                 | 2.4.0 |   `en`    |      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_ml_en_2.4.0_2.4_1580252705962.zip) |
 | Explain Document DL          | `explain_document_dl`                 | 2.4.3 |   `en`    |      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/explain_document_dl_en_2.4.3_2.4_1584626657780.zip) |
 | Recognize Entities DL        | `recognize_entities_dl`               | 2.4.3 |   `en`    |      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/recognize_entities_dl_en_2.4.3_2.4_1584626752821.zip) |
-| Recognize Entities DL        | `recognize_entities_bert`             | 2.4.3 |   `en`    |      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/recognize_entities_bert_en_2.4.3_2.4_1584626853422.zip) |
+| Recognize Entities DL        | `recognize_entities_bert`             | 2.6.0 |   `en`    |      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/recognize_entities_bert_en_2.6.0_2.4_1599554769343.zip) |
 | OntoNotes Entities Small     | `onto_recognize_entities_sm`          | 2.4.0 |   `en`    |      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/onto_recognize_entities_sm_en_2.4.0_2.4_1579730599257.zip) |
 | OntoNotes Entities Large     | `onto_recognize_entities_lg`          | 2.4.0 |   `en`    |      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/onto_recognize_entities_lg_en_2.4.0_2.4_1579729320751.zip) |
 | Match Datetime               | `match_datetime`                      | 2.4.0 |   `en`    |      | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/match_datetime_en_2.4.0_2.4_1580246861565.zip) |
@@ -356,7 +356,7 @@ pipeline = Pipeline(
 | PerceptronModel (POS UD)                    | `pos_ud_ewt`           | 2.2.2 |       `en`       | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_ewt_en_2.2.2_2.4_1570464827452.zip) |
 | NerCrfModel (NER with GloVe)             | `ner_crf`                 | 2.4.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/ner_crf_en_2.4.0_2.4_1580237286004.zip) |
 | NerDLModel (NER with GloVe)              | `ner_dl`                  | 2.4.3 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/ner_dl_en_2.4.3_2.4_1584624950746.zip) |
-| NerDLModel (NER with BERT)              | `ner_dl_bert`              | 2.4.3 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/ner_dl_bert_en_2.4.3_2.4_1584624951079.zip) |
+| NerDLModel (NER with BERT)              | `ner_dl_bert`              | 2.6.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/ner_dl_bert_en_2.6.0_2.4_1599550979101.zip) |
 | NerDLModel (OntoNotes with GloVe 100d)   | `onto_100`                | 2.4.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/onto_100_en_2.4.0_2.4_1579729071672.zip) |
 | NerDLModel (OntoNotes with GloVe 300d)   | `onto_300`                | 2.4.0 |      `en`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/onto_300_en_2.4.0_2.4_1579729071854.zip) |
 | DeepSentenceDetector                     | `ner_dl_sentence`         | 2.4.0 |      `en`         | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/ner_dl_sentence_en_2.4.0_2.4_1580252313303.zip)|
@@ -569,6 +569,8 @@ pipeline = Pipeline(
 | NerDLModel (glove_6B_300)  | `wikiner_6B_300`     | 2.5.0 |   `pt`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_6B_300_pt_2.5.0_2.4_1588495233641.zip) |
 | NerDLModel (glove_840B_300)  | `wikiner_840B_300` | 2.5.0 |   `pt`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/wikiner_840B_300_pt_2.5.0_2.4_1588495233642.zip)|
 | StopWordsCleaner  | `stopwords_pt`            | 2.5.4 |   `pt`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_pt_pt_2.5.4_2.4_1594742441703.zip) |
+| BertEmbeddings   | `bert_portuguese_base_cased`   | 2.6.0 |      `pt`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/bert_portuguese_base_cased_pt_2.6.0_2.4_1599740263165.zip) |
+| BertEmbeddings   | `bert_portuguese_large_cased`  | 2.6.0 |      `pt`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/bert_portuguese_large_cased_pt_2.6.0_2.4_1599740263521.zip) |
 
 ### Russian - Models
 
