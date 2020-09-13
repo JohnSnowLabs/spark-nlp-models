@@ -204,3 +204,4 @@
 {"name":"ner_healthcare","language":"de","libVersion":{"parts":[2,5,5]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-09-06T22:57:08.253Z","isZipped":true,"category":"nd","checksum":""}
 {"name":"chunkresolve_ICD10GM","language":"de","libVersion":{"parts":[2,5,5]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-09-06T22:33:55.423Z","isZipped":true,"category":"nd","checksum":""}
 {"name":"ner_legal","language":"de","libVersion":{"parts":[2,5,5]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-09-07T09:37:34.959Z","isZipped":true,"category":"nd","checksum":""}
+{"name":"sddl_healthcare","language":"en","libVersion":{"parts":[2,6,1]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-09-13T12:44:42.565Z","isZipped":true,"category":"nd","checksum":""}
