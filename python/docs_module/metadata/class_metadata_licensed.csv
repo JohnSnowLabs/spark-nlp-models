@@ -1,2 +1,2 @@
-approach_class,model_class,class_description,inputs,outputs,parameters,class_license,dataset_schema,class_annotation_sample
-AssertionDLApproach,AssertionDLModel,Deep Learning based Assertion of Clinical Entities,"[document, chunk, embeddings]",assertion,,,,
+approach_class,model_class,class_description,inputs,outputs,approach_parameters,model_parameters,common_parameters,class_license,dataset_schema,class_annotation_sample
+AssertionDLApproach,AssertionDLModel,Deep Learning based Assertion of Clinical Entities,"[document, chunk, embeddings]",assertion,,,,,,
