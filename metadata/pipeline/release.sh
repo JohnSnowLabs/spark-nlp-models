@@ -10,6 +10,7 @@ clinical_local_path=$5
 # Create a zip of the current directory.
 #zip -r $local_path . -x .git/ .git/*** .github/workflows/release.yml scripts/pipeline/release.sh scripts/pipeline/upload_file_to_s3.py .DS_Store
 
+apt-get install python3-setuptools
 # Install required dependencies for Python script.
 pip install boto3
 #git clone git://github.com/boto/boto.git && cd boto && python3 setup.py install
