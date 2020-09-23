@@ -11,6 +11,7 @@ def main():
     clinical_local_path=sys.argv[5]
 
 
+
     '''
     session = boto3.Session(
         aws_access_key_id=aws_access_key,
