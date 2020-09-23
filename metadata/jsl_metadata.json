@@ -211,3 +211,7 @@
 {"name":"classifierdl_biobert_ade","language":"en","libVersion":{"parts":[2,6,0]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-09-15T20:32:29.450Z","isZipped":true,"category":"nd","checksum":""}
 {"name":"biobert_pubmed_large_cased","language":"en","libVersion":{"parts":[2,6,0]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-09-16T07:14:54.946Z","isZipped":true,"category":"ml","checksum":""}
 {"name":"chunkresolve_athena_conditions_healthcare","language":"en","libVersion":{"parts":[2,6,0]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-09-16T14:07:38.887Z","isZipped":true,"category":"ml","checksum":""}
+{"name":"ner_healthcare","language":"en","libVersion":{"parts":[2,6,1]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-09-23T08:29:24.614Z","isZipped":true,"category":"nd","checksum":""}
+{"name":"assertion_dl_healthcare","language":"en","libVersion":{"parts":[2,6,1]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-09-23T08:30:11.713Z","isZipped":true,"category":"nd","checksum":""}
+{"name":"ner_posology_healthcare","language":"en","libVersion":{"parts":[2,6,1]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-09-23T08:30:52.424Z","isZipped":true,"category":"nd","checksum":""}
+{"name":"ner_events_healthcare","language":"en","libVersion":{"parts":[2,6,1]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-09-23T08:31:47.632Z","isZipped":true,"category":"nd","checksum":""}
