@@ -1,4 +1,4 @@
-import boto as boto3
+import boto3
 import sys
 
 def main():
@@ -9,7 +9,6 @@ def main():
     aws_access_key=sys.argv[3]
     aws_access_secret=sys.argv[4]
     clinical_local_path=sys.argv[5]
-
 
 
     '''
