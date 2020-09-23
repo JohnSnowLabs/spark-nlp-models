@@ -1,4 +1,4 @@
-import boto3
+import boto as boto3
 import sys
 
 def main():
