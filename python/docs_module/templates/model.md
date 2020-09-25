@@ -4,10 +4,10 @@ title: {{model_title_seo}}
 author: {{model_author}}
 name: {{model_name}}
 class: {{model_class}}
-language: {{model_language}}
+language: {{model_lang}}
 repository: {{model_repo}}
-date: {{model_date}}
-tags: {{model_tags_str}}]
+date: {{latest_date}}
+tags: {{tags}}
 article_header:
    type: cover
 use_language_switcher: "Python-Scala-Java"
@@ -20,12 +20,12 @@ use_language_switcher: "Python-Scala-Java"
 
 {:.h2_title}
 ## Predicted Labels
-{{model_predicted_labels}}
+{{labels}}
 
 {:.btn-box}
 [Live Demo]({{model_demo_url}}){:.button.button-orange}
 [Open in Colab]({{model_colab_url}}){:.button.button-orange.button-orange-trans.co.button-icon}
-[Download](model_s3_url){:.button.button-orange.button-orange-trans.arr.button-icon}
+[Download]({{model_s3_url}}){:.button.button-orange.button-orange-trans.arr.button-icon}
 
 {:.h2_title}
 ## How to use 
@@ -35,11 +35,11 @@ use_language_switcher: "Python-Scala-Java"
 {% endraw %}
 
 ```python
-{{model_python_sample}}
+{{python_sample}}
 ```
 
 ```scala
-{{model_scala_sample}}
+{{scala_sample}}
 ```
 </div>
 
@@ -52,14 +52,11 @@ use_language_switcher: "Python-Scala-Java"
 {{model_output_schema}}
 ```
 
-{:.class_param}
+{:.model-param}
 ## Model Parameters
 
-{:.class_table}
-{{class_metadata_table}}
-
-{:.model_table}
-{{model_metadata_table}}
+{:.table-model}
+{{table}}
 
 {:.h2_title}
 ## Data Source

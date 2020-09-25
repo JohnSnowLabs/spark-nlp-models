@@ -1,2 +1,8 @@
-approach_class,model_class,class_description,inputs,outputs,approach_parameters,model_parameters,common_parameters,class_license,dataset_schema,class_annotation_sample
-AssertionDLApproach,AssertionDLModel,Deep Learning based Assertion of Clinical Entities,"[document, chunk, embeddings]",assertion,,,,,,
+type,approach_class,model_class,class_description,inputs,output,class_license,dataset_schema,class_annotation_sample
+AssertionDL,AssertionDLApproach,AssertionDLModel,Assertion of Clinical Entities based on Deep Learning,"document, chunk, word_embeddings",assertion,,,
+AssertionLogReg,AssertionLogRegApproach,AssertionLogRegModel,Assertion of Clinical Entities based on Logistic Regression,"document, chunk, word_embeddings",assertion,,,
+ChunkEntityresolver,ChunkEntityResolverApproach,ChunkEntityResolverModel,Entity Resolution model Based on KNN using Word Embeddings + Word Movers Distance,"token, chunk_embeddings",entity,,,
+DeIdentification,DeIdentification,DeIdentificationModel,Anonymization and DeIdentification model based on outputs from DeId NERs and Replacement Dictionaries,"document, token, chunk",document,,,
+RelationExtraction,RelationExtractionApproach,RelationExtractionModel,Relation Extraction model based on syntactic features using deep learning,"word_embeddings, chunk, pos, dependency",category,,,
+WordEmbeddings,WordEmbeddings,WordEmbeddingsModel,Word embeddings indexed on a temporary key-value store on disk based on Word2Vec architecture,"document, token",word_embeddings,,,
+NerDL,NerDLApproach,NerDLModel,Named entity recognition deep learning model based on a CNN + BiLSTM architecture,"document, token, word_embeddings",named_entity,,,
