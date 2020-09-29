@@ -15,11 +15,8 @@ use_language_switcher: "Python-Scala-Java"
 
 {:.h2_title}
 ## Description
-
+  
 A pretrained pipeline with ner_clinical_events, assertion_dl and re_temporal_events_clinical. It will extract clinical entities, assign assertion status and find temporal relationships between clinical entities
-
-{:.h2_title}
-## Data Source
 
 
 
@@ -38,15 +35,15 @@ A pretrained pipeline with ner_clinical_events, assertion_dl and re_temporal_eve
 {% include programmingLanguageSelectScalaPython.html %}
 
 ```python
-model = PipelineModel.pretrained("explain_clinical_doc_era","en","clinical/models")
-	.setInputCols("")
-	.setOutputCol("")
+model = PretrainedPipeline("explain_clinical_doc_era","en","clinical/models")
+
+model.annotate("Include a healthcare document here. Can be a prescription, medical note, anything...")
 ```
 
 ```scala
-val model = PipelineModel.pretrained("explain_clinical_doc_era","en","clinical/models")
-	.setInputCols("")
-	.setOutputCol("")
+val model = PretrainedPipeline("explain_clinical_doc_era","en","clinical/models")
+
+model.annotate("Include a healthcare document here. Can be a prescription, medical note, anything...")
 ```
 </div>
 

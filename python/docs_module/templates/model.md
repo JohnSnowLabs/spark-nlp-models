@@ -15,21 +15,22 @@ use_language_switcher: "Python-Scala-Java"
 
 {:.h2_title}
 ## Description
-{{class_description}}
+{{class_description}}  
 {{description}}
 {% if labels %}
 {:.h2_title}
 ## Prediction Domain
 {{labels}}
 {% endif %}
-{:.h2_title}
-## Data Source
-{{dataset_info}}
-{{reference_url}}
+{% if reference_url %}[{{reference_url}}]({{reference_url}}){% endif %}
 {% if included_models %}
 {:.h2_title}
 ## Included Models
 {{included_models}}
+{% else %}
+{:.h2_title}
+## Data Source
+{{dataset_info}}
 {% endif %}
 {{buttons}}
 {:.h2_title}
