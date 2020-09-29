@@ -1,13 +1,13 @@
 ---
 layout: model
-title: {{model_title_seo}}
-author: {{model_author}}
-name: {{model_name}}
+title: {{title}}
+author: {{author}}
+name: {{name}}
 class: {{model_class}}
-language: {{model_lang}}
-repository: {{model_repo}}
+language: {{language}}
+repository: {{repo}}
 date: {{latest_date}}
-tags: {{tags}}
+tags: [{{tags}}]
 article_header:
    type: cover
 use_language_switcher: "Python-Scala-Java"
@@ -16,24 +16,28 @@ use_language_switcher: "Python-Scala-Java"
 {:.h2_title}
 ## Description
 {{class_description}}
-{{model_description}}
-
+{{description}}
+{% if labels %}
 {:.h2_title}
-## Predicted Labels
+## Prediction Domain
 {{labels}}
-
-{:.btn-box}
-[Live Demo]({{model_demo_url}}){:.button.button-orange}
-[Open in Colab]({{model_colab_url}}){:.button.button-orange.button-orange-trans.co.button-icon}
-[Download]({{model_s3_url}}){:.button.button-orange.button-orange-trans.arr.button-icon}
-
+{% endif %}
+{:.h2_title}
+## Data Source
+{{dataset_info}}
+{{reference_url}}
+{% if included_models %}
+{:.h2_title}
+## Included Models
+{{included_models}}
+{% endif %}
+{{buttons}}
 {:.h2_title}
 ## How to use 
 <div class="tabs-box" markdown="1">
 {% raw %}
 {% include programmingLanguageSelectScalaPython.html %}
 {% endraw %}
-
 ```python
 {{python_sample}}
 ```
@@ -43,6 +47,7 @@ use_language_switcher: "Python-Scala-Java"
 ```
 </div>
 
+{#
 {:.h2_title}
 ## Results
 {{class_annotation_sample}}
@@ -51,17 +56,16 @@ use_language_switcher: "Python-Scala-Java"
 ```python
 {{model_output_schema}}
 ```
+#}
 
 {:.model-param}
-## Model Parameters
+## Model Information
 
 {:.table-model}
 {{table}}
 
-{:.h2_title}
-## Data Source
-{{model_dataset}}
-
+{#
 {:.h2_title}
 ## Benchmarking 
 {{model_benchmarks}}
+#}
