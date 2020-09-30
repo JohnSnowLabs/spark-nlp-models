@@ -301,7 +301,7 @@ ner_onto = NerDLModel.pretrained(name='ner_dl_bert', lang='en')
 
 **NOTE:** `build` means the model can be downloaded or loaded for that specific version or above. For instance, `2.4.0` can be used in all the releases after `2.4.x` but not before.
 
-Pretrained models are great to creatae custom pipeline when the pretrained pipelines don't offer a feature or you need more flexibility:
+Pretrained models are great to create custom pipeline when the pretrained pipelines don't offer a feature or you need more flexibility:
 
 ```python
 
