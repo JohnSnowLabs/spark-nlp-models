@@ -215,6 +215,6 @@
 {"name":"ner_posology_healthcare","language":"en","libVersion":{"parts":[2,6,0]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-09-23T08:30:52.424Z","isZipped":true,"category":"nd","checksum":""}
 {"name":"ner_events_healthcare","language":"en","libVersion":{"parts":[2,6,0]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-09-23T08:31:47.632Z","isZipped":true,"category":"nd","checksum":""}
 {"name":"ner_ade_clinical","language":"en","libVersion":{"parts":[2,6,0]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-09-29T08:35:05.818Z","isZipped":true,"category":"nd","checksum":""}
-{"name":"classifierdl_ade_biobert","language":"en","libVersion":{"parts":[2,6,0]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-09-29T15:41:34.173Z","isZipped":true,"category":"nd","checksum":""}
 {"name":"ner_ade_healthcare","language":"en","libVersion":{"parts":[2,6,0]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-09-30T07:23:21.043Z","isZipped":true,"category":"nd","checksum":""}
 {"name":"explain_clinical_doc_ade","language":"en","libVersion":{"parts":[2,6,0]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-09-30T08:37:11.009Z","isZipped":true,"category":"nd","checksum":""}
+{"name":"classifierdl_ade_biobert","language":"en","libVersion":{"parts":[2,6,0]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-09-30T17:24:06.977Z","isZipped":true,"category":"nd","checksum":""}
