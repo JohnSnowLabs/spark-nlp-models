@@ -217,3 +217,4 @@
 {"name":"classifierdl_ade_clinicalbert","language":"en","libVersion":{"parts":[2,6,0]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-10-01T23:25:38.356Z","isZipped":true,"category":"nd","checksum":""}
 {"name":"ner_ade_biobert","language":"en","libVersion":{"parts":[2,6,0]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-10-01T23:26:27.264Z","isZipped":true,"category":"nd","checksum":""}
 {"name":"ner_ade_clinicalbert","language":"en","libVersion":{"parts":[2,6,0]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-10-01T23:27:11.715Z","isZipped":true,"category":"nd","checksum":""}
+{"name":"classfierdl_ade_conversational_biobert","language":"en","libVersion":{"parts":[2,6,0]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-10-03T15:44:38.549Z","isZipped":true,"category":"nd","checksum":""}
