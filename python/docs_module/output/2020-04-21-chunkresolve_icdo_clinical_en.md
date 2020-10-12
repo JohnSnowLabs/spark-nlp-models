@@ -2,9 +2,9 @@
 layout: model
 title: ChunkResolver Icdo Clinical
 author: John Snow Labs
-name: chunkresolve_icdo_clinical
-class: ChunkEntityResolverModel
-language: en
+name: 
+class: 
+language: 
 repository: clinical/models
 date: 2020-04-21
 tags: [clinical,entity_resolution,icd10,icdo,en]
@@ -14,38 +14,27 @@ use_language_switcher: "Python-Scala-Java"
 ---
 
 {:.h2_title}
-## Description
-Entity Resolution model Based on KNN using Word Embeddings + Word Movers Distance  
+## Description 
 
 
-{:.h2_title}
-## Prediction Domain
-ICD-O Codes and their normalized definition with `clinical_embeddings`
-
-[https://apps.who.int/iris/bitstream/handle/10665/96612/9789241548496_eng.pdf](https://apps.who.int/iris/bitstream/handle/10665/96612/9789241548496_eng.pdf)
-
-{:.h2_title}
-## Data Source
-Trained on ICD-O Histology Behaviour dataset
+ {:.h2_title}
+## Predicted Entities
+ICD-O Codes and their normalized definition with `clinical_embeddings` 
 
 {:.btn-box}
-[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/clinical/models/chunkresolve_icdo_clinical_en_2.4.5_2.4_1587491354644.zip){:.button.button-orange.button-orange-trans.arr.button-icon}
-{:.h2_title}
+[Live Demo](https://demo.johnsnowlabs.com/healthcare/ER_ICDO/){:.button.button-orange}<br/><button class="button button-orange" disabled>Open in Colab</button><br/>[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/clinical/models/chunkresolve_icdo_clinical_en_2.4.5_2.4_1587491354644.zip){:.button.button-orange.button-orange-trans.arr.button-icon}<br/>
+
 ## How to use 
 <div class="tabs-box" markdown="1">
 
 {% include programmingLanguageSelectScalaPython.html %}
 
 ```python
-model = ChunkEntityResolverModel.pretrained("chunkresolve_icdo_clinical","en","clinical/models")\
-	.setInputCols("token","chunk_embeddings")\
-	.setOutputCol("entity")
+
 ```
 
 ```scala
-val model = ChunkEntityResolverModel.pretrained("chunkresolve_icdo_clinical","en","clinical/models")
-	.setInputCols("token","chunk_embeddings")
-	.setOutputCol("entity")
+
 ```
 </div>
 
@@ -53,17 +42,25 @@ val model = ChunkEntityResolverModel.pretrained("chunkresolve_icdo_clinical","en
 
 {:.model-param}
 ## Model Information
-
 {:.table-model}
-|----------------|----------------------------|
-| name           | chunkresolve_icdo_clinical |
-| model_class    | ChunkEntityResolverModel   |
-| compatibility  | 2.4.2                      |
-| license        | Licensed                   |
-| edition        | Healthcare                 |
-| inputs         | token, chunk_embeddings    |
-| output         | entity                     |
-| language       | en                         |
-| case_sensitive | True                       |
-| upstream_deps  | embeddings_clinical        |
+|-------------------------|----------------------------|
+| Model Name              | chunkresolve_icdo_clinical |
+| Model Class             | ChunkEntityResolverModel   |
+| Spark Compatibility     | 2.4.2                      |
+| Spark NLP Compatibility | 2.4                        |
+| License                 | Licensed                   |
+| Edition                 | Official                   |
+| Input Labels            | token, chunk_embeddings    |
+| Output Labels           | entity                     |
+| Language                | en                         |
+| Case Sensitive          | True                       |
+| Upstream Dependencies   | embeddings_clinical        |
+
+
+
+
+
+{:.h2_title}
+## Data Source
+Trained on ICD-O Histology Behaviour dataset.
 

@@ -1,63 +1,63 @@
-"Name","Model","TrainedOn","Extracts","DatasetLink"
-"assertion_dl","AssertionDLModel","Trained on 2010 i2b2/VA challenge on concepts, assertions, and relations in clinical text with `embeddings_clinical`","hypothetical, present, absent, possible, conditional, associated_with_someone_else","https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/"
-"assertion_ml","AssertionLogRegModel","Trained on 2010 i2b2/VA challenge on concepts, assertions, and relations in clinical text with `embeddings_clinical`","hypothetical, present, absent, possible, conditional, associated_with_someone_else","https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/"
-"assertion_dl_large","AssertionDLModel","Trained on 2010 i2b2/VA challenge on concepts, assertions, and relations in clinical text with `embeddings_clinical`","hypothetical, present, absent, possible, conditional, associated_with_someone_else","https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/"
-"chunkresolve_cpt_clinical","ChunkEntityResolverModel","Trained on Current Procedural Terminology dataset",,
-"chunkresolve_icd10cm_clinical","ChunkEntityResolverModel","Trained on ICD10 Clinical Modification datasetwith tenths of variations per code","ICD10-CM Codes and their normalized definition","https://www.icd10data.com/ICD10CM/Codes/"
-"chunkresolve_icd10pcs_clinical","ChunkEntityResolverModel","Trained on ICD10 Procedure Coding System dataset","ICD10-PCS Codes and their normalized definition","https://www.icd10data.com/ICD10PCS/Codes"
-"chunkresolve_icdo_clinical","ChunkEntityResolverModel","Trained on ICD-O Histology Behaviour dataset","ICD-O Codes and their normalized definition","https://apps.who.int/iris/bitstream/handle/10665/96612/9789241548496_eng.pdf"
-"deidentify_rb","DeIdentificationModel","Rule based DeIdentifier based on `ner_deid`",,
-"deidentify_rb_no_regex","DeIdentificationModel","Rule based DeIdentifier based on `ner_deid`",,
-"embeddings_clinical","WordEmbeddingsModel","Trained on PubMed corpora",,
-"embeddings_healthcare","WordEmbeddingsModel","Trained on PubMed + ICD10 + UMLS + MIMIC III corpora",,
-"embeddings_healthcare_100d","WordEmbeddingsModel","Trained on PubMed + ICD10 + UMLS + MIMIC III corpora",,
-"embeddings_healthcare_200d","WordEmbeddingsModel","Trained on PubMed + ICD10 + UMLS + MIMIC III corpora",,
-"embeddings_healthcare_300d","WordEmbeddingsModel","Trained on PubMed + ICD10 + UMLS + MIMIC III corpora",,
-"embeddings_scielo_50d","WordEmbeddingsModel","Trained on Scielo Articles",,"https://zenodo.org/record/3744326#.XtViinVKh_U"
-"embeddings_scielo_150d","WordEmbeddingsModel","Trained on Scielo Articles",,"https://zenodo.org/record/3744326#.XtViinVKh_U"
-"embeddings_scielo_300d","WordEmbeddingsModel","Trained on Scielo Articles",,"https://zenodo.org/record/3744326#.XtViinVKh_U"
-"embeddings_wiki_50d","WordEmbeddingsModel","Trained on Clinical Wikipedia Articles",,"https://zenodo.org/record/3744326#.XtViinVKh_U"
-"embeddings_wiki_150d","WordEmbeddingsModel","Trained on Clinical Wikipedia Articles",,"https://zenodo.org/record/3744326#.XtViinVKh_U"
-"embeddings_wiki_300d","WordEmbeddingsModel","Trained on Clinical Wikipedia Articles",,"https://zenodo.org/record/3744326#.XtViinVKh_U"
-"embeddings_scielowiki_50d","WordEmbeddingsModel","Trained on Scielo Articles + Clinical Wikipedia Articles",,"https://zenodo.org/record/3744326#.XtViinVKh_U"
-"embeddings_scielowiki_150d","WordEmbeddingsModel","Trained on Scielo Articles + Clinical Wikipedia Articles",,"https://zenodo.org/record/3744326#.XtViinVKh_U"
-"embeddings_scielowiki_300d","WordEmbeddingsModel","Trained on Scielo Articles + Clinical Wikipedia Articles",,"https://zenodo.org/record/3744326#.XtViinVKh_U"
-"ner_bionlp","NerDLModel","Trained on Cancer Genetics (CG) task of the BioNLP Shared Task 2013 with `embeddings_clinical`","Amino_acid, Anatomical_system, Cancer, Cell, Cellular_component, Developing_anatomical_Structure, Gene_or_gene_product, Immaterial_anatomical_entity, Multi-tissue_structure, Organ, Organism, Organism_subdivision, Simple_chemical, Tissue.","http://2013.bionlp-st.org/tasks/cancer-genetics"
-"ner_clinical","NerDLModel","Trained on 2010 i2b2/VA challenge on concepts, assertions, and relations in clinical text with `embeddings_clinical`.","Problem, Test, Treatment.","https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp"
-"ner_diseases","NerDLModel","Trained on i2b2 with `embeddings_clinical.","Disease",
-"ner_drugs","NerDLModel","Trained on i2b2_med7 + FDA with `embeddings_clinical`.","DrugChem (Drug and Chemicals)","https://www.i2b2.org/NLP/Medication"
-"ner_healthcare","NerDLModel","Trained on 2010 i2b2/VA challenge on concepts, assertions, and relations in clinical text with `embeddings_healthcare`.","Problem, Test, Treatment.","https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/"
-"ner_posology","NerDLModel","Trained on the 2018 i2b2 dataset and FDA Drug datasets with `embeddings_clinical`.","Dosage, Drug, Duration, Form,  Frequency, Route, Strength.","https://open.fda.gov/"
-"pos_clinical","PerceptronModel","Trained with MedPost dataset",,
-"spellcheck_clinical","ContextSpellCheckerModel","Trained with PubMed and i2b2 datasets",,
-"textmatch_cpt_token","TextMatcherModel","Trai,ned on NER Synonym Augmented Procedural Terminology bigram tokens combined up to a window of one",,
-"textmatch_icdo_ner","TextMatcherModel","Trained on NER Synonym Augmented ICD Histology Behaviour bigram tokens up to a window of four",,
-"ner_cellular","NerDLModel","Trained on the JNLPBA corpus containing more than 2.404 publication abstracts with `embeddings_clinical`","DNA, Cell_type, Cell_line, RNA, Protein.","http://www.geniaproject.org/"
-"ner_anatomy","NerDLModel","Trained on the Anatomical Entity Mention (AnEM) corpus with `embeddings_clinical`","Anatomical_system, Cell, Cellular_component, Developing_anatomical_structure, Immaterial_anatomical_entity, Multi-tissue_structure, Organ, Organism_subdivision, Organism_substance, Pathological_formation, Tissue.","http://www.nactem.ac.uk/anatomy/"
-"ner_deid_enriched","NerDLModel","Trained on JSL enriched n2c2 2014: De-identification and Heart Disease Risk Factors Challenge datasets with `embeddings_clinical`","Age, City, Country, Date, Doctor, Hospital, Idnum, Medicalrecord, Organization, Patient, Phone, Profession, State, Street, Username, Zip.","https://portal.dbmi.hms.harvard.edu/projects/n2c2-2014/"
-"ner_deid_large","NerDLModel","Trained on plain n2c2 2014: De-identification and Heart Disease Risk Factors Challenge datasets with `embeddings_clinical`","Age, Contact, Date, Id, Location, Name, Profession.","https://portal.dbmi.hms.harvard.edu/projects/n2c2-2014/"
-"ner_jsl","NerDLModel","Trained on data gathered andmanually annotated by John Snow Labs","Age, Diagnosis, Dosage, Drug_name, Frequency, Gender, Lab_name, Lab_result, Modifier, Name, Negation, Symptom_name","https://www.johnsnowlabs.com/data/"
-"ner_jsl_enriched","NerDLModel","Trained on data gathered and manually annotated by John Snow Labs","Age, Diagnosis, Dosage, Drug_name, Frequency, Gender, Lab_name, Lab_result, Modifier, Name, Negation, Symptom_name","https://www.johnsnowlabs.com/data/"
-"ner_posology_large","NerDLModel","Trained on the 2018 i2b2 dataset and FDA Drug datasets with `embeddings_clinical`.","Dosage, Drug, Duration, Form,  Frequency, Route, Strength.","https://open.fda.gov/"
-"ner_posology_small","NerDLModel","Trained on the 2018 i2b2 dataset (no FDA) with `embeddings_clinical`.","Dosage, Drug, Duration, Form,  Frequency, Route, Strength.","https://www.i2b2.org/NLP/Medication"
-"ner_risk_factors","NerDLModel","Trained on plain n2c2 2014: De-identification and Heart Disease Risk Factors Challenge datasets with `embeddings_clinical`","Cad, Diabetes, Family_hist, Hyperlipidemia, Hypertension, Medication, Obese, Phi, Smoker.","https://portal.dbmi.hms.harvard.edu/projects/n2c2-2014/"
-"chunkresolve_icd10cm_neoplasms_clinical","ChunkEntityResolverModel","Trained on ICD10CM Dataset Ranges: C000-D489, R590-R599","ICD10-CM Codes and their normalized definition","https://www.icd10data.com/ICD10CM/Codes/C00-D49"
-"chunkresolve_icd10cm_puerile_clinical","ChunkEntityResolverModel","Trained on ICD10CM Dataset Range: O0000-O9989","ICD10-CM Codes and their normalized definition","https://www.icd10data.com/ICD10CM/Codes/O00-O9A"
-"chunkresolve_icd10cm_diseases_clinical","ChunkEntityResolverModel","Trained on ICD10CM Dataset Range: A000-N989 Except Neoplasms and Musculoskeletal","ICD10-CM Codes and their normalized definition","https://www.icd10data.com/ICD10CM/Codes/"
-"chunkresolve_icd10cm_injuries_clinical","ChunkEntityResolverModel","Trained on ICD10CM Dataset Range: S0000XA-S98929S ","ICD10-CM Codes and their normalized definition","https://www.icd10data.com/ICD10CM/Codes/S00-T88"
-"chunkresolve_icd10cm_musculoskeletal_clinical","ChunkEntityResolverModel","Trained on ICD10CM Dataset Range: M0000-M9979XXS","ICD10-CM Codes and their normalized definition","https://www.icd10data.com/ICD10CM/Codes/M00-M99"
-"chunkresolve_icd10cm_poisoning_ext_clinical","ChunkEntityResolverModel","Trained on ICD10CM Dataset Range: T1500XA-T879","ICD10-CM Codes and their normalized definition","https://www.icd10data.com/ICD10CM/Codes/S00-T88"
-"ner_events_clinical","NerDLModel","Trained on i2b2 events data with `clinical_embeddings`","Problem, Test, Treatment, Occurence, Clinical_Dept, Date, Evidential, Duration, Frequency, Admission, Discharge, Time","https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/"
-"ner_clinical_large","NerDLModel","Trained on i2b2 augmented data with `clinical_embeddings`","Problem, Test, Treatment","https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/"
-"chunkresolve_loinc_clinical","ChunkEntityResolverModel","Trained on LOINC dataset with `embeddings_clinical`","LOINC Codes and ther Standard Name","https://loinc.org/"
-"deidentify_large","DeIdentificatoinModel","Trained on 10.000 Contact, Location, Name and Profession random replacements","Contact, Location, Name, Profession.","https://portal.dbmi.hms.harvard.edu/projects/n2c2-2014/"
-"ner_medmentions_coarse","NerDLModel","Trained on MedMentions dataset","",""
-"chunkresolve_snomed_findings_clinical","ChunkEntityResolverModel","Trained on SNOMED CT Findings","Snomed Codes and their normalized definition","http://www.snomed.org/"
-"ner_diag_proc","NerDLModel","Trained on CodiEsp Challenge dataset","Diagnostico, Procedimiento","https://temu.bsc.es/codiesp/"
-"ner_neoplasms","NerDLModel","Trained on MedMentions dataset","MalignantNeoplasm","https://temu.bsc.es/cantemist/"
-"chunkresolve_rxnorm_cd_clinical","ChunkEntityResolverModel","Trained on December 2019 RxNorm Clinical Drugs (TTY=CD) ontology graph with `embeddings_clinical`","RxNorm Codes and their normalized definition","https://www.nlm.nih.gov/pubs/techbull/nd19/brief/nd19_rxnorm_december_2019_release.html"
-"chunkresolve_rxnorm_scd_clinical","ChunkEntityResolverModel","Trained on December 2019 RxNorm Clinical Drugs (TTY=SCD) ontology graph with `embeddings_clinical`","RxNorm Codes and their normalized definition","https://www.nlm.nih.gov/pubs/techbull/nd19/brief/nd19_rxnorm_december_2019_release.html"
-"chunkresolve_rxnorm_sbd_clinical","ChunkEntityResolverModel","Trained on December 2019 RxNorm Clinical Drugs (TTY=SBD) ontology graph with `embeddings_clinical`","RxNorm Codes and their normalized definition","https://www.nlm.nih.gov/pubs/techbull/nd19/brief/nd19_rxnorm_december_2019_release.html"
-"re_clinical","RelationExtractionModel","Trained on i2b2 augmented data with `clinical_embeddings`","TrIP (improved), TrWP (worsened), TrCP (caused problem), TrAP (administered), TrNAP (avoided), TeRP (revealed problem), TeCP (investigate problem), PIP (problems related)","https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/"
-"re_temporal_events_clinical","RelationExtractionModel","Trained on i2b2 augmented data with `clinical_embeddings`","TrIP (improved), TrWP (worsened), TrCP (caused problem), TrAP (administered), TrNAP (avoided), TeRP (revealed problem), TeCP (investigate problem), PIP (problems related)","https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/"
-"re_temporal_events_enriched_clinical","RelationExtractionModel","Trained on i2b2 augmented data with `clinical_embeddings`","Extracts: Temporal relations (BEFORE, AFTER, SIMULTANEOUS, BEGUN_BY, ENDED_BY, DURING, BEFORE_OVERLAP) between clinical events (`ner_events_clinical`)","https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/"
+Name,Model,TrainedOn,Extracts,DatasetLink
+assertion_dl,AssertionDLModel,"Trained on 2010 i2b2/VA challenge on concepts, assertions, and relations in clinical text with `embeddings_clinical`","hypothetical, present, absent, possible, conditional, associated_with_someone_else",https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/
+assertion_ml,AssertionLogRegModel,"Trained on 2010 i2b2/VA challenge on concepts, assertions, and relations in clinical text with `embeddings_clinical`","hypothetical, present, absent, possible, conditional, associated_with_someone_else",https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/
+assertion_dl_large,AssertionDLModel,"Trained on 2010 i2b2/VA challenge on concepts, assertions, and relations in clinical text with `embeddings_clinical`","hypothetical, present, absent, possible, conditional, associated_with_someone_else",https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/
+chunkresolve_cpt_clinical,ChunkEntityResolverModel,Trained on Current Procedural Terminology dataset,,
+chunkresolve_icd10cm_clinical,ChunkEntityResolverModel,Trained on ICD10 Clinical Modification datasetwith tenths of variations per code,ICD10-CM Codes and their normalized definition,https://www.icd10data.com/ICD10CM/Codes/
+chunkresolve_icd10pcs_clinical,ChunkEntityResolverModel,Trained on ICD10 Procedure Coding System dataset,ICD10-PCS Codes and their normalized definition,https://www.icd10data.com/ICD10PCS/Codes
+chunkresolve_icdo_clinical,ChunkEntityResolverModel,Trained on ICD-O Histology Behaviour dataset,ICD-O Codes and their normalized definition,https://apps.who.int/iris/bitstream/handle/10665/96612/9789241548496_eng.pdf
+deidentify_rb,DeIdentificationModel,Rule based DeIdentifier based on `ner_deid`,,
+deidentify_rb_no_regex,DeIdentificationModel,Rule based DeIdentifier based on `ner_deid`,,
+embeddings_clinical,WordEmbeddingsModel,Trained on PubMed corpora,,
+embeddings_healthcare,WordEmbeddingsModel,Trained on PubMed + ICD10 + UMLS + MIMIC III corpora,,
+embeddings_healthcare_100d,WordEmbeddingsModel,Trained on PubMed + ICD10 + UMLS + MIMIC III corpora,,
+embeddings_healthcare_200d,WordEmbeddingsModel,Trained on PubMed + ICD10 + UMLS + MIMIC III corpora,,
+embeddings_healthcare_300d,WordEmbeddingsModel,Trained on PubMed + ICD10 + UMLS + MIMIC III corpora,,
+embeddings_scielo_50d,WordEmbeddingsModel,Trained on Scielo Articles,,https://zenodo.org/record/3744326#.XtViinVKh_U
+embeddings_scielo_150d,WordEmbeddingsModel,Trained on Scielo Articles,,https://zenodo.org/record/3744326#.XtViinVKh_U
+embeddings_scielo_300d,WordEmbeddingsModel,Trained on Scielo Articles,,https://zenodo.org/record/3744326#.XtViinVKh_U
+embeddings_wiki_50d,WordEmbeddingsModel,Trained on Clinical Wikipedia Articles,,https://zenodo.org/record/3744326#.XtViinVKh_U
+embeddings_wiki_150d,WordEmbeddingsModel,Trained on Clinical Wikipedia Articles,,https://zenodo.org/record/3744326#.XtViinVKh_U
+embeddings_wiki_300d,WordEmbeddingsModel,Trained on Clinical Wikipedia Articles,,https://zenodo.org/record/3744326#.XtViinVKh_U
+embeddings_scielowiki_50d,WordEmbeddingsModel,Trained on Scielo Articles + Clinical Wikipedia Articles,,https://zenodo.org/record/3744326#.XtViinVKh_U
+embeddings_scielowiki_150d,WordEmbeddingsModel,Trained on Scielo Articles + Clinical Wikipedia Articles,,https://zenodo.org/record/3744326#.XtViinVKh_U
+embeddings_scielowiki_300d,WordEmbeddingsModel,Trained on Scielo Articles + Clinical Wikipedia Articles,,https://zenodo.org/record/3744326#.XtViinVKh_U
+ner_bionlp,NerDLModel,Trained on Cancer Genetics (CG) task of the BioNLP Shared Task 2013 with `embeddings_clinical`,"Amino_acid, Anatomical_system, Cancer, Cell, Cellular_component, Developing_anatomical_Structure, Gene_or_gene_product, Immaterial_anatomical_entity, Multi-tissue_structure, Organ, Organism, Organism_subdivision, Simple_chemical, Tissue.",http://2013.bionlp-st.org/tasks/cancer-genetics
+ner_clinical,NerDLModel,"Trained on 2010 i2b2/VA challenge on concepts, assertions, and relations in clinical text with `embeddings_clinical`.","Problem, Test, Treatment.",https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp
+ner_diseases,NerDLModel,Trained on i2b2 with `embeddings_clinical.,Disease,
+ner_drugs,NerDLModel,Trained on i2b2_med7 + FDA with `embeddings_clinical`.,DrugChem (Drug and Chemicals),https://www.i2b2.org/NLP/Medication
+ner_healthcare,NerDLModel,"Trained on 2010 i2b2/VA challenge on concepts, assertions, and relations in clinical text with `embeddings_healthcare`.","Problem, Test, Treatment.",https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/
+ner_posology,NerDLModel,Trained on the 2018 i2b2 dataset and FDA Drug datasets with `embeddings_clinical`.,"Dosage, Drug, Duration, Form,  Frequency, Route, Strength.",https://open.fda.gov/
+pos_clinical,PerceptronModel,Trained with MedPost dataset,,
+spellcheck_clinical,ContextSpellCheckerModel,Trained with PubMed and i2b2 datasets,,
+textmatch_cpt_token,TextMatcherModel,"Trai,ned on NER Synonym Augmented Procedural Terminology bigram tokens combined up to a window of one",,
+textmatch_icdo_ner,TextMatcherModel,Trained on NER Synonym Augmented ICD Histology Behaviour bigram tokens up to a window of four,,
+ner_cellular,NerDLModel,Trained on the JNLPBA corpus containing more than 2.404 publication abstracts with `embeddings_clinical`,"DNA, Cell_type, Cell_line, RNA, Protein.",http://www.geniaproject.org/
+ner_anatomy,NerDLModel,Trained on the Anatomical Entity Mention (AnEM) corpus with `embeddings_clinical`,"Anatomical_system, Cell, Cellular_component, Developing_anatomical_structure, Immaterial_anatomical_entity, Multi-tissue_structure, Organ, Organism_subdivision, Organism_substance, Pathological_formation, Tissue.",http://www.nactem.ac.uk/anatomy/
+ner_deid_enriched,NerDLModel,Trained on JSL enriched n2c2 2014: De-identification and Heart Disease Risk Factors Challenge datasets with `embeddings_clinical`,"Age, City, Country, Date, Doctor, Hospital, Idnum, Medicalrecord, Organization, Patient, Phone, Profession, State, Street, Username, Zip.",https://portal.dbmi.hms.harvard.edu/projects/n2c2-2014/
+ner_deid_large,NerDLModel,Trained on plain n2c2 2014: De-identification and Heart Disease Risk Factors Challenge datasets with `embeddings_clinical`,"Age, Contact, Date, Id, Location, Name, Profession.",https://portal.dbmi.hms.harvard.edu/projects/n2c2-2014/
+ner_jsl,NerDLModel,Trained on data gathered andmanually annotated by John Snow Labs,"Age, Diagnosis, Dosage, Drug_name, Frequency, Gender, Lab_name, Lab_result, Modifier, Name, Negation, Symptom_name",https://www.johnsnowlabs.com/data/
+ner_jsl_enriched,NerDLModel,Trained on data gathered and manually annotated by John Snow Labs,"Age, Diagnosis, Dosage, Drug_name, Frequency, Gender, Lab_name, Lab_result, Modifier, Name, Negation, Symptom_name",https://www.johnsnowlabs.com/data/
+ner_posology_large,NerDLModel,Trained on the 2018 i2b2 dataset and FDA Drug datasets with `embeddings_clinical`.,"Dosage, Drug, Duration, Form,  Frequency, Route, Strength.",https://open.fda.gov/
+ner_posology_small,NerDLModel,Trained on the 2018 i2b2 dataset (no FDA) with `embeddings_clinical`.,"Dosage, Drug, Duration, Form,  Frequency, Route, Strength.",https://www.i2b2.org/NLP/Medication
+ner_risk_factors,NerDLModel,Trained on plain n2c2 2014: De-identification and Heart Disease Risk Factors Challenge datasets with `embeddings_clinical`,"Cad, Diabetes, Family_hist, Hyperlipidemia, Hypertension, Medication, Obese, Phi, Smoker.",https://portal.dbmi.hms.harvard.edu/projects/n2c2-2014/
+chunkresolve_icd10cm_neoplasms_clinical,ChunkEntityResolverModel,"Trained on ICD10CM Dataset Ranges: C000-D489, R590-R599",ICD10-CM Codes and their normalized definition,https://www.icd10data.com/ICD10CM/Codes/C00-D49
+chunkresolve_icd10cm_puerile_clinical,ChunkEntityResolverModel,Trained on ICD10CM Dataset Range: O0000-O9989,ICD10-CM Codes and their normalized definition,https://www.icd10data.com/ICD10CM/Codes/O00-O9A
+chunkresolve_icd10cm_diseases_clinical,ChunkEntityResolverModel,Trained on ICD10CM Dataset Range: A000-N989 Except Neoplasms and Musculoskeletal,ICD10-CM Codes and their normalized definition,https://www.icd10data.com/ICD10CM/Codes/
+chunkresolve_icd10cm_injuries_clinical,ChunkEntityResolverModel,Trained on ICD10CM Dataset Range: S0000XA-S98929S ,ICD10-CM Codes and their normalized definition,https://www.icd10data.com/ICD10CM/Codes/S00-T88
+chunkresolve_icd10cm_musculoskeletal_clinical,ChunkEntityResolverModel,Trained on ICD10CM Dataset Range: M0000-M9979XXS,ICD10-CM Codes and their normalized definition,https://www.icd10data.com/ICD10CM/Codes/M00-M99
+chunkresolve_icd10cm_poisoning_ext_clinical,ChunkEntityResolverModel,Trained on ICD10CM Dataset Range: T1500XA-T879,ICD10-CM Codes and their normalized definition,https://www.icd10data.com/ICD10CM/Codes/S00-T88
+ner_events_clinical,NerDLModel,Trained on i2b2 events data with `clinical_embeddings`,"Problem, Test, Treatment, Occurence, Clinical_Dept, Date, Evidential, Duration, Frequency, Admission, Discharge, Time",https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/
+ner_clinical_large,NerDLModel,Trained on i2b2 augmented data with `clinical_embeddings`,"Problem, Test, Treatment",https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/
+chunkresolve_loinc_clinical,ChunkEntityResolverModel,Trained on LOINC dataset with `embeddings_clinical`,LOINC Codes and ther Standard Name,https://loinc.org/
+deidentify_large,DeIdentificatoinModel,"Trained on 10.000 Contact, Location, Name and Profession random replacements","Contact, Location, Name, Profession.",https://portal.dbmi.hms.harvard.edu/projects/n2c2-2014/
+ner_medmentions_coarse,NerDLModel,Trained on MedMentions dataset,,
+chunkresolve_snomed_findings_clinical,ChunkEntityResolverModel,Trained on SNOMED CT Findings,Snomed Codes and their normalized definition,http://www.snomed.org/
+ner_diag_proc,NerDLModel,Trained on CodiEsp Challenge dataset,"Diagnostico, Procedimiento",https://temu.bsc.es/codiesp/
+ner_neoplasms,NerDLModel,Trained on MedMentions dataset,MalignantNeoplasm,https://temu.bsc.es/cantemist/
+chunkresolve_rxnorm_cd_clinical,ChunkEntityResolverModel,Trained on December 2019 RxNorm Clinical Drugs (TTY=CD) ontology graph with `embeddings_clinical`,RxNorm Codes and their normalized definition,https://www.nlm.nih.gov/pubs/techbull/nd19/brief/nd19_rxnorm_december_2019_release.html
+chunkresolve_rxnorm_scd_clinical,ChunkEntityResolverModel,Trained on December 2019 RxNorm Clinical Drugs (TTY=SCD) ontology graph with `embeddings_clinical`,RxNorm Codes and their normalized definition,https://www.nlm.nih.gov/pubs/techbull/nd19/brief/nd19_rxnorm_december_2019_release.html
+chunkresolve_rxnorm_sbd_clinical,ChunkEntityResolverModel,Trained on December 2019 RxNorm Clinical Drugs (TTY=SBD) ontology graph with `embeddings_clinical`,RxNorm Codes and their normalized definition,https://www.nlm.nih.gov/pubs/techbull/nd19/brief/nd19_rxnorm_december_2019_release.html
+re_clinical,RelationExtractionModel,Trained on i2b2 augmented data with `clinical_embeddings`,"TrIP (improved), TrWP (worsened), TrCP (caused problem), TrAP (administered), TrNAP (avoided), TeRP (revealed problem), TeCP (investigate problem), PIP (problems related)",https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/
+re_temporal_events_clinical,RelationExtractionModel,Trained on i2b2 augmented data with `clinical_embeddings`,"TrIP (improved), TrWP (worsened), TrCP (caused problem), TrAP (administered), TrNAP (avoided), TeRP (revealed problem), TeCP (investigate problem), PIP (problems related)",https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/
+re_temporal_events_enriched_clinical,RelationExtractionModel,Trained on i2b2 augmented data with `clinical_embeddings`,"Extracts: Temporal relations (BEFORE, AFTER, SIMULTANEOUS, BEGUN_BY, ENDED_BY, DURING, BEFORE_OVERLAP) between clinical events (`ner_events_clinical`)",https://portal.dbmi.hms.harvard.edu/projects/n2c2-nlp/

@@ -14,26 +14,15 @@ use_language_switcher: "Python-Scala-Java"
 ---
 
 {:.h2_title}
-## Description
-{{class_description}}  
+## Description 
 {{description}}
-{% if labels %}
-{:.h2_title}
-## Prediction Domain
-{{labels}}
-{% endif %}
-{% if reference_url %}[{{reference_url}}]({{reference_url}}){% endif %}
-{% if included_models %}
-{:.h2_title}
-## Included Models
-{{included_models}}
-{% else %}
-{:.h2_title}
-## Data Source
-{{dataset_info}}
-{% endif %}
+
+{% if labels %} {:.h2_title}
+## Predicted Entities
+{{labels}} {% endif %}
+
 {{buttons}}
-{:.h2_title}
+
 ## How to use 
 <div class="tabs-box" markdown="1">
 {% raw %}
@@ -61,12 +50,22 @@ use_language_switcher: "Python-Scala-Java"
 
 {:.model-param}
 ## Model Information
-
 {:.table-model}
 {{table}}
 
-{#
+{% if included_models %}
+{:.h2_title}
+## Included Models
+{{included_models}}
+{% else %}
+{%endif%}
+
+{:.h2_title}
+## Data Source
+{{dataset_info}}
+
+{% if model_benchmarks %}
 {:.h2_title}
 ## Benchmarking 
 {{model_benchmarks}}
-#}
+{%endif%}

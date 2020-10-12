@@ -2,9 +2,9 @@
 layout: model
 title: Ner DL Model Risk Factors
 author: John Snow Labs
-name: ner_risk_factors
-class: NerDLModel
-language: en
+name: 
+class: 
+language: 
 repository: clinical/models
 date: 2020-04-21
 tags: [clinical,ner,risk,factors,en]
@@ -14,38 +14,27 @@ use_language_switcher: "Python-Scala-Java"
 ---
 
 {:.h2_title}
-## Description
-Named Entity recognition annotator allows for a generic model to be trained by utilizing a deep learning algorithm (Char CNNs - BiLSTM - CRF - word embeddings) inspired on a former state of the art model for NER: Chiu & Nicols, Named Entity Recognition with Bidirectional LSTM,CNN.  
+## Description 
 Pretrained named entity recognition deep learning model for Heart Disease Risk Factors and Personal Health Information.
 
-{:.h2_title}
-## Prediction Domain
-CAD,DIABETES,FAMILY_HIST,HYPERLIPIDEMIA,HYPERTENSION,MEDICATION,OBESE,PHI,SMOKER
-
-[https://portal.dbmi.hms.harvard.edu/projects/n2c2-2014/](https://portal.dbmi.hms.harvard.edu/projects/n2c2-2014/)
-
-{:.h2_title}
-## Data Source
-Trained on plain n2c2 2014: De-identification and Heart Disease Risk Factors Challenge datasets with `embeddings_clinical`
+ {:.h2_title}
+## Predicted Entities
+CAD,DIABETES,FAMILY_HIST,HYPERLIPIDEMIA,HYPERTENSION,MEDICATION,OBESE,PHI,SMOKER 
 
 {:.btn-box}
-[Open in Colab](https://colab.research.google.com/github/JohnSnowLabs/spark-nlp-workshop/blob/master/tutorials/Certification_Trainings/Healthcare/1.Clinical_Named_Entity_Recognition_Model.ipynb){:.button.button-orange.button-orange-trans.co.button-icon}[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/clinical/models/ner_risk_factors_en_2.4.2_2.4_1587513300751.zip){:.button.button-orange.button-orange-trans.arr.button-icon}
-{:.h2_title}
+[Live Demo](https://demo.johnsnowlabs.com/healthcare/NER_RISK_FACTORS/){:.button.button-orange}<br/>[Open in Colab](https://colab.research.google.com/github/JohnSnowLabs/spark-nlp-workshop/blob/master/tutorials/Certification_Trainings/Healthcare/1.Clinical_Named_Entity_Recognition_Model.ipynb){:.button.button-orange.button-orange-trans.co.button-icon}<br/>[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/clinical/models/ner_risk_factors_en_2.4.2_2.4_1587513300751.zip){:.button.button-orange.button-orange-trans.arr.button-icon}<br/>
+
 ## How to use 
 <div class="tabs-box" markdown="1">
 
 {% include programmingLanguageSelectScalaPython.html %}
 
 ```python
-model = NerDLModel.pretrained("ner_risk_factors","en","clinical/models")\
-	.setInputCols("sentence","token","word_embeddings")\
-	.setOutputCol("ner")
+
 ```
 
 ```scala
-val model = NerDLModel.pretrained("ner_risk_factors","en","clinical/models")
-	.setInputCols("sentence","token","word_embeddings")
-	.setOutputCol("ner")
+
 ```
 </div>
 
@@ -53,17 +42,25 @@ val model = NerDLModel.pretrained("ner_risk_factors","en","clinical/models")
 
 {:.model-param}
 ## Model Information
-
 {:.table-model}
-|----------------|----------------------------------|
-| name           | ner_risk_factors                 |
-| model_class    | NerDLModel                       |
-| compatibility  | 2.4.2                            |
-| license        | Licensed                         |
-| edition        | Healthcare                       |
-| inputs         | sentence, token, word_embeddings |
-| output         | ner                              |
-| language       | en                               |
-| case_sensitive | False                            |
-| upstream_deps  | embeddings_clinical              |
+|-------------------------|----------------------------------|
+| Model Name              | ner_risk_factors                 |
+| Model Class             | NerDLModel                       |
+| Spark Compatibility     | 2.4.2                            |
+| Spark NLP Compatibility | 2.4                              |
+| License                 | Licensed                         |
+| Edition                 | Official                         |
+| Input Labels            | sentence, token, word_embeddings |
+| Output Labels           | ner                              |
+| Language                | en                               |
+| Case Sensitive          | False                            |
+| Upstream Dependencies   | embeddings_clinical              |
+
+
+
+
+
+{:.h2_title}
+## Data Source
+Trained on plain n2c2 2014: De-identification and Heart Disease Risk Factors Challenge datasets with `embeddings_clinical`.
 
