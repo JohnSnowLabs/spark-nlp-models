@@ -223,3 +223,5 @@
 {"name":"assertiondl_biobert","language":"en","libVersion":{"parts":[2,6,1]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-10-05T20:16:05.625Z","isZipped":true,"category":"nd","checksum":""}
 {"name":"ner_deid_sd","language":"en","libVersion":{"parts":[2,5,0]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-10-12T07:03:52.440Z","isZipped":true,"category":"nd","checksum":""}
 {"name":"ner_deid_biobert","language":"en","libVersion":{"parts":[2,6,2]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-10-13T08:51:13.428Z","isZipped":true,"category":"nd","checksum":""}
+{"name":"ner_healthcare_slim","language":"de","libVersion":{"parts":[2,6,2]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-10-15T10:45:21.823Z","isZipped":true,"category":"nd","checksum":""}
+{"name":"ner_traffic","language":"de","libVersion":{"parts":[2,6,2]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-10-15T10:47:29.208Z","isZipped":true,"category":"nd","checksum":""}
