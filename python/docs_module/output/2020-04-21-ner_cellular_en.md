@@ -2,12 +2,12 @@
 layout: model
 title: Ner DL Model Cellular
 author: John Snow Labs
-name: 
-class: 
-language: 
+name: ner_cellular
+class: NerDLModel
+language: en
 repository: clinical/models
-date: 2020-04-21
-tags: [clinical,ner,dl,cellular,jnlpba,en]
+date: 21/04/2020
+tags: [clinical,ner]
 article_header:
    type: cover
 use_language_switcher: "Python-Scala-Java"
@@ -38,29 +38,35 @@ DNA,RNA,cell_line,cell_type,protein
 ```
 </div>
 
+{:.h2_title}
+## Results
+```bash
 
+```
 
 {:.model-param}
 ## Model Information
-{:.table-model}
-|-------------------------|----------------------------------|
-| Model Name              | ner_cellular                     |
-| Model Class             | NerDLModel                       |
-| Spark Compatibility     | 2.4.2                            |
-| Spark NLP Compatibility | 2.4                              |
-| License                 | Licensed                         |
-| Edition                 | Official                         |
-| Input Labels            | sentence, token, word_embeddings |
-| Output Labels           | ner                              |
-| Language                | en                               |
-| Case Sensitive          | False                            |
-| Upstream Dependencies   | embeddings_clinical              |
 
+{:.table-model}
+|-------------------------|-------------------------------------|
+| Model Name              | ner_cellular                        |
+| Model Class             | NerDLModel                          |
+| Spark Compatibility     | 2.4.2                               |
+| Spark NLP Compatibility | 2.4                                 |
+| License                 | Licensed                            |
+| Edition                 | Healthcare                          |
+| Input Labels            |                                     |
+| Output Labels           | DNA,RNA,cell_line,cell_type,protein |
+| Language                | en                                  |
+| Dimension               |                                     |
+| Case Sensitive          | 0.0                                 |
+| Upstream Dependencies   | embeddings_clinical                 |
 
 
 
 
 {:.h2_title}
 ## Data Source
-Trained on the JNLPBA corpus containing more than 2.404 publication abstracts with `embeddings_clinical`.
+
+Trained on the JNLPBA corpus containing more than 2.404 publication abstracts with `embeddings_clinical`
 

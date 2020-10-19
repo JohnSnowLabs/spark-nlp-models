@@ -2,12 +2,12 @@
 layout: model
 title: NER DL Model Legal
 author: John Snow Labs
-name: 
-class: 
-language: 
+name: ner_legal
+class: NerDLModel
+language: de
 repository: clinical/models
-date: 2020-09-07
-tags: [legal,ner,de]
+date: 07/09/2020
+tags: [clinical,ner]
 article_header:
    type: cover
 use_language_switcher: "Python-Scala-Java"
@@ -38,28 +38,35 @@ AN,EUN,GRT,GS,INN,LD,LDS,LIT,MRK,ORG,PER,RR,RS,ST,STR,UN,VO,VS,VT
 ```
 </div>
 
+{:.h2_title}
+## Results
+```bash
 
+```
 
 {:.model-param}
 ## Model Information
-{:.table-model}
-|-------------------------|----------------------------------|
-| Model Name              | ner_legal                        |
-| Model Class             | NerDLModel                       |
-| Spark Compatibility     | 2.5.5                            |
-| Spark NLP Compatibility | 2.4                              |
-| License                 | Licensed                         |
-| Edition                 | Official                         |
-| Input Labels            | sentence, token, word_embeddings |
-| Output Labels           | ner                              |
-| Language                | de                               |
-| Upstream Dependencies   | embeddings_clinical              |
 
+{:.table-model}
+|-------------------------|-------------------------------------------------------------------|
+| Model Name              | ner_legal                                                         |
+| Model Class             | NerDLModel                                                        |
+| Spark Compatibility     | 2.5.5                                                             |
+| Spark NLP Compatibility | 2.4                                                               |
+| License                 | Licensed                                                          |
+| Edition                 | Legal                                                             |
+| Input Labels            |                                                                   |
+| Output Labels           | AN,EUN,GRT,GS,INN,LD,LDS,LIT,MRK,ORG,PER,RR,RS,ST,STR,UN,VO,VS,VT |
+| Language                | de                                                                |
+| Dimension               |                                                                   |
+| Case Sensitive          |                                                                   |
+| Upstream Dependencies   | embeddings_clinical                                               |
 
 
 
 
 {:.h2_title}
 ## Data Source
+
 
 

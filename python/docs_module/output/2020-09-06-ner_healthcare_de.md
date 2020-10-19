@@ -2,12 +2,12 @@
 layout: model
 title: w2v_cc_300d
 author: John Snow Labs
-name: 
-class: 
-language: 
+name: ner_healthcare
+class: NerDLModel
+language: de
 repository: clinical/models
-date: 2020-09-06
-tags: [clinical,ner,events,de]
+date: 06/09/2020
+tags: [clinical,ner]
 article_header:
    type: cover
 use_language_switcher: "Python-Scala-Java"
@@ -38,28 +38,35 @@ BIOLOGICAL_CHEMISTRY,BIOLOGICAL_PARAMETER,BODY_FLUID,BODY_PART,DEGREE,DIAGLAB_PR
 ```
 </div>
 
+{:.h2_title}
+## Results
+```bash
 
+```
 
 {:.model-param}
 ## Model Information
-{:.table-model}
-|-------------------------|----------------------------------|
-| Model Name              | ner_healthcare                   |
-| Model Class             | NerDLModel                       |
-| Spark Compatibility     | 2.5.5                            |
-| Spark NLP Compatibility | 2.4                              |
-| License                 | Licensed                         |
-| Edition                 | Official                         |
-| Input Labels            | sentence, token, word_embeddings |
-| Output Labels           | ner                              |
-| Language                | de                               |
-| Upstream Dependencies   | FILLUP                           |
 
+{:.table-model}
+|-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Model Name              | ner_healthcare                                                                                                                                                                                                                                                    |
+| Model Class             | NerDLModel                                                                                                                                                                                                                                                        |
+| Spark Compatibility     | 2.5.5                                                                                                                                                                                                                                                             |
+| Spark NLP Compatibility | 2.4                                                                                                                                                                                                                                                               |
+| License                 | Licensed                                                                                                                                                                                                                                                          |
+| Edition                 | Healthcare                                                                                                                                                                                                                                                        |
+| Input Labels            |                                                                                                                                                                                                                                                                   |
+| Output Labels           | BIOLOGICAL_CHEMISTRY,BIOLOGICAL_PARAMETER,BODY_FLUID,BODY_PART,DEGREE,DIAGLAB_PROCEDURE,DOSING,LOCAL_SPECIFICATION,MEASUREMENT,MEDICAL_CONDITION,MEDICAL_DEVICE,MEDICAL_SPECIFICATION,MEDICATION,PERSON,PROCESS,STATE_OF_HEALTH,TIME_INFORMATION,TISSUE,TREATMENT |
+| Language                | de                                                                                                                                                                                                                                                                |
+| Dimension               |                                                                                                                                                                                                                                                                   |
+| Case Sensitive          |                                                                                                                                                                                                                                                                   |
+| Upstream Dependencies   | FILLUP                                                                                                                                                                                                                                                            |
 
 
 
 
 {:.h2_title}
 ## Data Source
-Trained on 2010 i2b2/VA challenge on concepts, assertions, and relations in clinical text with `w2v_cc_300d`.
+
+Trained on 2010 i2b2/VA challenge on concepts, assertions, and relations in clinical text with `w2v_cc_300d`
 

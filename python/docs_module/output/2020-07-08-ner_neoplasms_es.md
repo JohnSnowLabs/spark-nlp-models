@@ -2,12 +2,12 @@
 layout: model
 title: Neoplasms NER
 author: John Snow Labs
-name: 
-class: 
-language: 
+name: ner_neoplasms
+class: NerDLModel
+language: es
 repository: clinical/models
-date: 2020-07-08
-tags: [clinical,ner,cantemist,es]
+date: 08/07/2020
+tags: [clinical,ner]
 article_header:
    type: cover
 use_language_switcher: "Python-Scala-Java"
@@ -38,29 +38,35 @@ MORFOLOGIA_NEOPLASIA
 ```
 </div>
 
+{:.h2_title}
+## Results
+```bash
 
+```
 
 {:.model-param}
 ## Model Information
-{:.table-model}
-|-------------------------|----------------------------------|
-| Model Name              | ner_neoplasms                    |
-| Model Class             | NerDLModel                       |
-| Spark Compatibility     | 2.5.3                            |
-| Spark NLP Compatibility | 2.4                              |
-| License                 | Licensed                         |
-| Edition                 | Official                         |
-| Input Labels            | sentence, token, word_embeddings |
-| Output Labels           | ner                              |
-| Language                | es                               |
-| Case Sensitive          | False                            |
-| Upstream Dependencies   | embeddings_scielowiki_300d       |
 
+{:.table-model}
+|-------------------------|----------------------------|
+| Model Name              | ner_neoplasms              |
+| Model Class             | NerDLModel                 |
+| Spark Compatibility     | 2.5.3                      |
+| Spark NLP Compatibility | 2.4                        |
+| License                 | Licensed                   |
+| Edition                 | Healthcare                 |
+| Input Labels            |                            |
+| Output Labels           | MORFOLOGIA_NEOPLASIA       |
+| Language                | es                         |
+| Dimension               |                            |
+| Case Sensitive          | 0.0                        |
+| Upstream Dependencies   | embeddings_scielowiki_300d |
 
 
 
 
 {:.h2_title}
 ## Data Source
-Named Entity Recognition model for Neoplasic Morphology.
+
+Named Entity Recognition model for Neoplasic Morphology
 

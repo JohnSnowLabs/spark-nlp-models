@@ -2,12 +2,12 @@
 layout: model
 title: Ner DL Model Healthcare
 author: John Snow Labs
-name: 
-class: 
-language: 
+name: ner_human_phenotype_go_clinical
+class: NerDLModel
+language: en
 repository: clinical/models
-date: 2020-08-27
-tags: [clinical,ner,phenotype,en]
+date: 27/08/2020
+tags: [clinical,ner]
 article_header:
    type: cover
 use_language_switcher: "Python-Scala-Java"
@@ -38,28 +38,35 @@ GO,HP
 ```
 </div>
 
+{:.h2_title}
+## Results
+```bash
 
+```
 
 {:.model-param}
 ## Model Information
-{:.table-model}
-|-------------------------|----------------------------------|
-| Model Name              | ner_human_phenotype_go_clinical  |
-| Model Class             | NerDLModel                       |
-| Spark Compatibility     | 2.5.5                            |
-| Spark NLP Compatibility | 2.4                              |
-| License                 | Licensed                         |
-| Edition                 | Official                         |
-| Input Labels            | sentence, token, word_embeddings |
-| Output Labels           | ner                              |
-| Language                | en                               |
-| Upstream Dependencies   | embeddings_clinical              |
 
+{:.table-model}
+|-------------------------|---------------------------------|
+| Model Name              | ner_human_phenotype_go_clinical |
+| Model Class             | NerDLModel                      |
+| Spark Compatibility     | 2.5.5                           |
+| Spark NLP Compatibility | 2.4                             |
+| License                 | Licensed                        |
+| Edition                 | Healthcare                      |
+| Input Labels            |                                 |
+| Output Labels           | GO,HP                           |
+| Language                | en                              |
+| Dimension               |                                 |
+| Case Sensitive          |                                 |
+| Upstream Dependencies   | embeddings_clinical             |
 
 
 
 
 {:.h2_title}
 ## Data Source
+
 
 

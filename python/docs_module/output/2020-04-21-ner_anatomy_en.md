@@ -2,12 +2,12 @@
 layout: model
 title: Ner DL Model Anatomy
 author: John Snow Labs
-name: 
-class: 
-language: 
+name: ner_anatomy
+class: NerDLModel
+language: en
 repository: clinical/models
-date: 2020-04-21
-tags: [clinical,ner,dl,anatomy,anem,en]
+date: 21/04/2020
+tags: [clinical,ner]
 article_header:
    type: cover
 use_language_switcher: "Python-Scala-Java"
@@ -38,29 +38,35 @@ Anatomical_system,Cell,Cellular_component,Developing_anatomical_structure,Immate
 ```
 </div>
 
+{:.h2_title}
+## Results
+```bash
 
+```
 
 {:.model-param}
 ## Model Information
-{:.table-model}
-|-------------------------|----------------------------------|
-| Model Name              | ner_anatomy                      |
-| Model Class             | NerDLModel                       |
-| Spark Compatibility     | 2.4.2                            |
-| Spark NLP Compatibility | 2.4                              |
-| License                 | Licensed                         |
-| Edition                 | Official                         |
-| Input Labels            | sentence, token, word_embeddings |
-| Output Labels           | ner                              |
-| Language                | en                               |
-| Case Sensitive          | False                            |
-| Upstream Dependencies   | embeddings_clinical              |
 
+{:.table-model}
+|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Model Name              | ner_anatomy                                                                                                                                                                                         |
+| Model Class             | NerDLModel                                                                                                                                                                                          |
+| Spark Compatibility     | 2.4.2                                                                                                                                                                                               |
+| Spark NLP Compatibility | 2.4                                                                                                                                                                                                 |
+| License                 | Licensed                                                                                                                                                                                            |
+| Edition                 | Healthcare                                                                                                                                                                                          |
+| Input Labels            |                                                                                                                                                                                                     |
+| Output Labels           | Anatomical_system,Cell,Cellular_component,Developing_anatomical_structure,Immaterial_anatomical_entity,Organ,Organism_subdivision,Organism_substance,Pathological_formation,Tissue,tissue_structure |
+| Language                | en                                                                                                                                                                                                  |
+| Dimension               |                                                                                                                                                                                                     |
+| Case Sensitive          | 0.0                                                                                                                                                                                                 |
+| Upstream Dependencies   | embeddings_clinical                                                                                                                                                                                 |
 
 
 
 
 {:.h2_title}
 ## Data Source
-Trained on the Anatomical Entity Mention (AnEM) corpus with `embeddings_clinical`.
+
+Trained on the Anatomical Entity Mention (AnEM) corpus with `embeddings_clinical`
 

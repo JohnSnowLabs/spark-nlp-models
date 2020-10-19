@@ -2,12 +2,12 @@
 layout: model
 title: Ner DL Model Clinical (Large)
 author: John Snow Labs
-name: 
-class: 
-language: 
+name: ner_large_clinical
+class: NerDLModel
+language: en
 repository: clinical/models
-date: 2020-05-21
-tags: [clinical,ner,generic,large,en]
+date: 21/05/2020
+tags: [clinical,ner]
 article_header:
    type: cover
 use_language_switcher: "Python-Scala-Java"
@@ -38,28 +38,35 @@ PROBLEM,TEST,TREATMENT
 ```
 </div>
 
+{:.h2_title}
+## Results
+```bash
 
+```
 
 {:.model-param}
 ## Model Information
-{:.table-model}
-|-------------------------|----------------------------------|
-| Model Name              | ner_large_clinical               |
-| Model Class             | NerDLModel                       |
-| Spark Compatibility     | 2.5.0                            |
-| Spark NLP Compatibility | 2.4                              |
-| License                 | Licensed                         |
-| Edition                 | Official                         |
-| Input Labels            | sentence, token, word_embeddings |
-| Output Labels           | ner                              |
-| Language                | en                               |
-| Upstream Dependencies   | embeddings_clinical              |
 
+{:.table-model}
+|-------------------------|------------------------|
+| Model Name              | ner_large_clinical     |
+| Model Class             | NerDLModel             |
+| Spark Compatibility     | 2.5.0                  |
+| Spark NLP Compatibility | 2.4                    |
+| License                 | Licensed               |
+| Edition                 | Healthcare             |
+| Input Labels            |                        |
+| Output Labels           | PROBLEM,TEST,TREATMENT |
+| Language                | en                     |
+| Dimension               |                        |
+| Case Sensitive          |                        |
+| Upstream Dependencies   | embeddings_clinical    |
 
 
 
 
 {:.h2_title}
 ## Data Source
-Trained on data gathered and manually annotated by John Snow Labs.
+
+Trained on data gathered and manually annotated by John Snow Labs
 

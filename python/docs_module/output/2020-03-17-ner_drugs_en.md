@@ -2,12 +2,12 @@
 layout: model
 title: Ner DL Model Drugs
 author: John Snow Labs
-name: 
-class: 
-language: 
+name: ner_drugs
+class: NerDLModel
+language: en
 repository: clinical/models
-date: 2020-03-17
-tags: [clinical,ner,dl,n2c2,en]
+date: 17/03/2020
+tags: [clinical,ner]
 article_header:
    type: cover
 use_language_switcher: "Python-Scala-Java"
@@ -38,29 +38,35 @@ DrugChem (Drug and Chemicals)
 ```
 </div>
 
+{:.h2_title}
+## Results
+```bash
 
+```
 
 {:.model-param}
 ## Model Information
-{:.table-model}
-|-------------------------|----------------------------------|
-| Model Name              | ner_drugs                        |
-| Model Class             | NerDLModel                       |
-| Spark Compatibility     | 2.4.4                            |
-| Spark NLP Compatibility | 2.4                              |
-| License                 | Licensed                         |
-| Edition                 | Official                         |
-| Input Labels            | sentence, token, word_embeddings |
-| Output Labels           | ner                              |
-| Language                | en                               |
-| Case Sensitive          | False                            |
-| Upstream Dependencies   | embeddings_clinical              |
 
+{:.table-model}
+|-------------------------|-------------------------------|
+| Model Name              | ner_drugs                     |
+| Model Class             | NerDLModel                    |
+| Spark Compatibility     | 2.4.4                         |
+| Spark NLP Compatibility | 2.4                           |
+| License                 | Licensed                      |
+| Edition                 | Healthcare                    |
+| Input Labels            |                               |
+| Output Labels           | DrugChem (Drug and Chemicals) |
+| Language                | en                            |
+| Dimension               |                               |
+| Case Sensitive          | 0.0                           |
+| Upstream Dependencies   | embeddings_clinical           |
 
 
 
 
 {:.h2_title}
 ## Data Source
-Trained on i2b2_med7 + FDA with `embeddings_clinical`..
+
+Trained on i2b2_med7 + FDA with `embeddings_clinical`.
 

@@ -2,12 +2,12 @@
 layout: model
 title: Ner DL Model Phenotype / Gene
 author: John Snow Labs
-name: 
-class: 
-language: 
+name: ner_human_phenotype_gene_clinical
+class: NerDLModel
+language: en
 repository: clinical/models
-date: 2020-08-27
-tags: [clinical,ner,phenotype,en]
+date: 27/08/2020
+tags: [clinical,ner]
 article_header:
    type: cover
 use_language_switcher: "Python-Scala-Java"
@@ -38,10 +38,15 @@ GENE,HP
 ```
 </div>
 
+{:.h2_title}
+## Results
+```bash
 
+```
 
 {:.model-param}
 ## Model Information
+
 {:.table-model}
 |-------------------------|-----------------------------------|
 | Model Name              | ner_human_phenotype_gene_clinical |
@@ -49,17 +54,19 @@ GENE,HP
 | Spark Compatibility     | 2.5.5                             |
 | Spark NLP Compatibility | 2.4                               |
 | License                 | Licensed                          |
-| Edition                 | Official                          |
-| Input Labels            | sentence, token, word_embeddings  |
-| Output Labels           | ner                               |
+| Edition                 | Healthcare                        |
+| Input Labels            |                                   |
+| Output Labels           | GENE,HP                           |
 | Language                | en                                |
+| Dimension               |                                   |
+| Case Sensitive          |                                   |
 | Upstream Dependencies   | embeddings_clinical               |
-
 
 
 
 
 {:.h2_title}
 ## Data Source
+
 
 

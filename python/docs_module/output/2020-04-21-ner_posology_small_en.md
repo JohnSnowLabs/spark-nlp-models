@@ -2,12 +2,12 @@
 layout: model
 title: Ner DL Model Posology Small
 author: John Snow Labs
-name: 
-class: 
-language: 
+name: ner_posology_small
+class: NerDLModel
+language: en
 repository: clinical/models
-date: 2020-04-21
-tags: [clinical,ner,drugs,fda,small,en]
+date: 21/04/2020
+tags: [clinical,ner]
 article_header:
    type: cover
 use_language_switcher: "Python-Scala-Java"
@@ -38,29 +38,35 @@ DOSAGE,DRUG,DURATION,FORM,FREQUENCY,ROUTE,STRENGTH
 ```
 </div>
 
+{:.h2_title}
+## Results
+```bash
 
+```
 
 {:.model-param}
 ## Model Information
-{:.table-model}
-|-------------------------|----------------------------------|
-| Model Name              | ner_posology_small               |
-| Model Class             | NerDLModel                       |
-| Spark Compatibility     | 2.4.2                            |
-| Spark NLP Compatibility | 2.4                              |
-| License                 | Licensed                         |
-| Edition                 | Official                         |
-| Input Labels            | sentence, token, word_embeddings |
-| Output Labels           | ner                              |
-| Language                | en                               |
-| Case Sensitive          | False                            |
-| Upstream Dependencies   | embeddings_clinical              |
 
+{:.table-model}
+|-------------------------|----------------------------------------------------|
+| Model Name              | ner_posology_small                                 |
+| Model Class             | NerDLModel                                         |
+| Spark Compatibility     | 2.4.2                                              |
+| Spark NLP Compatibility | 2.4                                                |
+| License                 | Licensed                                           |
+| Edition                 | Healthcare                                         |
+| Input Labels            |                                                    |
+| Output Labels           | DOSAGE,DRUG,DURATION,FORM,FREQUENCY,ROUTE,STRENGTH |
+| Language                | en                                                 |
+| Dimension               |                                                    |
+| Case Sensitive          | 0.0                                                |
+| Upstream Dependencies   | embeddings_clinical                                |
 
 
 
 
 {:.h2_title}
 ## Data Source
-Trained on the 2018 i2b2 dataset (no FDA) with `embeddings_clinical`..
+
+Trained on the 2018 i2b2 dataset (no FDA) with `embeddings_clinical`.
 

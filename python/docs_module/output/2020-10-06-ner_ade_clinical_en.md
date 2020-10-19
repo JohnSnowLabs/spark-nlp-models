@@ -1,12 +1,12 @@
 ---
 layout: model
-title: Ner DL Model Diseases
+title: NER Adverse Drug Events
 author: John Snow Labs
-name: ner_diseases
+name: ner_ade_clinical
 class: NerDLModel
 language: en
 repository: clinical/models
-date: 17/03/2020
+date: 06/10/2020
 tags: [clinical,ner]
 article_header:
    type: cover
@@ -15,14 +15,14 @@ use_language_switcher: "Python-Scala-Java"
 
 {:.h2_title}
 ## Description 
-Pretrained named entity recognition deep learning model for diseases.
+Extract adverse drug reaction events and drug entites from text
 
  {:.h2_title}
 ## Predicted Entities
-Disease 
+ADE, DRUG 
 
 {:.btn-box}
-[Live Demo](https://demo.johnsnowlabs.com/healthcare/NER_DIAG_PROC/){:.button.button-orange}<br/>[Open in Colab](https://colab.research.google.com/github/JohnSnowLabs/spark-nlp-workshop/blob/master/tutorials/Certification_Trainings/Healthcare/1.Clinical_Named_Entity_Recognition_Model.ipynb){:.button.button-orange.button-orange-trans.co.button-icon}<br/>[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/clinical/models/ner_diseases_en_2.4.4_2.4_1584452534235.zip){:.button.button-orange.button-orange-trans.arr.button-icon}<br/>
+<button class="button button-orange" disabled>Live Demo</button><br/><button class="button button-orange" disabled>Open in Colab</button><br/>[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/clinical/models/ner_ade_clinical_en_2.6.0_2.4_1601368505818.zip){:.button.button-orange.button-orange-trans.arr.button-icon}<br/>
 
 ## How to use 
 <div class="tabs-box" markdown="1">
@@ -49,17 +49,17 @@ Disease
 
 {:.table-model}
 |-------------------------|---------------------|
-| Model Name              | ner_diseases        |
+| Model Name              | ner_ade_clinical    |
 | Model Class             | NerDLModel          |
-| Spark Compatibility     | 2.4.4               |
+| Spark Compatibility     | 2.6.2               |
 | Spark NLP Compatibility | 2.4                 |
 | License                 | Licensed            |
 | Edition                 | Healthcare          |
 | Input Labels            |                     |
-| Output Labels           | Disease             |
+| Output Labels           | ADE, DRUG           |
 | Language                | en                  |
 | Dimension               |                     |
-| Case Sensitive          | 0.0                 |
+| Case Sensitive          |                     |
 | Upstream Dependencies   | embeddings_clinical |
 
 
@@ -68,5 +68,5 @@ Disease
 {:.h2_title}
 ## Data Source
 
-Trained on i2b2 with `embeddings_clinical`
+Trained on DRUG-AE, 2018 i2b2, CADEC, and twitter ADE dataset
 

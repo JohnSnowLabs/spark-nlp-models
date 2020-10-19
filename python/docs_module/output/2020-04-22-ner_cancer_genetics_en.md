@@ -2,12 +2,12 @@
 layout: model
 title: Ner DL Model Cancer Genetics
 author: John Snow Labs
-name: 
-class: 
-language: 
+name: ner_cancer_genetics
+class: NerDLModel
+language: en
 repository: clinical/models
-date: 2020-04-22
-tags: [clinical,ner,dl,cancer,genetics,bionlp,en]
+date: 22/04/2020
+tags: [clinical,ner]
 article_header:
    type: cover
 use_language_switcher: "Python-Scala-Java"
@@ -38,28 +38,35 @@ DNA,RNA,cell_line,cell_type,protein
 ```
 </div>
 
+{:.h2_title}
+## Results
+```bash
 
+```
 
 {:.model-param}
 ## Model Information
-{:.table-model}
-|-------------------------|----------------------------------|
-| Model Name              | ner_cancer_genetics              |
-| Model Class             | NerDLModel                       |
-| Spark Compatibility     | 2.4.2                            |
-| Spark NLP Compatibility | 2.4                              |
-| License                 | Licensed                         |
-| Edition                 | Official                         |
-| Input Labels            | sentence, token, word_embeddings |
-| Output Labels           | ner                              |
-| Language                | en                               |
-| Upstream Dependencies   | embeddings_clinical              |
 
+{:.table-model}
+|-------------------------|-------------------------------------|
+| Model Name              | ner_cancer_genetics                 |
+| Model Class             | NerDLModel                          |
+| Spark Compatibility     | 2.4.2                               |
+| Spark NLP Compatibility | 2.4                                 |
+| License                 | Licensed                            |
+| Edition                 | Healthcare                          |
+| Input Labels            |                                     |
+| Output Labels           | DNA,RNA,cell_line,cell_type,protein |
+| Language                | en                                  |
+| Dimension               |                                     |
+| Case Sensitive          |                                     |
+| Upstream Dependencies   | embeddings_clinical                 |
 
 
 
 
 {:.h2_title}
 ## Data Source
-Trained on Cancer Genetics (CG) task of the BioNLP Shared Task 2013 with `embeddings_clinical`.
+
+Trained on Cancer Genetics (CG) task of the BioNLP Shared Task 2013 with `embeddings_clinical`
 

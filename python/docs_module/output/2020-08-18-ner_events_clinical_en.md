@@ -2,12 +2,12 @@
 layout: model
 title: Ner DL Model Events `embeddings_clinical`
 author: John Snow Labs
-name: 
-class: 
-language: 
+name: ner_events_clinical
+class: NerDLModel
+language: en
 repository: clinical/models
-date: 2020-08-18
-tags: [clinical,ner,events,en]
+date: 18/08/2020
+tags: [clinical,ner]
 article_header:
    type: cover
 use_language_switcher: "Python-Scala-Java"
@@ -38,29 +38,35 @@ CLINICAL_DEPT,DATE,DURATION,EVIDENTIAL,FREQUENCY,OCCURRENCE,PROBLEM,TEST,TIME,TR
 ```
 </div>
 
+{:.h2_title}
+## Results
+```bash
 
+```
 
 {:.model-param}
 ## Model Information
-{:.table-model}
-|-------------------------|----------------------------------|
-| Model Name              | ner_events_clinical              |
-| Model Class             | NerDLModel                       |
-| Spark Compatibility     | 2.5.0                            |
-| Spark NLP Compatibility | 2.4                              |
-| License                 | Licensed                         |
-| Edition                 | Official                         |
-| Input Labels            | sentence, token, word_embeddings |
-| Output Labels           | ner                              |
-| Language                | en                               |
-| Case Sensitive          | False                            |
-| Upstream Dependencies   | embeddings_clinical              |
 
+{:.table-model}
+|-------------------------|-----------------------------------------------------------------------------------------|
+| Model Name              | ner_events_clinical                                                                     |
+| Model Class             | NerDLModel                                                                              |
+| Spark Compatibility     | 2.5.0                                                                                   |
+| Spark NLP Compatibility | 2.4                                                                                     |
+| License                 | Licensed                                                                                |
+| Edition                 | Healthcare                                                                              |
+| Input Labels            |                                                                                         |
+| Output Labels           | CLINICAL_DEPT,DATE,DURATION,EVIDENTIAL,FREQUENCY,OCCURRENCE,PROBLEM,TEST,TIME,TREATMENT |
+| Language                | en                                                                                      |
+| Dimension               |                                                                                         |
+| Case Sensitive          | 0.0                                                                                     |
+| Upstream Dependencies   | embeddings_clinical                                                                     |
 
 
 
 
 {:.h2_title}
 ## Data Source
-Trained on i2b2 events data with `clinical_embeddings`.
+
+Trained on i2b2 events data with `clinical_embeddings`
 

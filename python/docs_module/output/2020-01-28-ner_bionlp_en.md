@@ -2,12 +2,12 @@
 layout: model
 title: Ner DL Model Bionlp
 author: John Snow Labs
-name: 
-class: 
-language: 
+name: ner_bionlp
+class: NerDLModel
+language: en
 repository: clinical/models
-date: 2020-01-28
-tags: [clinical,ner,dl,cancer,genetics,bionlp,en]
+date: 28/01/2020
+tags: [clinical,ner]
 article_header:
    type: cover
 use_language_switcher: "Python-Scala-Java"
@@ -38,29 +38,35 @@ Amino_acid,Anatomical_system,Cancer,Cell,Cellular_component,Developing_anatomica
 ```
 </div>
 
+{:.h2_title}
+## Results
+```bash
 
+```
 
 {:.model-param}
 ## Model Information
-{:.table-model}
-|-------------------------|----------------------------------|
-| Model Name              | ner_bionlp                       |
-| Model Class             | NerDLModel                       |
-| Spark Compatibility     | 2.4.0                            |
-| Spark NLP Compatibility | 2.4                              |
-| License                 | Licensed                         |
-| Edition                 | Official                         |
-| Input Labels            | sentence, token, word_embeddings |
-| Output Labels           | ner                              |
-| Language                | en                               |
-| Case Sensitive          | False                            |
-| Upstream Dependencies   | embeddings_clinical              |
 
+{:.table-model}
+|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Model Name              | ner_bionlp                                                                                                                                                                                                                                                          |
+| Model Class             | NerDLModel                                                                                                                                                                                                                                                          |
+| Spark Compatibility     | 2.4.0                                                                                                                                                                                                                                                               |
+| Spark NLP Compatibility | 2.4                                                                                                                                                                                                                                                                 |
+| License                 | Licensed                                                                                                                                                                                                                                                            |
+| Edition                 | Healthcare                                                                                                                                                                                                                                                          |
+| Input Labels            |                                                                                                                                                                                                                                                                     |
+| Output Labels           | Amino_acid,Anatomical_system,Cancer,Cell,Cellular_component,Developing_anatomical_structure,Gene_or_gene_product,Immaterial_anatomical_entity,Organ,Organism,Organism_subdivision,Organism_substance,Pathological_formation,Simple_chemical,Tissue,tissue_structure |
+| Language                | en                                                                                                                                                                                                                                                                  |
+| Dimension               |                                                                                                                                                                                                                                                                     |
+| Case Sensitive          | 0.0                                                                                                                                                                                                                                                                 |
+| Upstream Dependencies   | embeddings_clinical                                                                                                                                                                                                                                                 |
 
 
 
 
 {:.h2_title}
 ## Data Source
-Trained on Cancer Genetics (CG) task of the BioNLP Shared Task 2013 with `embeddings_clinical`.
+
+Trained on Cancer Genetics (CG) task of the BioNLP Shared Task 2013 with `embeddings_clinical`
 

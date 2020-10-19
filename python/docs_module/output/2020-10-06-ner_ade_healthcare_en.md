@@ -1,12 +1,12 @@
 ---
 layout: model
-title: Ner DL Model Clinical
+title: NER Adverse Drug Events
 author: John Snow Labs
-name: ner_diag_proc
+name: ner_ade_healthcare
 class: NerDLModel
-language: es
+language: en
 repository: clinical/models
-date: 08/07/2020
+date: 06/10/2020
 tags: [clinical,ner]
 article_header:
    type: cover
@@ -15,14 +15,14 @@ use_language_switcher: "Python-Scala-Java"
 
 {:.h2_title}
 ## Description 
-Pretrained named entity recognition deep learning model for diagnostics and procedures in spanish
+Extract adverse drug reaction events and drug entites from text
 
  {:.h2_title}
 ## Predicted Entities
-Diagnostico, Procedimiento 
+ADE, DRUG 
 
 {:.btn-box}
-<button class="button button-orange" disabled>Live Demo</button><br/><button class="button button-orange" disabled>Open in Colab</button><br/>[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/clinical/models/ner_diag_proc_es_2.5.3_2.4_1594168623415.zip){:.button.button-orange.button-orange-trans.arr.button-icon}<br/>
+<button class="button button-orange" disabled>Live Demo</button><br/><button class="button button-orange" disabled>Open in Colab</button><br/>[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/clinical/models/ner_ade_healthcare_en_2.6.0_2.4_1601450601043.zip){:.button.button-orange.button-orange-trans.arr.button-icon}<br/>
 
 ## How to use 
 <div class="tabs-box" markdown="1">
@@ -49,18 +49,18 @@ Diagnostico, Procedimiento
 
 {:.table-model}
 |-------------------------|----------------------------|
-| Model Name              | ner_diag_proc              |
+| Model Name              | ner_ade_healthcare         |
 | Model Class             | NerDLModel                 |
-| Spark Compatibility     | 2.5.3                      |
+| Spark Compatibility     | 2.6.2                      |
 | Spark NLP Compatibility | 2.4                        |
 | License                 | Licensed                   |
 | Edition                 | Healthcare                 |
 | Input Labels            |                            |
-| Output Labels           | Diagnostico, Procedimiento |
-| Language                | es                         |
+| Output Labels           | ADE, DRUG                  |
+| Language                | en                         |
 | Dimension               |                            |
 | Case Sensitive          |                            |
-| Upstream Dependencies   | embeddings_scielowiki_300d |
+| Upstream Dependencies   | embeddings_healthcare_100d |
 
 
 
@@ -68,5 +68,5 @@ Diagnostico, Procedimiento
 {:.h2_title}
 ## Data Source
 
-Trained on CodiEsp Challenge dataset trained with `embeddings_scielowiki_300d`
+Trained on DRUG-AE, 2018 i2b2, CADEC, and twitter ADE dataset
 
