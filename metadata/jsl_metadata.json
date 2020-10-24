@@ -243,3 +243,9 @@
 {"name":"ner_jsl_biobert","language":"en","libVersion":{"parts":[2,6,2]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-10-22T13:01:35.891Z","isZipped":true,"category":"nd","checksum":""}
 {"name":"ner_jsl_enriched_biobert","language":"en","libVersion":{"parts":[2,6,2]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-10-22T13:02:07.884Z","isZipped":true,"category":"nd","checksum":""}
 {"name":"jsl_ner_wip_clinical","language":"en","libVersion":{"parts":[2,6,1]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-10-22T14:21:57.912Z","isZipped":true,"category":"nd","checksum":""}
+{"name":"ner_chemprot_biobert","language":"en","libVersion":{"parts":[2,6,2]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-10-24T17:52:21.669Z","isZipped":true,"category":"nd","checksum":""}
+{"name":"ner_human_phenotype_gene_biobert","language":"en","libVersion":{"parts":[2,6,2]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-10-24T17:53:41.699Z","isZipped":true,"category":"nd","checksum":""}
+{"name":"ner_human_phenotype_go_biobert","language":"en","libVersion":{"parts":[2,6,2]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-10-24T17:58:55.946Z","isZipped":true,"category":"nd","checksum":""}
+{"name":"ner_posology_large_biobert","language":"en","libVersion":{"parts":[2,6,2]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-10-24T18:02:17.477Z","isZipped":true,"category":"nd","checksum":""}
+{"name":"ner_posology_biobert","language":"en","libVersion":{"parts":[2,6,2]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-10-24T18:03:10.478Z","isZipped":true,"category":"nd","checksum":""}
+{"name":"ner_risk_factors_biobert","language":"en","libVersion":{"parts":[2,6,2]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-10-24T18:05:23.975Z","isZipped":true,"category":"nd","checksum":""}
