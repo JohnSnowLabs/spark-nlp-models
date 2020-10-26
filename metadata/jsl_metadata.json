@@ -249,3 +249,9 @@
 {"name":"ner_posology_large_biobert","language":"en","libVersion":{"parts":[2,6,2]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-10-24T18:02:17.477Z","isZipped":true,"category":"nd","checksum":""}
 {"name":"ner_posology_biobert","language":"en","libVersion":{"parts":[2,6,2]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-10-24T18:03:10.478Z","isZipped":true,"category":"nd","checksum":""}
 {"name":"ner_risk_factors_biobert","language":"en","libVersion":{"parts":[2,6,2]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-10-24T18:05:23.975Z","isZipped":true,"category":"nd","checksum":""}
+{"name":"biobertresolve_icdo","language":"en","libVersion":{"parts":[2,6,3]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-10-26T00:45:01.579Z","isZipped":true,"category":"nd","checksum":""}
+{"name":"biobertresolve_cpt","language":"en","libVersion":{"parts":[2,6,3]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-10-26T00:45:14.746Z","isZipped":true,"category":"nd","checksum":""}
+{"name":"biobertresolve_icd10cm","language":"en","libVersion":{"parts":[2,6,3]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-10-26T00:55:04.767Z","isZipped":true,"category":"nd","checksum":""}
+{"name":"biobertresolve_loinc","language":"en","libVersion":{"parts":[2,6,3]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-10-26T01:57:14.936Z","isZipped":true,"category":"nd","checksum":""}
+{"name":"biobertresolve_icd10pcs","language":"en","libVersion":{"parts":[2,6,3]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-10-26T02:13:27.701Z","isZipped":true,"category":"nd","checksum":""}
+{"name":"biobertresolve_rxnorm_bdcd","language":"en","libVersion":{"parts":[2,6,3]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-10-26T03:38:07.151Z","isZipped":true,"category":"nd","checksum":""}
