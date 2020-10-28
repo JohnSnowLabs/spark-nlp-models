@@ -1008,9 +1008,12 @@ It is required to specify 3rd argument to `pretrained(name, lang, location)` fun
 | Model                 | Name                   | Build  | lang | Offline   |
 |:-------------------------|:-----------------------|:-------|:----------|:----------|
 | NER Healthcare   | `ner_healthcare`  | 2.6.0 |   `de` |  [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/clinical/models/ner_healthcare_de_2.5.5_2.4_1599433028253.zip)  |
+| NER Healthcare   | `ner_healthcare_slim`  | 2.6.0 |   `de` |  [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/clinical/models/ner_healthcare_slim_de_2.6.0_2.4_1602758721823.zip)  |
 | Entity Resolver ICD10GM   | `chunkresolve_ICD10GM`  | 2.6.0 |   `de` | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/clinical/models/chunkresolve_ICD10GM_de_2.5.5_2.4_1599431635423.zip)  |
+| Entity Resolver ICD10GM   | `chunkresolve_ICD10GM_2021`  | 2.6.0 |   `de` | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/clinical/models/chunkresolve_ICD10GM_2021_de_2.6.0_2.4_1603881769571.zip)  |
 | WordEmbeddings   | `w2v_cc_300d`  | 2.6.0 |   `de` |  [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/clinical/models/w2v_cc_300d_de_2.5.5_2.4_1599428063692.zip)  |
 | NER Legal  | `ner_legal`  | 2.6.0 |   `de` |  [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/clinical/models/ner_legal_de_2.5.5_2.4_1599471454959.zip)  |
+| NER Traffic  | `ner_traffic`  | 2.6.0 |   `de` |  [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/clinical/models/ner_traffic_de_2.6.0_2.4_1602758849208.zip)  |
 
 
 
