@@ -259,4 +259,4 @@
 {"name":"ner_bacterial_species","language":"en","libVersion":{"parts":[2,6,3]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-10-27T09:32:54.433Z","isZipped":true,"category":"nd","checksum":""}
 {"name":"ner_diseases_large","language":"en","libVersion":{"parts":[2,6,3]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-10-27T09:34:10.146Z","isZipped":true,"category":"nd","checksum":""}
 {"name":"ner_chemicals","language":"en","libVersion":{"parts":[2,6,3]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-10-27T09:35:04.125Z","isZipped":true,"category":"nd","checksum":""}
-
+{"name":"chunkresolve_ICD10GM_2021","language":"de","libVersion":{"parts":[2,6,0]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-10-28T10:42:49.571Z","isZipped":true,"category":"nd","checksum":""}
