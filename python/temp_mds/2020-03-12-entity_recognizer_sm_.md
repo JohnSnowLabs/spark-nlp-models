@@ -1,0 +1,61 @@
+---
+layout: model
+title: Entity Recognizer Small
+author: John Snow Labs
+name: entity_recognizer_sm
+class: 
+language: 
+repository: public/models
+date: 12/03/2020
+tags: [pipeline]
+article_header:
+   type: cover
+use_language_switcher: "Python-Scala-Java"
+---
+
+{:.h2_title}
+## Description 
+
+
+
+
+{:.btn-box}
+<button class="button button-orange" disabled>Live Demo</button><br/><button class="button button-orange" disabled>Open in Colab</button><br/>[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/entity_recognizer_sm_ru_2.4.4_2.4_1584018543619.zip){:.button.button-orange.button-orange-trans.arr.button-icon}<br/>
+
+## How to use 
+<div class="tabs-box" markdown="1">
+
+{% include programmingLanguageSelectScalaPython.html %}
+
+```python
+model = Pipeline.pretrained("entity_recognizer_sm","","public/models")\
+	.setInputCols("")\
+	.setOutputCol("")
+```
+
+```scala
+
+```
+</div>
+
+
+
+{:.model-param}
+## Model Information
+
+{:.table-model}
+|-------------------------|----------------------|
+| Model Name              | entity_recognizer_sm |
+| Model Class             | Pipeline             |
+| Spark Compatibility     | 2.4.4                |
+| Spark NLP Compatibility | 2.4                  |
+| License                 | open source          |
+| Edition                 | public               |
+
+
+
+
+{:.h2_title}
+## Data Source
+
+

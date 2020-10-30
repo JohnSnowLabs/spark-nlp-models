@@ -50,12 +50,14 @@ use_language_switcher: "Python-Scala-Java"
 
 {:.model-param}
 ## Model Information
+
 {:.table-model}
 {{table}}
 
 {% if included_models %}
 {:.h2_title}
 ## Included Models
+
 {{included_models}}
 {% else %}
 {%endif%}

@@ -1,0 +1,65 @@
+---
+layout: model
+title: 
+author: John Snow Labs
+name: lemma_dxc
+class: 
+language: it
+repository: public/models
+date: 29/04/2019
+tags: [lemmatizer]
+article_header:
+   type: cover
+use_language_switcher: "Python-Scala-Java"
+---
+
+{:.h2_title}
+## Description 
+
+
+
+
+{:.btn-box}
+<button class="button button-orange" disabled>Live Demo</button><br/><button class="button button-orange" disabled>Open in Colab</button><br/>[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_dxc_it_2.0.2_2.4_1556531469058.zip){:.button.button-orange.button-orange-trans.arr.button-icon}<br/>
+
+## How to use 
+<div class="tabs-box" markdown="1">
+
+{% include programmingLanguageSelectScalaPython.html %}
+
+```python
+model = LemmatizerModel.pretrained("lemma_dxc","it","public/models")\
+	.setInputCols("token")\
+	.setOutputCol("lemma")
+```
+
+```scala
+
+```
+</div>
+
+
+
+{:.model-param}
+## Model Information
+
+{:.table-model}
+|-------------------------|-----------------|
+| Model Name              | lemma_dxc       |
+| Model Class             | LemmatizerModel |
+| Spark Compatibility     | 2.0.2           |
+| Spark NLP Compatibility | 2.4             |
+| License                 | open source     |
+| Edition                 | public          |
+| Input Labels            | token           |
+| Output Labels           | lemma           |
+| Language                | it              |
+| Upstream Dependencies   | Lemmatizer      |
+
+
+
+
+{:.h2_title}
+## Data Source
+
+
