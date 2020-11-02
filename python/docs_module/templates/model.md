@@ -50,6 +50,7 @@ use_language_switcher: "Python-Scala-Java"
 
 {:.model-param}
 ## Model Information
+
 {:.table-model}
 {{table}}
 
@@ -62,7 +63,8 @@ use_language_switcher: "Python-Scala-Java"
 
 {:.h2_title}
 ## Data Source
-{{dataset_info}}
+{{dataset_info}}  
+Visit [this]({{reference_url}}) link to get more information
 
 {% if model_benchmarks %}
 {:.h2_title}
