@@ -269,5 +269,4 @@
 {"name":"chunkresolve_icd10cm_hcc_clinical","language":"en","libVersion":{"parts":[2,6,3]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-11-03T16:03:44.770Z","isZipped":true,"category":"nd","checksum":""}
 {"name":"chunkresolve_icd10cm_hcc_healthcare","language":"en","libVersion":{"parts":[2,6,3]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-11-03T17:55:32.688Z","isZipped":true,"category":"nd","checksum":""}
 {"name":"jsl_bert_pubmed_cased","language":"en","libVersion":{"parts":[2,6,1]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-11-04T19:14:00.333Z","isZipped":true,"category":"nd","checksum":""}
-
 {"name":"ner_financial_contract","language":"en","libVersion":{"parts":[2,7,0]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-11-04T20:17:23.983Z","isZipped":true,"category":"nd","checksum":""}
