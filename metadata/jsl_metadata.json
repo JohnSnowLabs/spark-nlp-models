@@ -273,3 +273,7 @@
 {"name":"ner_anatomy","language":"en","libVersion":{"parts":[2,6,2]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-11-07T17:40:00.146Z","isZipped":true,"category":"nd","checksum":""}
 {"name":"jsl_ner_wip_clinical","language":"en","libVersion":{"parts":[2,6,3]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-11-11T09:52:16.505Z","isZipped":true,"category":"nd","checksum":""}
 {"name":"sent_biobert_base_uncased_mednli","language":"en","libVersion":{"parts":[2,6,3]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-11-11T21:39:06.737Z","isZipped":true,"category":"nd","checksum":""}
+{"name":"biobertresolve_cpt","language":"en","libVersion":{"parts":[2,6,3]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-11-12T00:13:17.695Z","isZipped":true,"category":"nd","checksum":""}
+{"name":"biobertresolve_icdo","language":"en","libVersion":{"parts":[2,6,3]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-11-12T00:21:35.894Z","isZipped":true,"category":"nd","checksum":""}
+{"name":"biobertresolve_icd10cm","language":"en","libVersion":{"parts":[2,6,3]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-11-12T01:27:22.721Z","isZipped":true,"category":"nd","checksum":""}
+{"name":"biobertresolve_icd10pcs","language":"en","libVersion":{"parts":[2,6,3]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-11-12T02:39:31.264Z","isZipped":true,"category":"nd","checksum":""}
