@@ -280,5 +280,5 @@
 {"name":"sbiobertresolve_icd10cm","language":"en","libVersion":{"parts":[2,6,3]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-11-14T12:39:23.576Z","isZipped":true,"category":"nd","checksum":""}
 {"name":"sbiobertresolve_icd10pcs","language":"en","libVersion":{"parts":[2,6,3]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-11-14T12:53:17.868Z","isZipped":true,"category":"nd","checksum":""}
 {"name":"sbiobertresolve_snomed_auxConcepts","language":"en","libVersion":{"parts":[2,6,3]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-11-23T14:17:13.300Z","isZipped":true,"category":"nd","checksum":""}
-{"name":"sbiobertresolve_snomed_int_auxConcepts","language":"en","libVersion":{"parts":[2,6,3]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-11-23T14:18:34.241Z","isZipped":true,"category":"nd","checksum":""}
+{"name":"sbiobertresolve_snomed_auxConcepts_int","language":"en","libVersion":{"parts":[2,6,3]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-11-23T14:18:34.241Z","isZipped":true,"category":"nd","checksum":""}
 
