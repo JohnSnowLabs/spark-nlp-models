@@ -282,6 +282,6 @@
 {"name":"sbiobertresolve_snomed_auxConcepts","language":"en","libVersion":{"parts":[2,6,3]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-11-23T14:17:13.300Z","isZipped":true,"category":"nd","checksum":""}
 {"name":"sbiobertresolve_snomed_auxConcepts_int","language":"en","libVersion":{"parts":[2,6,3]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-11-23T14:18:34.241Z","isZipped":true,"category":"nd","checksum":""}
 {"name":"classifier_icd10cm_hcc_healthcare","language":"en","libVersion":{"parts":[2,6,3]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-11-24T01:50:34.614Z","isZipped":true,"category":"nd","checksum":""}
-{"name":"sbiobert_base_cased_mli","language":"en","libVersion":{"parts":[2,6,4]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-11-24T13:48:48.763Z","isZipped":true,"category":"nd","checksum":""}
+{"name":"sbiobert_base_cased_mli","language":"en","libVersion":{"parts":[2,6,3]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-11-24T13:48:48.763Z","isZipped":true,"category":"nd","checksum":""}
 {"name":"sbluebert_base_uncased_mli","language":"en","libVersion":{"parts":[2,6,4]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-11-24T14:36:36.089Z","isZipped":true,"category":"nd","checksum":""}
 
