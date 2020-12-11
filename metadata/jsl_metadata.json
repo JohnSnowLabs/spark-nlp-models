@@ -300,3 +300,8 @@
 {"name":"jsl_assertion_wip","language":"en","libVersion":{"parts":[2,6,1]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-12-01T22:08:30.166Z","isZipped":true,"category":"nd","checksum":""}
 {"name":"jsl_ner_wip_modifier_clinical","language":"en","libVersion":{"parts":[2,6,4]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-12-04T21:07:09.830Z","isZipped":true,"category":"nd","checksum":""}
 {"name":"ner_drugs_greedy","language":"en","libVersion":{"parts":[2,6,4]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-12-06T20:06:50.902Z","isZipped":true,"category":"nd","checksum":""}
+{"name":"chunkresolve_rxnorm_in_clinical","language":"en","libVersion":{"parts":[2,6,3]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-12-09T01:59:29.730Z","isZipped":true,"category":"nd","checksum":""}
+{"name":"chunkresolve_rxnorm_scdc_clinical","language":"en","libVersion":{"parts":[2,6,3]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-12-09T02:20:09.561Z","isZipped":true,"category":"nd","checksum":""}
+{"name":"chunkresolve_rxnorm_in_healthcare","language":"en","libVersion":{"parts":[2,6,3]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-12-09T02:27:16.200Z","isZipped":true,"category":"nd","checksum":""}
+{"name":"chunkresolve_rxnorm_scdc_healthcare","language":"en","libVersion":{"parts":[2,6,3]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-12-09T02:34:33.501Z","isZipped":true,"category":"nd","checksum":""}
+{"name":"biobertresolve_rxcui","language":"en","libVersion":{"parts":[2,6,4]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2020-12-11T19:15:46.277Z","isZipped":true,"category":"nd","checksum":""}
