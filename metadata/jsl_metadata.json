@@ -322,3 +322,4 @@
 {"name":"jsl_ner_wip_clinical","language":"en","libVersion":{"parts":[2,6,5]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2021-01-01T12:53:48.141Z","isZipped":true,"category":"nd","checksum":""}
 {"name":"sbiobertresolve_hcc_augmented","language":"en","libVersion":{"parts":[2,6,5]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2021-01-05T19:33:17.840Z","isZipped":true,"category":"nd","checksum":""}
 {"name":"ner_measurements_clinical","language":"en","libVersion":{"parts":[2,6,5]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2021-01-08T10:34:13.866Z","isZipped":true,"category":"nd","checksum":""}
+{"name":"jsl_rd_ner_wip_greedy_clinical","language":"en","libVersion":{"parts":[2,6,1]},"sparkVersion":{"parts":[2,4]},"readyToUse":true,"time":"2021-01-08T12:26:09.621Z","isZipped":true,"category":"nd","checksum":""}
