@@ -335,7 +335,7 @@ pipeline = Pipeline(
 | PerceptronModel (POS UD)     | `pos_ud_ddt`       | 2.5.5 |   `da`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_ddt_da_2.5.5_2.4_1596053892919.zip) |
 | NerDLModel (glove_100d)    | `dane_ner_6B_100`     | 2.6.0 |   `da`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/dane_ner_6B_100_da_2.6.0_2.4_1598810267725.zip) |
 | NerDLModel (glove_6B_300)  | `dane_ner_6B_300`     | 2.6.0 |   `da`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/dane_ner_6B_300_da_2.6.0_2.4_1598810268069.zip) |
-| NerDLModel (glove_840B_300)| `dane_ner_840B_100`     | 2.6.0 |   `da`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/dane_ner_840B_300_da_2.6.0_2.4_1598810268070.zip) |
+| NerDLModel (glove_840B_300)| `dane_ner_840B_300`     | 2.6.0 |   `da`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/dane_ner_840B_300_da_2.6.0_2.4_1598810268070.zip) |
 
 ### Dutch - Models
 
@@ -484,9 +484,9 @@ pipeline = Pipeline(
 | LemmatizerModel (Lemmatizer) | `lemma`            | 2.5.0 |   `fi`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/lemma_fi_2.5.0_2.4_1588671290521.zip) |
 | PerceptronModel (POS UD)     | `pos_ud_tdt`       | 2.5.0 |   `fi`    |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/pos_ud_tdt_fi_2.5.0_2.4_1588622348985.zip) |
 | StopWordsCleaner  | `stopwords_fi`            | 2.5.4 |   `fi`   |[Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/stopwords_fi_fi_2.5.4_2.4_1594742441054.zip) |
-| NerDLModel (glove_100d)  | `wikiner_6B_100`       | 2.6.0 |   `fi`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/finnish_ner_6B_100_fi_2.6.0_2.4_1598965807300.zip) |
-| NerDLModel (glove_6B_300)  | `wikiner_6B_300`     | 2.6.0 |   `fi`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/finnish_ner_6B_300_fi_2.6.0_2.4_1598965807718.zip) |
-| NerDLModel (glove_840B_300)  | `wikiner_840B_300` | 2.6.0 |   `fi`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/finnish_ner_840B_300_fi_2.6.0_2.4_1598965807720.zip)|
+| NerDLModel (glove_100d)  | `finnish_ner_6B_100`       | 2.6.0 |   `fi`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/finnish_ner_6B_100_fi_2.6.0_2.4_1598965807300.zip) |
+| NerDLModel (glove_6B_300)  | `finnish_ner_6B_300`     | 2.6.0 |   `fi`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/finnish_ner_6B_300_fi_2.6.0_2.4_1598965807718.zip) |
+| NerDLModel (glove_840B_300)  | `finnish_ner_840B_300` | 2.6.0 |   `fi`    | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/finnish_ner_840B_300_fi_2.6.0_2.4_1598965807720.zip)|
 | BertEmbeddings   | `bert_finnish_cased`       | 2.6.0 |      `fi`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/bert_finnish_cased_fi_2.6.0_2.4_1598896927571.zip) |
 | BertEmbeddings   | `bert_finnish_uncased`       | 2.6.0 |      `fi`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/bert_finnish_uncased_fi_2.6.0_2.4_1598897239983.zip) |
 | BertSentenceEmbeddings   | `sent_bert_finnish_cased`       | 2.6.0 |      `fi`        | [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/public/models/sent_bert_finnish_cased_fi_2.6.0_2.4_1598897560014.zip) |
