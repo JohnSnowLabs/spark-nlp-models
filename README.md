@@ -14,13 +14,13 @@ Take a look at our official Spark NLP page: [http://nlp.johnsnowlabs.com/](http:
 
 [Join Slack](https://join.slack.com/t/spark-nlp/shared_invite/enQtNjA4MTE2MDI1MDkxLTM4ZDliMjU5OWZmMDE1ZGVkMjg0MWFjMjU3NjY4YThlMTJkNmNjNjM3NTMwYzlhMWY4MGMzODI2NDBkOWU4ZDE)
 
-# Open Source Models & Pipelines
+# Open Source
 
 Spark NLP comes with **1100+** pretrained **pipelines** and **models** in more than **192+** languages. 
 
 **Some of the selected languages:** `Afrikaans, Arabic, Armenian, Basque, Bengali, Breton, Bulgarian, Catalan, Czech, Dutch, English, Esperanto, Finnish, French, Galician, German, Greek, Hausa, Hebrew, Hindi, Hungarian, Indonesian, Irish, Italian, Japanese, Latin, Latvian, Marathi, Norwegian, Persian, Polish, Portuguese, Romanian, Russian, Slovak, Slovenian, Somali, Southern Sotho, Spanish, Swahili, Swedish, Tswana, Turkish, Ukrainian, Zulu`
 
-Please check out our Models Hub for the full and updated list of [pre-trained models & pipelines](https://nlp.johnsnowlabs.com/models) with examples, demo, benchmark, and more
+### Please check out our Models Hub for the full and updated list of [pre-trained models & pipelines](https://nlp.johnsnowlabs.com/models) with examples, demo, benchmark, and more
 
 # Licensed Enterprise
 
